@@ -10,12 +10,12 @@ tags: [其他]
 
 2. 取消勾选`decrypt https traffic`
 
-   {% asset_image image-20220830085929624.png %}
+   ![](image-20220830085929624.png)
 
 3. 点击`actions-remove interception certficates` ，删除所有证书
 
-   {% asset_image image-20220830085915971.png %}
+   ![](image-20220830085915971.png)
 
 4. 重新勾选`decrypt https traffic`，根据提示安装证书
 
-   {% asset_image image-20220830090534349.png %}
+   ![](image-20220830090534349.png)
