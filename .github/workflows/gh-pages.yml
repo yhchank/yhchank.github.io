@@ -22,7 +22,7 @@ jobs:
           extended: true          # 如果你使用的不是extended版本的hugo，将true改为false
 
       - name: Build
-        run: hugo --minify && cp -r --path gh-pages/.github public/ && ls public/
+        run: hugo --minify && cp -r --path .github public/ && ls public/
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
