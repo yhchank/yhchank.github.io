@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>其他 on Hank's Blog</title><link>https://yhank.com/tags/%E5%85%B6%E4%BB%96/</link><description>Recent content in 其他 on Hank's Blog</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Sun, 04 Sep 2022 19:57:19 +0800</lastBuildDate><atom:link href="https://yhank.com/tags/%E5%85%B6%E4%BB%96/index.xml" rel="self" type="application/rss+xml"/><item><title>Google Chrome 如何禁用无痕浏览模式</title><link>https://yhank.com/p/google-chrome-%E5%A6%82%E4%BD%95%E7%A6%81%E7%94%A8%E6%97%A0%E7%97%95%E6%B5%8F%E8%A7%88%E6%A8%A1%E5%BC%8F/</link><pubDate>Sun, 04 Sep 2022 19:57:19 +0800</pubDate><guid>https://yhank.com/p/google-chrome-%E5%A6%82%E4%BD%95%E7%A6%81%E7%94%A8%E6%97%A0%E7%97%95%E6%B5%8F%E8%A7%88%E6%A8%A1%E5%BC%8F/</guid><description>&lt;ol>
+&lt;li>
+&lt;p>前往谷歌的浏览器策略页面，链接：&lt;a class="link" href="https://support.google.com/chrome/a/answer/187202?hl=zh-Hans" target="_blank" rel="noopener"
+>https://support.google.com/chrome/a/answer/187202?hl=zh-Hans&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>点击&lt;code>Windows&lt;/code>选项，选择&lt;code>包含 Google Chrome 模板和文档的 Zip 文件&lt;/code>并下载&lt;/p>
+&lt;p>{% asset_image Snipaste_2022-09-04_20-04-32.png %}&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>打开&lt;code>policy_templates.zip&lt;/code>，将&lt;code>windows\admx\chrome.admx&lt;/code>复制到&lt;code>C:\Windows\PolicyDefinitions\&lt;/code>，并将&lt;code>windows\admx\zh-CN\chrome.adml&lt;/code>复制到&lt;code>C:\Windows\PolicyDefinitions\zh-CN\&lt;/code>&lt;/p>
+&lt;p>{% asset_image Snipaste_2022-09-04_20-23-29.png %}&lt;/p>
+&lt;p>{% asset_image Snipaste_2022-09-04_20-24-13.png %}&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>启动&lt;code>gpedit.msc&lt;/code>&lt;/p>
+&lt;p>{% asset_image Snipaste_2022-09-04_20-26-11.png %}&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>打开&lt;code>计算机配置\管理模板\Google Chrome\&lt;/code>&lt;/p>
+&lt;p>{% asset_image Snipaste_2022-09-04_20-27-49.png %}&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>找到&lt;code>无痕模式的可用性&lt;/code>，双击打开&lt;/p>
+&lt;p>{% asset_image Snipaste_2022-09-04_20-33-04.png %}&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>选择&lt;code>已启用&lt;/code>并在下面的菜单中选择&lt;code>隐身模式已停用&lt;/code>，点击确定&lt;/p>
+&lt;p>{% asset_image Snipaste_2022-09-04_20-43-16.png %}&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>关闭组策略编辑器，现在已经无法启动&lt;code>无痕浏览模式&lt;/code>&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;p>**注：&lt;strong>如需禁用&lt;/strong>Microsoft Edge（新版）**的无痕浏览模式，可到&lt;a class="link" href="https://www.microsoft.com/zh-cn/edge/business/download" target="_blank" rel="noopener"
+>此处&lt;/a>下载策略文件并配置&lt;/p></description></item><item><title>启用Fiddler导致无法联网的解决方法</title><link>https://yhank.com/p/%E5%90%AF%E7%94%A8fiddler%E5%AF%BC%E8%87%B4%E6%97%A0%E6%B3%95%E8%81%94%E7%BD%91%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/</link><pubDate>Tue, 30 Aug 2022 21:45:49 +0800</pubDate><guid>https://yhank.com/p/%E5%90%AF%E7%94%A8fiddler%E5%AF%BC%E8%87%B4%E6%97%A0%E6%B3%95%E8%81%94%E7%BD%91%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/</guid><description>&lt;p>&lt;strong>解决方法：&lt;/strong>&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>打开&lt;code>fiddler&lt;/code>-&lt;code>tools&lt;/code>-&lt;code>options&lt;/code>-&lt;code>https&lt;/code>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>取消勾选&lt;code>decrypt https traffic&lt;/code>&lt;/p>
+&lt;p>{% asset_image image-20220830085929624.png %}&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>点击&lt;code>actions-remove interception certficates&lt;/code> ，删除所有证书&lt;/p>
+&lt;p>{% asset_image image-20220830085915971.png %}&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>重新勾选&lt;code>decrypt https traffic&lt;/code>，根据提示安装证书&lt;/p>
+&lt;p>{% asset_image image-20220830090534349.png %}&lt;/p>
+&lt;/li>
+&lt;/ol></description></item></channel></rss>

@@ -1,0 +1,336 @@
+<!doctype html><html lang=zh-cn dir=ltr><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="题面 点这里 分析 可以先回忆一下我们平时是如何通分的（以样例#2为例）。 首先，把分母全部乘起来： $$\frac{1}{3^1}+\frac{1}{3^2}+\frac{1}{3^3}=\frac{3^2 \times 3^3+3^1 \times 3^3+3^1 \times 3^2}{3^1 \times 3^2 \times 3^3}$$ 把指数加起来，得到： $$\frac{3^5+3^4+3^3}{3^6}$$ 显然"><title>CF359C 题解</title><link rel=canonical href=https://yhank.com/p/cf359c-%E9%A2%98%E8%A7%A3/><link rel=stylesheet href=/scss/style.min.8191399262444ab68b72a18c97392f5349be20a1615d77445be51e974c144cff.css><meta property="og:title" content="CF359C 题解"><meta property="og:description" content="题面 点这里 分析 可以先回忆一下我们平时是如何通分的（以样例#2为例）。 首先，把分母全部乘起来： $$\frac{1}{3^1}+\frac{1}{3^2}+\frac{1}{3^3}=\frac{3^2 \times 3^3+3^1 \times 3^3+3^1 \times 3^2}{3^1 \times 3^2 \times 3^3}$$ 把指数加起来，得到： $$\frac{3^5+3^4+3^3}{3^6}$$ 显然"><meta property="og:url" content="https://yhank.com/p/cf359c-%E9%A2%98%E8%A7%A3/"><meta property="og:site_name" content="Hank's Blog"><meta property="og:type" content="article"><meta property="article:section" content="Post"><meta property="article:tag" content="C++/算法"><meta property="article:published_time" content="2022-08-17T10:36:30+08:00"><meta property="article:modified_time" content="2022-08-17T10:36:30+08:00"><meta name=twitter:title content="CF359C 题解"><meta name=twitter:description content="题面 点这里 分析 可以先回忆一下我们平时是如何通分的（以样例#2为例）。 首先，把分母全部乘起来： $$\frac{1}{3^1}+\frac{1}{3^2}+\frac{1}{3^3}=\frac{3^2 \times 3^3+3^1 \times 3^3+3^1 \times 3^2}{3^1 \times 3^2 \times 3^3}$$ 把指数加起来，得到： $$\frac{3^5+3^4+3^3}{3^6}$$ 显然"></head><body class=article-page><script>(function(){const e="StackColorScheme";localStorage.getItem(e)||localStorage.setItem(e,"auto")})()</script><script>(function(){const t="StackColorScheme",e=localStorage.getItem(t),n=window.matchMedia("(prefers-color-scheme: dark)").matches===!0;e=="dark"||e==="auto"&&n?document.documentElement.dataset.scheme="dark":document.documentElement.dataset.scheme="light"})()</script><div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky"><button class="hamburger hamburger--spin" type=button id=toggle-menu aria-label=切换菜单>
+<span class=hamburger-box><span class=hamburger-inner></span></span></button><header><figure class=site-avatar><a href=/><img src=/img/avatar_huda2458f72ce188392d75c5d51cd8e24e_373_300x0_resize_box_3.png width=300 height=300 class=site-logo loading=lazy alt=Avatar></a>
+<span class=emoji>🍥</span></figure><div class=site-meta><h1 class=site-name><a href=/>Hank's Blog</a></h1><h2 class=site-description>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2></div></header><ol class=social-menu><li><a href=https://github.com/CaiJimmy/hugo-theme-stack target=_blank title=GitHub rel=me><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6.0 00-1.3-3.2 4.2 4.2.0 00-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3.0 00-6.2.0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2.0 00-.1 3.2A4.6 4.6.0 004 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/></svg></a></li><li><a href=https://twitter.com target=_blank title=Twitter rel=me><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitter" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M22 4.01c-1 .49-1.98.689-3 .99-1.121-1.265-2.783-1.335-4.38-.737S11.977 6.323 12 8v1c-3.245.083-6.135-1.395-8-4 0 0-4.182 7.433 4 11-1.872 1.247-3.739 2.088-6 2 3.308 1.803 6.913 2.423 10.034 1.517 3.58-1.04 6.522-3.723 7.651-7.742a13.84 13.84.0 00.497-3.753C20.18 7.773 21.692 5.25 22 4.009z"/></svg></a></li></ol><ol class=menu id=main-menu><li><a href=/><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><polyline points="5 12 3 12 12 3 21 12 19 12"/><path d="M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7"/><path d="M9 21v-6a2 2 0 012-2h2a2 2 0 012 2v6"/></svg><span>主页</span></a></li><li><a href=/%E5%85%B3%E4%BA%8E/><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="12" cy="7" r="4"/><path d="M6 21v-2a4 4 0 014-4h4a4 4 0 014 4v2"/></svg><span>关于</span></a></li><li><a href=/archives/><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><rect x="3" y="4" width="18" height="4" rx="2"/><path d="M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8"/><line x1="10" y1="12" x2="14" y2="12"/></svg><span>Archives</span></a></li><li><a href=/search/><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="10" cy="10" r="7"/><line x1="21" y1="21" x2="15" y2="15"/></svg><span>Search</span></a></li><li><a href=/links/><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><path d="M10 14a3.5 3.5.0 005 0l4-4a3.5 3.5.0 00-5-5l-.5.5"/><path d="M14 10a3.5 3.5.0 00-5 0l-4 4a3.5 3.5.0 005 5l.5-.5"/></svg><span>Links</span></a></li><div class=menu-bottom-section><li id=dark-mode-toggle><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="8" cy="12" r="2"/><rect x="2" y="6" width="20" height="12" rx="6"/></svg><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="16" cy="12" r="2"/><rect x="2" y="6" width="20" height="12" rx="6"/></svg><span>暗色模式</span></li></div></ol></aside><aside class="sidebar right-sidebar sticky"><section class="widget archives"><div class=widget-icon><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><line x1="5" y1="9" x2="19" y2="9"/><line x1="5" y1="15" x2="19" y2="15"/><line x1="11" y1="4" x2="7" y2="20"/><line x1="17" y1="4" x2="13" y2="20"/></svg></div><h2 class="widget-title section-title">目录</h2><div class=widget--toc><nav id=TableOfContents><ol><li><a href=#题面>题面</a></li><li><a href=#分析>分析</a></li><li><a href=#完整代码>完整代码</a></li><li><a href=#ac>AC</a></li></ol></nav></div></section></aside><main class="main full-width"><article class=main-article><header class=article-header><div class=article-details><div class=article-title-wrapper><h2 class=article-title><a href=/p/cf359c-%E9%A2%98%E8%A7%A3/>CF359C 题解</a></h2></div><footer class=article-time><div><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><path d="M11.795 21H5a2 2 0 01-2-2V7a2 2 0 012-2h12a2 2 0 012 2v4"/><circle cx="18" cy="18" r="4"/><path d="M15 3v4"/><path d="M7 3v4"/><path d="M3 11h16"/><path d="M18 16.496V18l1 1"/></svg><time class=article-time--published>Aug 17, 2022</time></div><div><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 15 15"/></svg><time class=article-time--reading>阅读时长: 5 分钟</time></div></footer></div></header><section class=article-content><h2 id=题面>题面</h2><p><a class=link href=https://www.luogu.com.cn/problem/CF359C target=_blank rel=noopener>点这里</a></p><h2 id=分析>分析</h2><p>可以先回忆一下我们平时是如何通分的（以<em>样例#2</em>为例）。</p><p>首先，把分母全部乘起来：</p><p>$$\frac{1}{3^1}+\frac{1}{3^2}+\frac{1}{3^3}=\frac{3^2 \times 3^3+3^1 \times 3^3+3^1 \times 3^2}{3^1 \times 3^2 \times 3^3}$$</p><p>把指数加起来，得到：</p><p>$$\frac{3^5+3^4+3^3}{3^6}$$</p><p>显然，分子和分母上的任意一个数都是 $3^n$，也就是说：我们只需要找到分子中<strong>次数最低的一项</strong>（$3^3$）去跟分母（$3^6$）比较，输出其中次数更低的一项（$3^3$）即可。</p><p>稍作观察即可得到答案的公式：$ans = \min(sum - a_i)$（其中 $sum$ 表示所有 $a_i$ 的和）。</p><p><strong>但是</strong>，看到样例一，这里出现了两个 $2$，根据 $ans = \min(sum - a_i)$，此时的答案应为 $2^2=4$，但是实际答案为 $8$。</p><p>为什么？显然是因为 $2^2+2^2=2 \times 2^2=2^3$（只看分母），也就是说，当 $a_i$ 有重复时，要把每个值的个数也考虑进去，比如说，$12$ 个 $2^2$ 就应该写成 $3 \times 2^4$。</p><p>所以我们可以统计每个 ${sum - a_i}$ 的值的出现次数，然后计算<strong>出现次数</strong>中有几个因数 $x$，可以用这样一个函数来实现：</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span><span class=lnt>7
+</span><span class=lnt>8
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-cpp data-lang=cpp><span class=line><span class=cl><span class=kt>int</span> <span class=nf>count</span><span class=p>(</span><span class=kt>int</span> <span class=n>a</span><span class=p>,</span> <span class=kt>int</span> <span class=o>&amp;</span><span class=n>b</span><span class=p>)</span> <span class=p>{</span> <span class=c1>// 计算b中有几个因数a，用“&amp;b”是因为处理完后b剩余的数还要用到
+</span></span></span><span class=line><span class=cl><span class=c1></span>	<span class=kt>int</span> <span class=n>res</span> <span class=o>=</span> <span class=mi>0</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>	<span class=k>while</span> <span class=p>(</span><span class=n>b</span> <span class=o>&amp;&amp;</span> <span class=n>b</span> <span class=o>%</span> <span class=n>a</span> <span class=o>==</span> <span class=mi>0</span><span class=p>)</span> <span class=p>{</span> <span class=c1>// 如果b大于0且还有因数a
+</span></span></span><span class=line><span class=cl><span class=c1></span>		<span class=n>res</span><span class=o>++</span><span class=p>;</span> <span class=c1>// 个数加一
+</span></span></span><span class=line><span class=cl><span class=c1></span>		<span class=n>b</span> <span class=o>/=</span> <span class=n>a</span><span class=p>;</span> <span class=c1>// 除掉因数a
+</span></span></span><span class=line><span class=cl><span class=c1></span>	<span class=p>}</span>
+</span></span><span class=line><span class=cl>	<span class=k>return</span> <span class=n>res</span><span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></td></tr></table></div></div><p>但是，如果你这样写，还是会 <code>WA</code>，因为有可能出现这样的情况： $2^2 \times 8 + 2^3 \times 4 = 2^2 \times 2^3 + 2^3 \times 2^2 = 2^5 + 2^5 = 2 ^ 6$。也就是说，即使考虑了每个 ${sum - a_i}$ 的值的出现次数，在计算的过程中，还是有可能出现<strong>重复的情况</strong>。</p><p>对于这个问题，我的解决办法：</p><p>首先，开一个 <code>Number</code> 类型（定义见下方）的优先队列。</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-cpp data-lang=cpp><span class=line><span class=cl><span class=k>struct</span> <span class=nc>Number</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>	<span class=kt>int</span> <span class=n>k</span><span class=p>;</span> <span class=c1>// x的k次方
+</span></span></span><span class=line><span class=cl><span class=c1></span>	<span class=kt>int</span> <span class=n>cnt</span><span class=p>;</span> <span class=c1>// 有cnt个
+</span></span></span><span class=line><span class=cl><span class=c1></span>	<span class=kt>bool</span> <span class=k>operator</span><span class=o>&gt;</span><span class=p>(</span><span class=k>const</span> <span class=n>Number</span> <span class=o>&amp;</span><span class=n>_x</span><span class=p>)</span> <span class=k>const</span> <span class=p>{</span> <span class=c1>// 重载大于运算符，优先队列中会用到
+</span></span></span><span class=line><span class=cl><span class=c1></span>		<span class=k>return</span> <span class=n>k</span> <span class=o>&gt;</span> <span class=n>_x</span><span class=p>.</span><span class=n>k</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>	<span class=p>}</span>
+</span></span><span class=line><span class=cl><span class=p>};</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=n>priority_queue</span><span class=o>&lt;</span><span class=n>Number</span><span class=p>,</span> <span class=n>vector</span><span class=o>&lt;</span><span class=n>Number</span><span class=o>&gt;</span><span class=p>,</span> <span class=n>greater</span><span class=o>&lt;</span><span class=n>Number</span><span class=o>&gt;&gt;</span> <span class=n>q</span><span class=p>;</span>
+</span></span></code></pre></td></tr></table></div></div><p>在输入完成后，先预处理出每个 $sum - a_i$，放在 $b$ 数组中，代码如下：</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span><span class=lnt>7
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-cpp data-lang=cpp><span class=line><span class=cl><span class=kt>int</span> <span class=n>sum</span> <span class=o>=</span> <span class=mi>0</span><span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=k>for</span> <span class=p>(</span><span class=kt>int</span> <span class=n>i</span> <span class=o>=</span> <span class=mi>1</span><span class=p>;</span> <span class=n>i</span> <span class=o>&lt;=</span> <span class=n>n</span><span class=p>;</span> <span class=n>i</span><span class=o>++</span><span class=p>)</span> <span class=p>{</span> <span class=c1>// 计算a[i]的和
+</span></span></span><span class=line><span class=cl><span class=c1></span>	<span class=n>sum</span> <span class=o>+=</span> <span class=n>a</span><span class=p>[</span><span class=n>i</span><span class=p>];</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span><span class=line><span class=cl><span class=k>for</span> <span class=p>(</span><span class=kt>int</span> <span class=n>i</span> <span class=o>=</span> <span class=mi>1</span><span class=p>;</span> <span class=n>i</span> <span class=o>&lt;=</span> <span class=n>n</span><span class=p>;</span> <span class=n>i</span><span class=o>++</span><span class=p>)</span> <span class=p>{</span> <span class=c1>// 预处理出每个sum - a[i]的值
+</span></span></span><span class=line><span class=cl><span class=c1></span>	<span class=n>b</span><span class=p>[</span><span class=n>i</span><span class=p>]</span> <span class=o>=</span> <span class=n>sum</span> <span class=o>-</span> <span class=n>a</span><span class=p>[</span><span class=n>i</span><span class=p>];</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></td></tr></table></div></div><p>然后，统计每个 $b_i$ 值的个数，一起 <code>push</code> 到优先队列里：</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-cpp data-lang=cpp><span class=line><span class=cl><span class=kt>int</span> <span class=n>tmp</span> <span class=o>=</span> <span class=mi>1</span><span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=n>b</span><span class=p>[</span><span class=mi>0</span><span class=p>]</span> <span class=o>=</span> <span class=o>-</span><span class=mi>1</span><span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=k>for</span> <span class=p>(</span><span class=kt>int</span> <span class=n>i</span> <span class=o>=</span> <span class=n>n</span> <span class=o>-</span> <span class=mi>1</span><span class=p>;</span> <span class=n>i</span> <span class=o>&gt;=</span> <span class=mi>0</span><span class=p>;</span> <span class=n>i</span><span class=o>--</span><span class=p>)</span> <span class=p>{</span> <span class=c1>// 倒着统计（其实正向也可以）
+</span></span></span><span class=line><span class=cl><span class=c1></span>	<span class=k>if</span> <span class=p>(</span><span class=n>b</span><span class=p>[</span><span class=n>i</span><span class=p>]</span> <span class=o>!=</span> <span class=n>b</span><span class=p>[</span><span class=n>i</span> <span class=o>+</span> <span class=mi>1</span><span class=p>])</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>		<span class=c1>// 把sum - a[i]（即b[i]）的值和它的个数一起push到单调队列里
+</span></span></span><span class=line><span class=cl><span class=c1></span>		<span class=n>q</span><span class=p>.</span><span class=n>push</span><span class=p>({</span><span class=n>b</span><span class=p>[</span><span class=n>i</span> <span class=o>+</span> <span class=mi>1</span><span class=p>],</span> <span class=n>tmp</span><span class=p>});</span>
+</span></span><span class=line><span class=cl>		<span class=n>tmp</span> <span class=o>=</span> <span class=mi>0</span><span class=p>;</span> <span class=c1>// 清除计数器
+</span></span></span><span class=line><span class=cl><span class=c1></span>	<span class=p>}</span>
+</span></span><span class=line><span class=cl>	<span class=n>tmp</span><span class=o>++</span><span class=p>;</span> <span class=c1>// 计数器加一
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=p>}</span>
+</span></span></code></pre></td></tr></table></div></div><p>每次取出次数最小的数并不断检查剩下的队首元素，如果次数和当前元素的次数相同，那么就合并 <code>cnt</code> 最后，调用上文提到的 <code>count()</code> 函数来处理 <em>$b_i$值的个数</em>，并把结果乘到当前元素上，把 <code>count()</code> 处理完的 <code>cnt</code> （也就是不能再拆出 $x$ 了）最为新的 <code>cnt</code>，然后重新加入队列；<strong>注意：</strong> 如果 <code>count()</code> 函数的返回值为 $0$ ，则意味着 <code>cnt</code> 中已经拆不出来因数 $x$ 了，所以此时的答案就是当前元素的次数，可以直接 <code>break</code>，代码：</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-cpp data-lang=cpp><span class=line><span class=cl><span class=k>while</span> <span class=p>(</span><span class=o>!</span><span class=n>q</span><span class=p>.</span><span class=n>empty</span><span class=p>())</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>	<span class=n>Number</span> <span class=n>f</span> <span class=o>=</span> <span class=n>q</span><span class=p>.</span><span class=n>top</span><span class=p>();</span> <span class=c1>// 每次取出次数最小的数
+</span></span></span><span class=line><span class=cl><span class=c1></span>	<span class=n>q</span><span class=p>.</span><span class=n>pop</span><span class=p>();</span>
+</span></span><span class=line><span class=cl>	<span class=k>while</span> <span class=p>(</span><span class=o>!</span><span class=n>q</span><span class=p>.</span><span class=n>empty</span><span class=p>()</span> <span class=o>&amp;&amp;</span> <span class=n>q</span><span class=p>.</span><span class=n>top</span><span class=p>().</span><span class=n>k</span> <span class=o>==</span> <span class=n>f</span><span class=p>.</span><span class=n>k</span><span class=p>)</span> <span class=p>{</span> <span class=c1>// 如果队首元素的次数和当前元素的次数相同
+</span></span></span><span class=line><span class=cl><span class=c1></span>		<span class=n>f</span><span class=p>.</span><span class=n>cnt</span> <span class=o>+=</span> <span class=n>q</span><span class=p>.</span><span class=n>top</span><span class=p>().</span><span class=n>cnt</span><span class=p>;</span> <span class=c1>// 合并个数
+</span></span></span><span class=line><span class=cl><span class=c1></span>		<span class=n>q</span><span class=p>.</span><span class=n>pop</span><span class=p>();</span>
+</span></span><span class=line><span class=cl>	<span class=p>}</span>
+</span></span><span class=line><span class=cl>	<span class=n>ans</span> <span class=o>=</span> <span class=n>f</span><span class=p>.</span><span class=n>k</span><span class=p>;</span> <span class=c1>// 更新答案
+</span></span></span><span class=line><span class=cl><span class=c1></span>	<span class=kt>int</span> <span class=n>tmp</span> <span class=o>=</span> <span class=n>count</span><span class=p>(</span><span class=n>x</span><span class=p>,</span> <span class=n>f</span><span class=p>.</span><span class=n>cnt</span><span class=p>);</span> <span class=c1>// 计算cnt中能拆出开的因数x的个数
+</span></span></span><span class=line><span class=cl><span class=c1></span>	<span class=k>if</span> <span class=p>(</span><span class=n>tmp</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>		<span class=c1>// k加上处理结果，剩下拆不掉的数仍然作为cnt
+</span></span></span><span class=line><span class=cl><span class=c1></span>		<span class=n>q</span><span class=p>.</span><span class=n>push</span><span class=p>({</span><span class=n>f</span><span class=p>.</span><span class=n>k</span> <span class=o>+</span> <span class=n>tmp</span><span class=p>,</span> <span class=n>f</span><span class=p>.</span><span class=n>cnt</span><span class=p>});</span>
+</span></span><span class=line><span class=cl>	<span class=p>}</span> <span class=k>else</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>		<span class=c1>// cnt中拆不出来因数x了，可以直接结束
+</span></span></span><span class=line><span class=cl><span class=c1></span>		<span class=k>break</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>	<span class=p>}</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></td></tr></table></div></div><p>由于分子的结果可能比分母的次数高，还需要取一下最小值：</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-cpp data-lang=cpp><span class=line><span class=cl><span class=n>ans</span> <span class=o>=</span> <span class=n>min</span><span class=p>(</span><span class=n>ans</span><span class=p>,</span> <span class=n>sum</span><span class=p>);</span>
+</span></span></code></pre></td></tr></table></div></div><p>最后用快速幂算出 $x^{ans}$ 即可。</p><h2 id=完整代码>完整代码</h2><p>最然看起来很长，其实内容并不多。</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>  1
+</span><span class=lnt>  2
+</span><span class=lnt>  3
+</span><span class=lnt>  4
+</span><span class=lnt>  5
+</span><span class=lnt>  6
+</span><span class=lnt>  7
+</span><span class=lnt>  8
+</span><span class=lnt>  9
+</span><span class=lnt> 10
+</span><span class=lnt> 11
+</span><span class=lnt> 12
+</span><span class=lnt> 13
+</span><span class=lnt> 14
+</span><span class=lnt> 15
+</span><span class=lnt> 16
+</span><span class=lnt> 17
+</span><span class=lnt> 18
+</span><span class=lnt> 19
+</span><span class=lnt> 20
+</span><span class=lnt> 21
+</span><span class=lnt> 22
+</span><span class=lnt> 23
+</span><span class=lnt> 24
+</span><span class=lnt> 25
+</span><span class=lnt> 26
+</span><span class=lnt> 27
+</span><span class=lnt> 28
+</span><span class=lnt> 29
+</span><span class=lnt> 30
+</span><span class=lnt> 31
+</span><span class=lnt> 32
+</span><span class=lnt> 33
+</span><span class=lnt> 34
+</span><span class=lnt> 35
+</span><span class=lnt> 36
+</span><span class=lnt> 37
+</span><span class=lnt> 38
+</span><span class=lnt> 39
+</span><span class=lnt> 40
+</span><span class=lnt> 41
+</span><span class=lnt> 42
+</span><span class=lnt> 43
+</span><span class=lnt> 44
+</span><span class=lnt> 45
+</span><span class=lnt> 46
+</span><span class=lnt> 47
+</span><span class=lnt> 48
+</span><span class=lnt> 49
+</span><span class=lnt> 50
+</span><span class=lnt> 51
+</span><span class=lnt> 52
+</span><span class=lnt> 53
+</span><span class=lnt> 54
+</span><span class=lnt> 55
+</span><span class=lnt> 56
+</span><span class=lnt> 57
+</span><span class=lnt> 58
+</span><span class=lnt> 59
+</span><span class=lnt> 60
+</span><span class=lnt> 61
+</span><span class=lnt> 62
+</span><span class=lnt> 63
+</span><span class=lnt> 64
+</span><span class=lnt> 65
+</span><span class=lnt> 66
+</span><span class=lnt> 67
+</span><span class=lnt> 68
+</span><span class=lnt> 69
+</span><span class=lnt> 70
+</span><span class=lnt> 71
+</span><span class=lnt> 72
+</span><span class=lnt> 73
+</span><span class=lnt> 74
+</span><span class=lnt> 75
+</span><span class=lnt> 76
+</span><span class=lnt> 77
+</span><span class=lnt> 78
+</span><span class=lnt> 79
+</span><span class=lnt> 80
+</span><span class=lnt> 81
+</span><span class=lnt> 82
+</span><span class=lnt> 83
+</span><span class=lnt> 84
+</span><span class=lnt> 85
+</span><span class=lnt> 86
+</span><span class=lnt> 87
+</span><span class=lnt> 88
+</span><span class=lnt> 89
+</span><span class=lnt> 90
+</span><span class=lnt> 91
+</span><span class=lnt> 92
+</span><span class=lnt> 93
+</span><span class=lnt> 94
+</span><span class=lnt> 95
+</span><span class=lnt> 96
+</span><span class=lnt> 97
+</span><span class=lnt> 98
+</span><span class=lnt> 99
+</span><span class=lnt>100
+</span><span class=lnt>101
+</span><span class=lnt>102
+</span><span class=lnt>103
+</span><span class=lnt>104
+</span><span class=lnt>105
+</span><span class=lnt>106
+</span><span class=lnt>107
+</span><span class=lnt>108
+</span><span class=lnt>109
+</span><span class=lnt>110
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-cpp data-lang=cpp><span class=line><span class=cl><span class=cm>/*
+</span></span></span><span class=line><span class=cl><span class=cm>*	Author: Hank Yu
+</span></span></span><span class=line><span class=cl><span class=cm>*	Problem: CF359C
+</span></span></span><span class=line><span class=cl><span class=cm>*	Date: 2022/08/16
+</span></span></span><span class=line><span class=cl><span class=cm>*/</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=cp>#include</span> <span class=cpf>&lt;bits/stdc++.h&gt;</span><span class=cp>
+</span></span></span><span class=line><span class=cl><span class=cp></span><span class=k>using</span> <span class=k>namespace</span> <span class=n>std</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=cp>#define endl &#34;\n&#34;
+</span></span></span><span class=line><span class=cl><span class=cp></span>
+</span></span><span class=line><span class=cl><span class=kt>void</span> <span class=nf>faster_io</span><span class=p>()</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>	<span class=n>ios</span><span class=o>::</span><span class=n>sync_with_stdio</span><span class=p>(</span><span class=mi>0</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>	<span class=n>cin</span><span class=p>.</span><span class=n>tie</span><span class=p>(</span><span class=mi>0</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>	<span class=n>cout</span><span class=p>.</span><span class=n>tie</span><span class=p>(</span><span class=mi>0</span><span class=p>);</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=cp>#define int long long
+</span></span></span><span class=line><span class=cl><span class=cp></span>
+</span></span><span class=line><span class=cl><span class=cp>#define MAXN 100005
+</span></span></span><span class=line><span class=cl><span class=cp>#define MOD 1000000007
+</span></span></span><span class=line><span class=cl><span class=cp></span>
+</span></span><span class=line><span class=cl><span class=k>struct</span> <span class=nc>Number</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>	<span class=kt>int</span> <span class=n>k</span><span class=p>;</span> <span class=c1>// x的k次方
+</span></span></span><span class=line><span class=cl><span class=c1></span>	<span class=kt>int</span> <span class=n>cnt</span><span class=p>;</span> <span class=c1>// 有cnt个
+</span></span></span><span class=line><span class=cl><span class=c1></span>	<span class=kt>bool</span> <span class=k>operator</span><span class=o>&gt;</span><span class=p>(</span><span class=k>const</span> <span class=n>Number</span> <span class=o>&amp;</span><span class=n>_x</span><span class=p>)</span> <span class=k>const</span> <span class=p>{</span> <span class=c1>// 重载大于运算符，优先队列中会用到
+</span></span></span><span class=line><span class=cl><span class=c1></span>		<span class=k>return</span> <span class=n>k</span> <span class=o>&gt;</span> <span class=n>_x</span><span class=p>.</span><span class=n>k</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>	<span class=p>}</span>
+</span></span><span class=line><span class=cl><span class=p>};</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kt>int</span> <span class=n>n</span><span class=p>,</span> <span class=n>x</span><span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=kt>int</span> <span class=n>a</span><span class=p>[</span><span class=n>MAXN</span><span class=p>];</span>
+</span></span><span class=line><span class=cl><span class=kt>int</span> <span class=n>b</span><span class=p>[</span><span class=n>MAXN</span><span class=p>];</span>
+</span></span><span class=line><span class=cl><span class=n>priority_queue</span><span class=o>&lt;</span><span class=n>Number</span><span class=p>,</span> <span class=n>vector</span><span class=o>&lt;</span><span class=n>Number</span><span class=o>&gt;</span><span class=p>,</span> <span class=n>greater</span><span class=o>&lt;</span><span class=n>Number</span><span class=o>&gt;&gt;</span> <span class=n>q</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kt>int</span> <span class=nf>count</span><span class=p>(</span><span class=kt>int</span> <span class=n>a</span><span class=p>,</span> <span class=kt>int</span> <span class=o>&amp;</span><span class=n>b</span><span class=p>)</span> <span class=p>{</span> <span class=c1>// 计算b中有几个因数a
+</span></span></span><span class=line><span class=cl><span class=c1></span>	<span class=kt>int</span> <span class=n>res</span> <span class=o>=</span> <span class=mi>0</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>	<span class=k>while</span> <span class=p>(</span><span class=n>b</span> <span class=o>&amp;&amp;</span> <span class=n>b</span> <span class=o>%</span> <span class=n>a</span> <span class=o>==</span> <span class=mi>0</span><span class=p>)</span> <span class=p>{</span> <span class=c1>// 如果b大于0且还有因数a
+</span></span></span><span class=line><span class=cl><span class=c1></span>		<span class=n>res</span><span class=o>++</span><span class=p>;</span> <span class=c1>// 个数加一
+</span></span></span><span class=line><span class=cl><span class=c1></span>		<span class=n>b</span> <span class=o>/=</span> <span class=n>a</span><span class=p>;</span> <span class=c1>// 除掉因数a
+</span></span></span><span class=line><span class=cl><span class=c1></span>	<span class=p>}</span>
+</span></span><span class=line><span class=cl>	<span class=k>return</span> <span class=n>res</span><span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kt>int</span> <span class=nf>qpow</span><span class=p>(</span><span class=kt>int</span> <span class=n>x</span><span class=p>,</span> <span class=kt>int</span> <span class=n>k</span><span class=p>,</span> <span class=kt>int</span> <span class=n>q</span><span class=p>)</span> <span class=p>{</span> <span class=c1>// 快速幂模板
+</span></span></span><span class=line><span class=cl><span class=c1></span>	<span class=kt>int</span> <span class=n>ans</span> <span class=o>=</span> <span class=mi>1</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>	<span class=k>while</span> <span class=p>(</span><span class=n>k</span> <span class=o>&gt;</span> <span class=mi>1</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>		<span class=k>if</span> <span class=p>(</span><span class=n>k</span> <span class=o>%</span> <span class=mi>2</span> <span class=o>==</span> <span class=mi>1</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>			<span class=n>ans</span> <span class=o>*=</span> <span class=n>x</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>			<span class=n>ans</span> <span class=o>%=</span> <span class=n>q</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>		<span class=p>}</span>
+</span></span><span class=line><span class=cl>		<span class=n>x</span> <span class=o>*=</span> <span class=n>x</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>		<span class=n>x</span> <span class=o>%=</span> <span class=n>q</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>		<span class=n>k</span> <span class=o>/=</span> <span class=mi>2</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>	<span class=p>}</span>
+</span></span><span class=line><span class=cl>	<span class=k>if</span> <span class=p>(</span><span class=n>k</span> <span class=o>==</span> <span class=mi>1</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>		<span class=n>ans</span> <span class=o>*=</span> <span class=n>x</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>		<span class=n>ans</span> <span class=o>%=</span> <span class=n>q</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>	<span class=p>}</span>
+</span></span><span class=line><span class=cl>	<span class=k>return</span> <span class=n>ans</span><span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kt>signed</span> <span class=nf>main</span><span class=p>()</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>	<span class=n>faster_io</span><span class=p>();</span> <span class=c1>// cin/cout加速
+</span></span></span><span class=line><span class=cl><span class=c1></span>	<span class=n>cin</span> <span class=o>&gt;&gt;</span> <span class=n>n</span> <span class=o>&gt;&gt;</span> <span class=n>x</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>	<span class=k>for</span> <span class=p>(</span><span class=kt>int</span> <span class=n>i</span> <span class=o>=</span> <span class=mi>1</span><span class=p>;</span> <span class=n>i</span> <span class=o>&lt;=</span> <span class=n>n</span><span class=p>;</span> <span class=n>i</span><span class=o>++</span><span class=p>)</span> <span class=p>{</span> <span class=c1>// 输入
+</span></span></span><span class=line><span class=cl><span class=c1></span>		<span class=n>cin</span> <span class=o>&gt;&gt;</span> <span class=n>a</span><span class=p>[</span><span class=n>i</span><span class=p>];</span>
+</span></span><span class=line><span class=cl>	<span class=p>}</span>
+</span></span><span class=line><span class=cl>	<span class=kt>int</span> <span class=n>sum</span> <span class=o>=</span> <span class=mi>0</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>	<span class=k>for</span> <span class=p>(</span><span class=kt>int</span> <span class=n>i</span> <span class=o>=</span> <span class=mi>1</span><span class=p>;</span> <span class=n>i</span> <span class=o>&lt;=</span> <span class=n>n</span><span class=p>;</span> <span class=n>i</span><span class=o>++</span><span class=p>)</span> <span class=p>{</span> <span class=c1>// 计算a[i]的和
+</span></span></span><span class=line><span class=cl><span class=c1></span>		<span class=n>sum</span> <span class=o>+=</span> <span class=n>a</span><span class=p>[</span><span class=n>i</span><span class=p>];</span>
+</span></span><span class=line><span class=cl>	<span class=p>}</span>
+</span></span><span class=line><span class=cl>	<span class=k>for</span> <span class=p>(</span><span class=kt>int</span> <span class=n>i</span> <span class=o>=</span> <span class=mi>1</span><span class=p>;</span> <span class=n>i</span> <span class=o>&lt;=</span> <span class=n>n</span><span class=p>;</span> <span class=n>i</span><span class=o>++</span><span class=p>)</span> <span class=p>{</span> <span class=c1>// 预处理出每个sum - a[i]的值
+</span></span></span><span class=line><span class=cl><span class=c1></span>		<span class=n>b</span><span class=p>[</span><span class=n>i</span><span class=p>]</span> <span class=o>=</span> <span class=n>sum</span> <span class=o>-</span> <span class=n>a</span><span class=p>[</span><span class=n>i</span><span class=p>];</span>
+</span></span><span class=line><span class=cl>	<span class=p>}</span>
+</span></span><span class=line><span class=cl>	<span class=p>{</span> <span class=c1>// 防止变量名污染
+</span></span></span><span class=line><span class=cl><span class=c1></span>		<span class=kt>int</span> <span class=n>tmp</span> <span class=o>=</span> <span class=mi>1</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>		<span class=n>b</span><span class=p>[</span><span class=mi>0</span><span class=p>]</span> <span class=o>=</span> <span class=o>-</span><span class=mi>1</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>		<span class=k>for</span> <span class=p>(</span><span class=kt>int</span> <span class=n>i</span> <span class=o>=</span> <span class=n>n</span> <span class=o>-</span> <span class=mi>1</span><span class=p>;</span> <span class=n>i</span> <span class=o>&gt;=</span> <span class=mi>0</span><span class=p>;</span> <span class=n>i</span><span class=o>--</span><span class=p>)</span> <span class=p>{</span> <span class=c1>// 倒着统计（其实正向也可以）
+</span></span></span><span class=line><span class=cl><span class=c1></span>			<span class=k>if</span> <span class=p>(</span><span class=n>b</span><span class=p>[</span><span class=n>i</span><span class=p>]</span> <span class=o>!=</span> <span class=n>b</span><span class=p>[</span><span class=n>i</span> <span class=o>+</span> <span class=mi>1</span><span class=p>])</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>				<span class=c1>// 把sum - a[i]（即b[i]）的值和它的个数一起push到单调队列里
+</span></span></span><span class=line><span class=cl><span class=c1></span>				<span class=n>q</span><span class=p>.</span><span class=n>push</span><span class=p>({</span><span class=n>b</span><span class=p>[</span><span class=n>i</span> <span class=o>+</span> <span class=mi>1</span><span class=p>],</span> <span class=n>tmp</span><span class=p>});</span>
+</span></span><span class=line><span class=cl>				<span class=n>tmp</span> <span class=o>=</span> <span class=mi>0</span><span class=p>;</span> <span class=c1>// 清除计数器
+</span></span></span><span class=line><span class=cl><span class=c1></span>			<span class=p>}</span>
+</span></span><span class=line><span class=cl>			<span class=n>tmp</span><span class=o>++</span><span class=p>;</span> <span class=c1>// 计数器加一
+</span></span></span><span class=line><span class=cl><span class=c1></span>		<span class=p>}</span>
+</span></span><span class=line><span class=cl>	<span class=p>}</span>
+</span></span><span class=line><span class=cl>	<span class=kt>int</span> <span class=n>ans</span> <span class=o>=</span> <span class=mi>0</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>	<span class=p>{</span> <span class=c1>// 防止变量名污染
+</span></span></span><span class=line><span class=cl><span class=c1></span>		<span class=k>while</span> <span class=p>(</span><span class=o>!</span><span class=n>q</span><span class=p>.</span><span class=n>empty</span><span class=p>())</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>			<span class=n>Number</span> <span class=n>f</span> <span class=o>=</span> <span class=n>q</span><span class=p>.</span><span class=n>top</span><span class=p>();</span> <span class=c1>// 每次取出次数最小的数
+</span></span></span><span class=line><span class=cl><span class=c1></span>			<span class=n>q</span><span class=p>.</span><span class=n>pop</span><span class=p>();</span>
+</span></span><span class=line><span class=cl>			<span class=k>while</span> <span class=p>(</span><span class=o>!</span><span class=n>q</span><span class=p>.</span><span class=n>empty</span><span class=p>()</span> <span class=o>&amp;&amp;</span> <span class=n>q</span><span class=p>.</span><span class=n>top</span><span class=p>().</span><span class=n>k</span> <span class=o>==</span> <span class=n>f</span><span class=p>.</span><span class=n>k</span><span class=p>)</span> <span class=p>{</span> <span class=c1>// 如果队首元素的次数和当前元素的次数相同
+</span></span></span><span class=line><span class=cl><span class=c1></span>				<span class=n>f</span><span class=p>.</span><span class=n>cnt</span> <span class=o>+=</span> <span class=n>q</span><span class=p>.</span><span class=n>top</span><span class=p>().</span><span class=n>cnt</span><span class=p>;</span> <span class=c1>// 合并个数
+</span></span></span><span class=line><span class=cl><span class=c1></span>				<span class=n>q</span><span class=p>.</span><span class=n>pop</span><span class=p>();</span>
+</span></span><span class=line><span class=cl>			<span class=p>}</span>
+</span></span><span class=line><span class=cl>			<span class=n>ans</span> <span class=o>=</span> <span class=n>f</span><span class=p>.</span><span class=n>k</span><span class=p>;</span> <span class=c1>// 更新答案
+</span></span></span><span class=line><span class=cl><span class=c1></span>			<span class=kt>int</span> <span class=n>tmp</span> <span class=o>=</span> <span class=n>count</span><span class=p>(</span><span class=n>x</span><span class=p>,</span> <span class=n>f</span><span class=p>.</span><span class=n>cnt</span><span class=p>);</span> <span class=c1>// 计算cnt中能拆出开的因数x的个数
+</span></span></span><span class=line><span class=cl><span class=c1></span>			<span class=k>if</span> <span class=p>(</span><span class=n>tmp</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>				<span class=c1>// k加上处理结果，剩下拆不掉的数仍然作为cnt
+</span></span></span><span class=line><span class=cl><span class=c1></span>				<span class=n>q</span><span class=p>.</span><span class=n>push</span><span class=p>({</span><span class=n>f</span><span class=p>.</span><span class=n>k</span> <span class=o>+</span> <span class=n>tmp</span><span class=p>,</span> <span class=n>f</span><span class=p>.</span><span class=n>cnt</span><span class=p>});</span>
+</span></span><span class=line><span class=cl>			<span class=p>}</span> <span class=k>else</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>				<span class=c1>// cnt中拆不出来因数x了，可以直接结束
+</span></span></span><span class=line><span class=cl><span class=c1></span>				<span class=k>break</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>			<span class=p>}</span>
+</span></span><span class=line><span class=cl>		<span class=p>}</span>
+</span></span><span class=line><span class=cl>	<span class=p>}</span>
+</span></span><span class=line><span class=cl>	<span class=n>ans</span> <span class=o>=</span> <span class=n>min</span><span class=p>(</span><span class=n>ans</span><span class=p>,</span> <span class=n>sum</span><span class=p>);</span> <span class=c1>// 由于分子的结果可能比分母的次数高，这里需要取最小值
+</span></span></span><span class=line><span class=cl><span class=c1></span>	<span class=n>cout</span> <span class=o>&lt;&lt;</span> <span class=n>qpow</span><span class=p>(</span><span class=n>x</span><span class=p>,</span> <span class=n>ans</span><span class=p>,</span> <span class=n>MOD</span><span class=p>)</span> <span class=o>&lt;&lt;</span> <span class=n>endl</span><span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></td></tr></table></div></div><h2 id=ac>AC</h2></section><footer class=article-footer><section class=article-tags><a href=/tags/c++/%E7%AE%97%E6%B3%95/>C++/算法</a></section><section class=article-copyright><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="12" cy="12" r="9"/><path d="M14.5 9a3.5 4 0 100 6"/></svg><span>Licensed under CC BY-NC-SA 4.0</span></section></footer></article><script>MathJax={tex:{inlineMath:[["$","$"],["\\(","\\)"]]},svg:{fontCache:"global"}}</script><script type=text/javascript id=MathJax-script async src=https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js></script><footer class=site-footer><section class=copyright>&copy;
+2020 -
+2022 Hank's Blog</section><section class=powerby>Built with <a href=https://gohugo.io/ target=_blank rel=noopener>Hugo</a><br>主题 <b><a href=https://github.com/CaiJimmy/hugo-theme-stack target=_blank rel=noopener data-version=3.16.0>Stack</a></b> 由 <a href=https://jimmycai.com target=_blank rel=noopener>Jimmy</a> 设计</section></footer><div class=pswp tabindex=-1 role=dialog aria-hidden=true><div class=pswp__bg></div><div class=pswp__scroll-wrap><div class=pswp__container><div class=pswp__item></div><div class=pswp__item></div><div class=pswp__item></div></div><div class="pswp__ui pswp__ui--hidden"><div class=pswp__top-bar><div class=pswp__counter></div><button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+<button class="pswp__button pswp__button--share" title=Share></button>
+<button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+<button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button><div class=pswp__preloader><div class=pswp__preloader__icn><div class=pswp__preloader__cut><div class=pswp__preloader__donut></div></div></div></div></div><div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap"><div class=pswp__share-tooltip></div></div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
+<button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button><div class=pswp__caption><div class=pswp__caption__center></div></div></div></div></div><script src=https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo=" crossorigin=anonymous defer></script><script src=https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU=" crossorigin=anonymous defer></script><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css crossorigin=anonymous><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css crossorigin=anonymous></main></div><script src=https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z+KMkF24hUW8WePSA9HM=" crossorigin=anonymous></script><script type=text/javascript src=/ts/main.js defer></script>
+<script>(function(){const e=document.createElement("link");e.href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap",e.type="text/css",e.rel="stylesheet",document.head.appendChild(e)})()</script></body></html>
