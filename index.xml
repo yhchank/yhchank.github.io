@@ -384,28 +384,84 @@ $$
 &lt;/li>
 &lt;li>
 &lt;p>点击&lt;code>Windows&lt;/code>选项，选择&lt;code>包含 Google Chrome 模板和文档的 Zip 文件&lt;/code>并下载&lt;/p>
-&lt;p>{% asset_image Snipaste_2022-09-04_20-04-32.png %}&lt;/p>
+&lt;p>&lt;img src="https://yhank.com/p/google-chrome-%E5%A6%82%E4%BD%95%E7%A6%81%E7%94%A8%E6%97%A0%E7%97%95%E6%B5%8F%E8%A7%88%E6%A8%A1%E5%BC%8F/Snipaste_2022-09-04_20-04-32.png"
+width="1366"
+height="625"
+srcset="https://yhank.com/p/google-chrome-%E5%A6%82%E4%BD%95%E7%A6%81%E7%94%A8%E6%97%A0%E7%97%95%E6%B5%8F%E8%A7%88%E6%A8%A1%E5%BC%8F/Snipaste_2022-09-04_20-04-32_hu2ce5d3d8bc30204d72819c2e5bfecedb_114369_480x0_resize_box_3.png 480w, https://yhank.com/p/google-chrome-%E5%A6%82%E4%BD%95%E7%A6%81%E7%94%A8%E6%97%A0%E7%97%95%E6%B5%8F%E8%A7%88%E6%A8%A1%E5%BC%8F/Snipaste_2022-09-04_20-04-32_hu2ce5d3d8bc30204d72819c2e5bfecedb_114369_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="218"
+data-flex-basis="524px"
+>&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>打开&lt;code>policy_templates.zip&lt;/code>，将&lt;code>windows\admx\chrome.admx&lt;/code>复制到&lt;code>C:\Windows\PolicyDefinitions\&lt;/code>，并将&lt;code>windows\admx\zh-CN\chrome.adml&lt;/code>复制到&lt;code>C:\Windows\PolicyDefinitions\zh-CN\&lt;/code>&lt;/p>
-&lt;p>{% asset_image Snipaste_2022-09-04_20-23-29.png %}&lt;/p>
-&lt;p>{% asset_image Snipaste_2022-09-04_20-24-13.png %}&lt;/p>
+&lt;p>&lt;img src="https://yhank.com/p/google-chrome-%E5%A6%82%E4%BD%95%E7%A6%81%E7%94%A8%E6%97%A0%E7%97%95%E6%B5%8F%E8%A7%88%E6%A8%A1%E5%BC%8F/Snipaste_2022-09-04_20-23-29.png"
+width="1001"
+height="573"
+srcset="https://yhank.com/p/google-chrome-%E5%A6%82%E4%BD%95%E7%A6%81%E7%94%A8%E6%97%A0%E7%97%95%E6%B5%8F%E8%A7%88%E6%A8%A1%E5%BC%8F/Snipaste_2022-09-04_20-23-29_huaeb92d949c2bb254b21d4876472b4cb5_91240_480x0_resize_box_3.png 480w, https://yhank.com/p/google-chrome-%E5%A6%82%E4%BD%95%E7%A6%81%E7%94%A8%E6%97%A0%E7%97%95%E6%B5%8F%E8%A7%88%E6%A8%A1%E5%BC%8F/Snipaste_2022-09-04_20-23-29_huaeb92d949c2bb254b21d4876472b4cb5_91240_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="174"
+data-flex-basis="419px"
+>&lt;/p>
+&lt;p>&lt;img src="https://yhank.com/p/google-chrome-%E5%A6%82%E4%BD%95%E7%A6%81%E7%94%A8%E6%97%A0%E7%97%95%E6%B5%8F%E8%A7%88%E6%A8%A1%E5%BC%8F/Snipaste_2022-09-04_20-24-13.png"
+width="1001"
+height="573"
+srcset="https://yhank.com/p/google-chrome-%E5%A6%82%E4%BD%95%E7%A6%81%E7%94%A8%E6%97%A0%E7%97%95%E6%B5%8F%E8%A7%88%E6%A8%A1%E5%BC%8F/Snipaste_2022-09-04_20-24-13_huc555d30b2943aab1b8eb8a4c1ddc1ece_89109_480x0_resize_box_3.png 480w, https://yhank.com/p/google-chrome-%E5%A6%82%E4%BD%95%E7%A6%81%E7%94%A8%E6%97%A0%E7%97%95%E6%B5%8F%E8%A7%88%E6%A8%A1%E5%BC%8F/Snipaste_2022-09-04_20-24-13_huc555d30b2943aab1b8eb8a4c1ddc1ece_89109_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="174"
+data-flex-basis="419px"
+>&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>启动&lt;code>gpedit.msc&lt;/code>&lt;/p>
-&lt;p>{% asset_image Snipaste_2022-09-04_20-26-11.png %}&lt;/p>
+&lt;p>&lt;img src="https://yhank.com/p/google-chrome-%E5%A6%82%E4%BD%95%E7%A6%81%E7%94%A8%E6%97%A0%E7%97%95%E6%B5%8F%E8%A7%88%E6%A8%A1%E5%BC%8F/Snipaste_2022-09-04_20-26-11.png"
+width="422"
+height="251"
+srcset="https://yhank.com/p/google-chrome-%E5%A6%82%E4%BD%95%E7%A6%81%E7%94%A8%E6%97%A0%E7%97%95%E6%B5%8F%E8%A7%88%E6%A8%A1%E5%BC%8F/Snipaste_2022-09-04_20-26-11_hue256c3da306dea4f6c0d6c77f88f485d_12682_480x0_resize_box_3.png 480w, https://yhank.com/p/google-chrome-%E5%A6%82%E4%BD%95%E7%A6%81%E7%94%A8%E6%97%A0%E7%97%95%E6%B5%8F%E8%A7%88%E6%A8%A1%E5%BC%8F/Snipaste_2022-09-04_20-26-11_hue256c3da306dea4f6c0d6c77f88f485d_12682_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="168"
+data-flex-basis="403px"
+>&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>打开&lt;code>计算机配置\管理模板\Google Chrome\&lt;/code>&lt;/p>
-&lt;p>{% asset_image Snipaste_2022-09-04_20-27-49.png %}&lt;/p>
+&lt;p>&lt;img src="https://yhank.com/p/google-chrome-%E5%A6%82%E4%BD%95%E7%A6%81%E7%94%A8%E6%97%A0%E7%97%95%E6%B5%8F%E8%A7%88%E6%A8%A1%E5%BC%8F/Snipaste_2022-09-04_20-27-49.png"
+width="754"
+height="530"
+srcset="https://yhank.com/p/google-chrome-%E5%A6%82%E4%BD%95%E7%A6%81%E7%94%A8%E6%97%A0%E7%97%95%E6%B5%8F%E8%A7%88%E6%A8%A1%E5%BC%8F/Snipaste_2022-09-04_20-27-49_hu535b9dded299ca7dacb518c720ca2225_66669_480x0_resize_box_3.png 480w, https://yhank.com/p/google-chrome-%E5%A6%82%E4%BD%95%E7%A6%81%E7%94%A8%E6%97%A0%E7%97%95%E6%B5%8F%E8%A7%88%E6%A8%A1%E5%BC%8F/Snipaste_2022-09-04_20-27-49_hu535b9dded299ca7dacb518c720ca2225_66669_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="142"
+data-flex-basis="341px"
+>&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>找到&lt;code>无痕模式的可用性&lt;/code>，双击打开&lt;/p>
-&lt;p>{% asset_image Snipaste_2022-09-04_20-33-04.png %}&lt;/p>
+&lt;p>&lt;img src="https://yhank.com/p/google-chrome-%E5%A6%82%E4%BD%95%E7%A6%81%E7%94%A8%E6%97%A0%E7%97%95%E6%B5%8F%E8%A7%88%E6%A8%A1%E5%BC%8F/Snipaste_2022-09-04_20-33-04.png"
+width="1100"
+height="643"
+srcset="https://yhank.com/p/google-chrome-%E5%A6%82%E4%BD%95%E7%A6%81%E7%94%A8%E6%97%A0%E7%97%95%E6%B5%8F%E8%A7%88%E6%A8%A1%E5%BC%8F/Snipaste_2022-09-04_20-33-04_huea1e0f44b58eaa12d39d3703c28c2e79_111298_480x0_resize_box_3.png 480w, https://yhank.com/p/google-chrome-%E5%A6%82%E4%BD%95%E7%A6%81%E7%94%A8%E6%97%A0%E7%97%95%E6%B5%8F%E8%A7%88%E6%A8%A1%E5%BC%8F/Snipaste_2022-09-04_20-33-04_huea1e0f44b58eaa12d39d3703c28c2e79_111298_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="171"
+data-flex-basis="410px"
+>&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>选择&lt;code>已启用&lt;/code>并在下面的菜单中选择&lt;code>隐身模式已停用&lt;/code>，点击确定&lt;/p>
-&lt;p>{% asset_image Snipaste_2022-09-04_20-43-16.png %}&lt;/p>
+&lt;p>&lt;img src="https://yhank.com/p/google-chrome-%E5%A6%82%E4%BD%95%E7%A6%81%E7%94%A8%E6%97%A0%E7%97%95%E6%B5%8F%E8%A7%88%E6%A8%A1%E5%BC%8F/Snipaste_2022-09-04_20-43-16.png"
+width="694"
+height="645"
+srcset="https://yhank.com/p/google-chrome-%E5%A6%82%E4%BD%95%E7%A6%81%E7%94%A8%E6%97%A0%E7%97%95%E6%B5%8F%E8%A7%88%E6%A8%A1%E5%BC%8F/Snipaste_2022-09-04_20-43-16_hua68d255fd74c371c048749280751380c_41562_480x0_resize_box_3.png 480w, https://yhank.com/p/google-chrome-%E5%A6%82%E4%BD%95%E7%A6%81%E7%94%A8%E6%97%A0%E7%97%95%E6%B5%8F%E8%A7%88%E6%A8%A1%E5%BC%8F/Snipaste_2022-09-04_20-43-16_hua68d255fd74c371c048749280751380c_41562_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="107"
+data-flex-basis="258px"
+>&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>关闭组策略编辑器，现在已经无法启动&lt;code>无痕浏览模式&lt;/code>&lt;/p>
@@ -419,15 +475,39 @@ $$
 &lt;/li>
 &lt;li>
 &lt;p>取消勾选&lt;code>decrypt https traffic&lt;/code>&lt;/p>
-&lt;p>{% asset_image image-20220830085929624.png %}&lt;/p>
+&lt;p>&lt;img src="https://yhank.com/p/%E5%90%AF%E7%94%A8fiddler%E5%AF%BC%E8%87%B4%E6%97%A0%E6%B3%95%E8%81%94%E7%BD%91%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/image-20220830085929624.png"
+width="542"
+height="368"
+srcset="https://yhank.com/p/%E5%90%AF%E7%94%A8fiddler%E5%AF%BC%E8%87%B4%E6%97%A0%E6%B3%95%E8%81%94%E7%BD%91%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/image-20220830085929624_hue4c26d6cee3a74acadb850f0a8bb6690_12765_480x0_resize_box_3.png 480w, https://yhank.com/p/%E5%90%AF%E7%94%A8fiddler%E5%AF%BC%E8%87%B4%E6%97%A0%E6%B3%95%E8%81%94%E7%BD%91%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/image-20220830085929624_hue4c26d6cee3a74acadb850f0a8bb6690_12765_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="147"
+data-flex-basis="353px"
+>&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>点击&lt;code>actions-remove interception certficates&lt;/code> ，删除所有证书&lt;/p>
-&lt;p>{% asset_image image-20220830085915971.png %}&lt;/p>
+&lt;p>&lt;img src="https://yhank.com/p/%E5%90%AF%E7%94%A8fiddler%E5%AF%BC%E8%87%B4%E6%97%A0%E6%B3%95%E8%81%94%E7%BD%91%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/image-20220830085915971.png"
+width="741"
+height="384"
+srcset="https://yhank.com/p/%E5%90%AF%E7%94%A8fiddler%E5%AF%BC%E8%87%B4%E6%97%A0%E6%B3%95%E8%81%94%E7%BD%91%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/image-20220830085915971_hub8cf502109f48572cbe034ce2706c047_24526_480x0_resize_box_3.png 480w, https://yhank.com/p/%E5%90%AF%E7%94%A8fiddler%E5%AF%BC%E8%87%B4%E6%97%A0%E6%B3%95%E8%81%94%E7%BD%91%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/image-20220830085915971_hub8cf502109f48572cbe034ce2706c047_24526_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="192"
+data-flex-basis="463px"
+>&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>重新勾选&lt;code>decrypt https traffic&lt;/code>，根据提示安装证书&lt;/p>
-&lt;p>{% asset_image image-20220830090534349.png %}&lt;/p>
+&lt;p>&lt;img src="https://yhank.com/p/%E5%90%AF%E7%94%A8fiddler%E5%AF%BC%E8%87%B4%E6%97%A0%E6%B3%95%E8%81%94%E7%BD%91%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/image-20220830090534349.png"
+width="542"
+height="368"
+srcset="https://yhank.com/p/%E5%90%AF%E7%94%A8fiddler%E5%AF%BC%E8%87%B4%E6%97%A0%E6%B3%95%E8%81%94%E7%BD%91%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/image-20220830090534349_hua8e6723ffca0a4370e28708fdc2f2f62_17780_480x0_resize_box_3.png 480w, https://yhank.com/p/%E5%90%AF%E7%94%A8fiddler%E5%AF%BC%E8%87%B4%E6%97%A0%E6%B3%95%E8%81%94%E7%BD%91%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/image-20220830090534349_hua8e6723ffca0a4370e28708fdc2f2f62_17780_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="147"
+data-flex-basis="353px"
+>&lt;/p>
 &lt;/li>
 &lt;/ol></description></item><item><title>CF359C 题解</title><link>https://yhank.com/p/cf359c-%E9%A2%98%E8%A7%A3/</link><pubDate>Wed, 17 Aug 2022 10:36:30 +0800</pubDate><guid>https://yhank.com/p/cf359c-%E9%A2%98%E8%A7%A3/</guid><description>&lt;h2 id="题面">题面&lt;/h2>
 &lt;p>&lt;a class="link" href="https://www.luogu.com.cn/problem/CF359C" target="_blank" rel="noopener"
@@ -971,7 +1051,15 @@ $$
 &lt;p>转移方程为：&lt;/p>
 &lt;p>$$dp[v]=min(dp[v],dp[u]+w[v])$$&lt;/p>
 &lt;p>关于状态压缩后的正确性：最有可能令人不理解的部分就是：在同一轮更新中，我们可能会用已经更新完的值再去更新别的值。这就导致，同一论更新中，不同节点被更新到的DP值对应的$k$可能不同。（如果没看懂，就看下面这张图）&lt;/p>
-&lt;p>{% asset_img 2756435-20220808225759726-1971450317.png %}&lt;/p>
+&lt;p>&lt;img src="https://yhank.com/p/bellman-ford%E7%AE%97%E6%B3%95%E4%B8%8Espfa%E7%AE%97%E6%B3%95%E8%AF%A6%E8%A7%A3/2756435-20220808225759726-1971450317.png"
+width="353"
+height="348"
+srcset="https://yhank.com/p/bellman-ford%E7%AE%97%E6%B3%95%E4%B8%8Espfa%E7%AE%97%E6%B3%95%E8%AF%A6%E8%A7%A3/2756435-20220808225759726-1971450317_huac4476123a59e7685f7dd694c3310355_19608_480x0_resize_box_3.png 480w, https://yhank.com/p/bellman-ford%E7%AE%97%E6%B3%95%E4%B8%8Espfa%E7%AE%97%E6%B3%95%E8%AF%A6%E8%A7%A3/2756435-20220808225759726-1971450317_huac4476123a59e7685f7dd694c3310355_19608_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="101"
+data-flex-basis="243px"
+>&lt;/p>
 &lt;p>但是实际上，我们其实并不关心到底走了几步，而只关心&lt;strong>最短路的边权和&lt;/strong>。所以，像这样的“错位更新”并不会引起错误。&lt;/p>
 &lt;p>于是，我们可以得到新的代码：&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
@@ -1485,8 +1573,24 @@ $$
 &lt;/div></description></item><item><title>数据结构--树和二叉树</title><link>https://yhank.com/p/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84--%E6%A0%91%E5%92%8C%E4%BA%8C%E5%8F%89%E6%A0%91/</link><pubDate>Mon, 25 Jul 2022 16:06:41 +0800</pubDate><guid>https://yhank.com/p/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84--%E6%A0%91%E5%92%8C%E4%BA%8C%E5%8F%89%E6%A0%91/</guid><description>&lt;p>二叉树的递归定义如下：二叉树要么为空，要么由根节点、左子树、右子树组成，而左子树和右子树分别是一棵二叉树。在计算机中，树一般是“倒置”的，即根在上，叶子在下。&lt;/p>
 &lt;p>树和二叉树类似，区别在于没一个节点不一定只有两棵子树。&lt;/p>
 &lt;p>&lt;strong>图示：&lt;/strong>
-{% asset_img 20190817141022512.png 二叉树 %}
-{% asset_img a04c7de7726ed7ed9a518738eafe411b.png 普通的树 %}
+&lt;img src="https://yhank.com/p/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84--%E6%A0%91%E5%92%8C%E4%BA%8C%E5%8F%89%E6%A0%91/20190817141022512.png"
+width="386"
+height="278"
+srcset="https://yhank.com/p/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84--%E6%A0%91%E5%92%8C%E4%BA%8C%E5%8F%89%E6%A0%91/20190817141022512_hubd392ffc07e5ccd51455c5b6632d3836_30059_480x0_resize_box_3.png 480w, https://yhank.com/p/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84--%E6%A0%91%E5%92%8C%E4%BA%8C%E5%8F%89%E6%A0%91/20190817141022512_hubd392ffc07e5ccd51455c5b6632d3836_30059_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="138"
+data-flex-basis="333px"
+>
+&lt;img src="https://yhank.com/p/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84--%E6%A0%91%E5%92%8C%E4%BA%8C%E5%8F%89%E6%A0%91/a04c7de7726ed7ed9a518738eafe411b.png"
+width="308"
+height="262"
+srcset="https://yhank.com/p/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84--%E6%A0%91%E5%92%8C%E4%BA%8C%E5%8F%89%E6%A0%91/a04c7de7726ed7ed9a518738eafe411b_hudd09476f78bc13c1ac125b16050651ff_17710_480x0_resize_box_3.png 480w, https://yhank.com/p/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84--%E6%A0%91%E5%92%8C%E4%BA%8C%E5%8F%89%E6%A0%91/a04c7de7726ed7ed9a518738eafe411b_hudd09476f78bc13c1ac125b16050651ff_17710_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="117"
+data-flex-basis="282px"
+>
 不管是二叉树还是树，每个非根节点都有一个父亲，也成父节点。&lt;/p>
 &lt;p>以下是一道例题&lt;/p>
 &lt;h3 id="uva679-dropping-balls">UVa679: Dropping Balls&lt;/h3>
@@ -1494,7 +1598,15 @@ $$
 &lt;p>&lt;a class="link" href="https://vjudge.net/problem/UVA-679" target="_blank" rel="noopener"
 >UVA679 Dropping Balls&lt;/a>&lt;/p>
 &lt;h4 id="分析">分析&lt;/h4>
-&lt;p>{% asset_img 20200326003915687.png %}&lt;/p>
+&lt;p>&lt;img src="https://yhank.com/p/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84--%E6%A0%91%E5%92%8C%E4%BA%8C%E5%8F%89%E6%A0%91/20200326003915687.png"
+width="534"
+height="214"
+srcset="https://yhank.com/p/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84--%E6%A0%91%E5%92%8C%E4%BA%8C%E5%8F%89%E6%A0%91/20200326003915687_hubf6652586310af460ab04664431d838e_62423_480x0_resize_box_3.png 480w, https://yhank.com/p/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84--%E6%A0%91%E5%92%8C%E4%BA%8C%E5%8F%89%E6%A0%91/20200326003915687_hubf6652586310af460ab04664431d838e_62423_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="249"
+data-flex-basis="598px"
+>&lt;/p>
 &lt;p>可以发现，对于一个结点k，其左子节点、右子结点的编号分别为2k和2k+1。&lt;/p>
 &lt;p>因为小球落下后，开关的状态就会改变，所以一个节点上的小球的去向，跟这个小球是第几个到达此节点有关系，也就是说，如果是第奇数个到达，会往左走，偶数个，会往右走。&lt;/p>
 &lt;p>如果是节点1，第一个小球（I=1）肯定会往左走，第二个小球（I=2）则会往右走。如果是节点2、3、4……，也会有和结点1类似的规律。比如第5颗球，他是第五个到达节点1的球，接下来往左，第5/2+1=3（奇）个到达节点2的球，接下来往左，3/2+1=2（偶），第2个到达节点4，下面第2/2=1个到达节点9；&lt;/p>
@@ -1556,7 +1668,15 @@ $$
 &lt;p>&lt;strong>优点：&lt;/strong> 使用链表结构不需要预先知道数据大小，可以充分利用计算机内存空间，实现灵活的内存动态管理，链表还允许插入和移除表上任意位置上的节点。&lt;/p>
 &lt;p>&lt;strong>缺点：&lt;/strong> 链表失去了数组随机读取的优点，同时链表由于增加了结点的指针域，空间开销比较大。&lt;/p>
 &lt;p>&lt;strong>分类：&lt;/strong> 单向链表，双向链表以及循环链表&lt;/p>
-&lt;p>&lt;strong>图示：&lt;/strong> {% asset_img 20210113172838824.png 链表 %}&lt;/p>
+&lt;p>&lt;strong>图示：&lt;/strong> &lt;img src="https://yhank.com/p/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84--%E9%93%BE%E8%A1%A8/20210113172838824.png"
+width="465"
+height="73"
+srcset="https://yhank.com/p/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84--%E9%93%BE%E8%A1%A8/20210113172838824_hucc8a337d7271476f8852dbcc9ab3d7df_875_480x0_resize_box_3.png 480w, https://yhank.com/p/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84--%E9%93%BE%E8%A1%A8/20210113172838824_hucc8a337d7271476f8852dbcc9ab3d7df_875_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="636"
+data-flex-basis="1528px"
+>&lt;/p>
 &lt;p>以下是一道例题&lt;/p>
 &lt;h3 id="uva11988悲剧文本">UVa11988：悲剧文本&lt;/h3>
 &lt;h4 id="题目">题目&lt;/h4>
@@ -1815,7 +1935,15 @@ For each case, print the Beiju text on the screen.&lt;/p>
 &lt;/div></description></item><item><title>CF859E 题解</title><link>https://yhank.com/p/cf859e-%E9%A2%98%E8%A7%A3/</link><pubDate>Mon, 25 Jul 2022 11:20:58 +0800</pubDate><guid>https://yhank.com/p/cf859e-%E9%A2%98%E8%A7%A3/</guid><description>&lt;h2 id="分析">分析&lt;/h2>
 &lt;p>我们不妨把这些座位看作是一张图中的节点，把每个人的诉求作为一条边（由【原座位】指向【想去的座位】）&lt;/p>
 &lt;p>比如，对于样例#1，我们就可以得到这样一张图：&lt;/p>
-&lt;p>{% asset_img jtijv9fb.png %}&lt;/p>
+&lt;p>&lt;img src="https://yhank.com/p/cf859e-%E9%A2%98%E8%A7%A3/jtijv9fb.png"
+width="404"
+height="368"
+srcset="https://yhank.com/p/cf859e-%E9%A2%98%E8%A7%A3/jtijv9fb_hu3967219f6a2f19a1a8084580172e7125_16847_480x0_resize_box_3.png 480w, https://yhank.com/p/cf859e-%E9%A2%98%E8%A7%A3/jtijv9fb_hu3967219f6a2f19a1a8084580172e7125_16847_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="109"
+data-flex-basis="263px"
+>&lt;/p>
 &lt;p>显然，我们有可能会得到多个连通图（比如上面这张）&lt;/p>
 &lt;p>因为每个座位上的人都只有一个想去的座位，所以每个点的出度就是 $0$（可能只有其他的点指向它） 或 $1$，整每个连通图的边数就是 $n$ （点的个数）或者 $n - 1$ 个&lt;/p>
 &lt;p>当边数等于 $n$ 时，显然这是一个&lt;strong>环&lt;/strong>或者一棵&lt;strong>基环树&lt;/strong>（定义见&lt;a class="link" href="https://blog.csdn.net/weixin_45697774/article/details/108948457" target="_blank" rel="noopener"
@@ -1845,13 +1973,29 @@ For each case, print the Beiju text on the screen.&lt;/p>
 &lt;/div>
 &lt;/div>&lt;p>&lt;del>手画一下&lt;/del>复制到&lt;a class="link" href="https://csacademy.com/app/graph_editor/" target="_blank" rel="noopener"
 >Graph Editor&lt;/a>，可以得到这张图：&lt;/p>
-&lt;p>{% asset_img chufrqa7.png %}&lt;/p>
+&lt;p>&lt;img src="https://yhank.com/p/cf859e-%E9%A2%98%E8%A7%A3/chufrqa7.png"
+width="386"
+height="466"
+srcset="https://yhank.com/p/cf859e-%E9%A2%98%E8%A7%A3/chufrqa7_hu22c02615917cc8904e2752df94b5ca76_26662_480x0_resize_box_3.png 480w, https://yhank.com/p/cf859e-%E9%A2%98%E8%A7%A3/chufrqa7_hu22c02615917cc8904e2752df94b5ca76_26662_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="82"
+data-flex-basis="198px"
+>&lt;/p>
 &lt;p>试着移动每一个点，容易发现：移动r任意环外点（比如这里的 $3$、$5$、$6$、$7$），环上的点肯定就没位置了。&lt;/p>
 &lt;p>&lt;strong>证明（&lt;del>废话&lt;/del>）&lt;/strong> ：点 $2$ 唯一的一条出边已经用在环上了，所以 $2$ 和任意环外点之间的边一定是指向 $2$ 的，以此类推，我们可以发现：$3$、$5$、$6$、$7$ 对应的边都是指向 $2$ 的。于是，只要移动必定会移到 $2$ 的位置&lt;/p>
 &lt;p>于是我们就可以得到结论：如果这是一棵基环树或者一个环，那么它的答案为 $2$（环内的点移/不移，两种情况）&lt;/p>
 &lt;p>当边数等于 $n$ 时，显然这是一棵&lt;strong>树&lt;/strong>&lt;/p>
 &lt;p>我们拿它举例：&lt;/p>
-&lt;p>{% asset_img 4qmktzjh.png %}&lt;/p>
+&lt;p>&lt;img src="https://yhank.com/p/cf859e-%E9%A2%98%E8%A7%A3/4qmktzjh.png"
+width="402"
+height="429"
+srcset="https://yhank.com/p/cf859e-%E9%A2%98%E8%A7%A3/4qmktzjh_hu0284222e32155c6cc4a5c395d61b5194_21457_480x0_resize_box_3.png 480w, https://yhank.com/p/cf859e-%E9%A2%98%E8%A7%A3/4qmktzjh_hu0284222e32155c6cc4a5c395d61b5194_21457_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="93"
+data-flex-basis="224px"
+>&lt;/p>
 &lt;p>每个节点的出度都为 $1$ 或 $0$（只可能有一个点出度为 $0$，这个座位一开始就空着），所以我们可以将唯一的那个出度为 $0$ 的点（如这张图中的点 $0$）作为树根。&lt;/p>
 &lt;p>显然，我们移动任意一个点，都会导致一种确定且不重复的情况（它到根节点的链上的每一个点都往上移），所以其答案为 $n$，即点数&lt;/p>
 &lt;p>于是，最终的答案就是将每个连通图的答案乘起来。&lt;/p>
@@ -2102,7 +2246,15 @@ target="_blank" rel="noopener"
 &lt;p>所以，&lt;strong>正确的写法是：&lt;code>dp[l - 1][r] + p[m - r + l - 1] * a[i][l - 1]&lt;/code>（把目标类型写在运算符号前）&lt;/strong>&lt;/p></description></item><item><title>树的重心相关概念与证明--好文摘录</title><link>https://yhank.com/p/%E6%A0%91%E7%9A%84%E9%87%8D%E5%BF%83%E7%9B%B8%E5%85%B3%E6%A6%82%E5%BF%B5%E4%B8%8E%E8%AF%81%E6%98%8E--%E5%A5%BD%E6%96%87%E6%91%98%E5%BD%95/</link><pubDate>Mon, 18 Jul 2022 13:26:30 +0800</pubDate><guid>https://yhank.com/p/%E6%A0%91%E7%9A%84%E9%87%8D%E5%BF%83%E7%9B%B8%E5%85%B3%E6%A6%82%E5%BF%B5%E4%B8%8E%E8%AF%81%E6%98%8E--%E5%A5%BD%E6%96%87%E6%91%98%E5%BD%95/</guid><description>&lt;p>此处只记录链接，不转载了：&lt;a class="link" href="https://www.luogu.com.cn/blog/dcmfqw/shu-di-zhong-xin-xiang-guan-gai-nian-yu-zheng-ming" target="_blank" rel="noopener"
 >请点击此处&lt;/a>&lt;/p></description></item><item><title>关于二叉树上叶节点的最值</title><link>https://yhank.com/p/%E5%85%B3%E4%BA%8E%E4%BA%8C%E5%8F%89%E6%A0%91%E4%B8%8A%E5%8F%B6%E8%8A%82%E7%82%B9%E7%9A%84%E6%9C%80%E5%80%BC/</link><pubDate>Sun, 17 Jul 2022 12:03:53 +0800</pubDate><guid>https://yhank.com/p/%E5%85%B3%E4%BA%8E%E4%BA%8C%E5%8F%89%E6%A0%91%E4%B8%8A%E5%8F%B6%E8%8A%82%E7%82%B9%E7%9A%84%E6%9C%80%E5%80%BC/</guid><description>&lt;h3 id="1-叶结点数最大">1. 叶结点数最大&lt;/h3>
 &lt;p>每个右子节点都为叶节点&lt;/p>
-&lt;p>{% asset_img 2756435-20220717115652777-1086707988.jpg %}&lt;/p>
+&lt;p>&lt;img src="https://yhank.com/p/%E5%85%B3%E4%BA%8E%E4%BA%8C%E5%8F%89%E6%A0%91%E4%B8%8A%E5%8F%B6%E8%8A%82%E7%82%B9%E7%9A%84%E6%9C%80%E5%80%BC/2756435-20220717115652777-1086707988.jpg"
+width="315"
+height="280"
+srcset="https://yhank.com/p/%E5%85%B3%E4%BA%8E%E4%BA%8C%E5%8F%89%E6%A0%91%E4%B8%8A%E5%8F%B6%E8%8A%82%E7%82%B9%E7%9A%84%E6%9C%80%E5%80%BC/2756435-20220717115652777-1086707988_hu3d046f6b55c5adb26d5b84210562ee97_7385_480x0_resize_q75_box.jpg 480w, https://yhank.com/p/%E5%85%B3%E4%BA%8E%E4%BA%8C%E5%8F%89%E6%A0%91%E4%B8%8A%E5%8F%B6%E8%8A%82%E7%82%B9%E7%9A%84%E6%9C%80%E5%80%BC/2756435-20220717115652777-1086707988_hu3d046f6b55c5adb26d5b84210562ee97_7385_1024x0_resize_q75_box.jpg 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="112"
+data-flex-basis="270px"
+>&lt;/p>
 &lt;p>例如 &lt;strong>【2015-NOIP-J-初赛-第22题】&lt;/strong>：&lt;/p>
 &lt;blockquote>
 &lt;p>一棵结点数为 2015 的二叉树最多有___个叶子结点。&lt;/p>
@@ -2110,7 +2262,15 @@ target="_blank" rel="noopener"
 &lt;p>极端情况下，在二叉树中所有的右节点都是叶子节点，除最下层外的左节点都是父节点且有两个孩子，如图所示，1008 = 1007（3~2015的奇数个数)+1(2014)。&lt;/p>
 &lt;h3 id="1-叶结点数最小">1. 叶结点数最小&lt;/h3>
 &lt;p>挂成一条链，则只有一个叶节点&lt;/p>
-&lt;p>{% asset_img 2756435-20220717122454958-1001641004.png %}&lt;/p>
+&lt;p>&lt;img src="https://yhank.com/p/%E5%85%B3%E4%BA%8E%E4%BA%8C%E5%8F%89%E6%A0%91%E4%B8%8A%E5%8F%B6%E8%8A%82%E7%82%B9%E7%9A%84%E6%9C%80%E5%80%BC/2756435-20220717122454958-1001641004.png"
+width="451"
+height="621"
+srcset="https://yhank.com/p/%E5%85%B3%E4%BA%8E%E4%BA%8C%E5%8F%89%E6%A0%91%E4%B8%8A%E5%8F%B6%E8%8A%82%E7%82%B9%E7%9A%84%E6%9C%80%E5%80%BC/2756435-20220717122454958-1001641004_hub8e2984fb4498ce784f60d9ea1c98df5_26052_480x0_resize_box_3.png 480w, https://yhank.com/p/%E5%85%B3%E4%BA%8E%E4%BA%8C%E5%8F%89%E6%A0%91%E4%B8%8A%E5%8F%B6%E8%8A%82%E7%82%B9%E7%9A%84%E6%9C%80%E5%80%BC/2756435-20220717122454958-1001641004_hub8e2984fb4498ce784f60d9ea1c98df5_26052_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="72"
+data-flex-basis="174px"
+>&lt;/p>
 &lt;p>例如 &lt;strong>【2016-NOIP-J-初赛-第22题】&lt;/strong>：&lt;/p>
 &lt;blockquote>
 &lt;p>约定二叉树的根节点高度为 1。一棵结点数为 2016 的二叉树最少有______个叶子结点&lt;/p>
