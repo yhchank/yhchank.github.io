@@ -1,0 +1,22 @@
+name: Hub Mirror Action
+
+on:
+  push:
+    branches:
+      - gh-pages
+  pull_request:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-22.04
+    concurrency:
+      group: ${{ github.workflow }}-${{ github.ref }}
+    steps:
+    - name: Mirror the Github repo to Gitee.
+      uses: Yikun/hub-mirror-action@master
+      with:
+        src: github/yhchank
+        dst: gitee/yhchank
+        dst_key: ${{ secrets.GITEE_PRIVATE_KEY }}
+        dst_token: ${{ secrets.GITEE_TOKEN }}
+        static_list: "yhchank.github.io"
