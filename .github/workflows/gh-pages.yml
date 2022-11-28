@@ -3,7 +3,7 @@ name: GitHub Pages
 on:
   push:
     branches:
-      - master  # 博客根目录的默认分支，这里是main，有时也是master
+      - main  # 博客根目录的默认分支，这里是main，有时也是master
   pull_request:
 
 jobs:
@@ -26,7 +26,7 @@ jobs:
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
-        if: ${{ github.ref == 'refs/heads/master' }}  # 注意填写main或者master
+        if: ${{ github.ref == 'refs/heads/main' }}  # 注意填写main或者master
         with:
           github_token: ${{ secrets.GH_ACT_TOKEN}} # 如果secret取了其他名称，将GH_ACT_TOKEN替换掉
           publish_dir: ./public
