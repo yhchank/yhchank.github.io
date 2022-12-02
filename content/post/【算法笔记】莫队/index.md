@@ -103,9 +103,11 @@ int main() {
 可以发现，在最劣的情况下，比如询问的区间为 $[1, 1], [1, 50], [1, 100], [2, 2], [2, 50], [2, 100], [3, 3], [3, 50], [3, 100]$ 时，左端点只会移动 $3$ 次，但是右端点会移动大约 $300$ 次
 
 但是，如果对其按如下方式排序，移动次数就会大大降低
+
 $$
 [1, 1], [2, 2], [3, 3], [1, 50], [2, 50], [3, 50], [1, 100], [2, 100], [3, 100]
 $$
+
 此时左端点大约会移动 $10$ 次，而右端点则会移动 $100$ 次
 
 这只是一个极端情况，对于普遍的情况，莫涛大神则提出了一种基于分块的方法：
@@ -164,6 +166,96 @@ int main() {
     block = sqrt(n);
     for(int i = 1; i <= m; i++) {
         cin >> q[i].l >> q[i].r;
+        q[i].id = i;
+    }
+    sort(q + 1, q + m + 1, cmpRG); // 对区间排序
+    l = 1; // 初始位置
+    r = 0;
+    ans = 0;
+    for(int i = 1; i <= m; i++) {
+        while(r > q[i].r) { // 移动到新区间
+            del(r--);
+        }
+        while(r < q[i].r) {
+            add(++r);
+        }
+        while(l > q[i].l) {
+            add(--l);
+        }
+        while(l < q[i].l) {
+            del(l++);
+        }
+        q[i].ans = ans;
+    }
+    sort(q + 1, q + m + 1, cmpID); // 恢复原顺序
+    // Code here...
+}
+```
+
+## 再优化（蛇形移动）
+
+可以发现，每次从一个块前往下一个块的时候，左端点常常会移动很远，此时，我们可以利用**蛇形移动**来优化。
+
+我们先将左端点和右端点在坐标系中形象地表示出来：
+
+![](蛇形移动.png "蛇形移动 - 图示")
+
+所谓蛇形移动，就是对于奇数块和偶数块在块内采用相反的方向按右端点排序。这样，每次解决完一个块时，我们不必使左端点回到头部，所以可以节省部分时间。
+
+当然，这种方法通常是常数级优化。
+
+### 具体实现
+
+```cpp
+struct Query {
+    int l, r;
+    int lid; // 左端点所在的块的编号
+    int id, ans;
+};
+
+int n, m;
+int a[MAXN];
+Query q[MAXQ];
+int cnt[MAXN];
+int l, r, ans;
+int block;
+
+bool cmpRG(const Query &_a, const Query &_b) { // 左端点为第一关键字，右端点为第二关键字
+    if(_a.lid != _b.lid) {
+        return _a.lid < _b.lid;
+    } else {
+        if(_a.lid % 2) { // 奇数块
+            return _a.r < _b.r; // 升序排列
+        } else { // 偶数块
+            return _a.r > _b.r; // 降序排列
+        }
+    }
+}
+
+bool cmpID(const Query &_a, const Query &_b) { // id
+    return _a.id < _b.id;
+}
+
+void add(int x) { // 向区间添加元素，更新当前答案
+    cnt[a[x]]++;
+    if(cnt[a[x]] == 1) {
+        ans++;
+    }
+}
+
+void del(int x) { // 从区间删除元素，更新答案
+    cnt[a[x]]--;
+    if(cnt[a[x]] == 0) {
+        ans--;
+    }
+}
+
+int main() {
+    // Code here...
+    block = sqrt(n);
+    for(int i = 1; i <= m; i++) {
+        cin >> q[i].l >> q[i].r;
+        q[i].lid = q[i].l / block;
         q[i].id = i;
     }
     sort(q + 1, q + m + 1, cmpRG); // 对区间排序
