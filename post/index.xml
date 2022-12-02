@@ -152,11 +152,11 @@
 &lt;/div>&lt;h2 id="优化">优化&lt;/h2>
 &lt;h3 id="过程">过程&lt;/h3>
 &lt;p>可以发现，在最劣的情况下，比如询问的区间为 $[1, 1], [1, 50], [1, 100], [2, 2], [2, 50], [2, 100], [3, 3], [3, 50], [3, 100]$ 时，左端点只会移动 $3$ 次，但是右端点会移动大约 $300$ 次&lt;/p>
-&lt;p>但是，如果对其按如下方式排序，移动次数就会大大降低
-$$
+&lt;p>但是，如果对其按如下方式排序，移动次数就会大大降低&lt;/p>
+&lt;p>$$
 [1, 1], [2, 2], [3, 3], [1, 50], [2, 50], [3, 50], [1, 100], [2, 100], [3, 100]
-$$
-此时左端点大约会移动 $10$ 次，而右端点则会移动 $100$ 次&lt;/p>
+$$&lt;/p>
+&lt;p>此时左端点大约会移动 $10$ 次，而右端点则会移动 $100$ 次&lt;/p>
 &lt;p>这只是一个极端情况，对于普遍的情况，莫涛大神则提出了一种基于分块的方法：&lt;/p>
 &lt;ol>
 &lt;li>将下标范围 $[1, n]$ 分为 $\sqrt{n}$ 块（$[1, \sqrt{n}], [\sqrt{n} + 1, 2\sqrt{n}] \dots$）&lt;/li>
@@ -280,6 +280,173 @@ $$
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="n">block&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">sqrt&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">n&lt;/span>&lt;span class="p">);&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">for&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="kt">int&lt;/span> &lt;span class="n">i&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">1&lt;/span>&lt;span class="p">;&lt;/span> &lt;span class="n">i&lt;/span> &lt;span class="o">&amp;lt;=&lt;/span> &lt;span class="n">m&lt;/span>&lt;span class="p">;&lt;/span> &lt;span class="n">i&lt;/span>&lt;span class="o">++&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">cin&lt;/span> &lt;span class="o">&amp;gt;&amp;gt;&lt;/span> &lt;span class="n">q&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">i&lt;/span>&lt;span class="p">].&lt;/span>&lt;span class="n">l&lt;/span> &lt;span class="o">&amp;gt;&amp;gt;&lt;/span> &lt;span class="n">q&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">i&lt;/span>&lt;span class="p">].&lt;/span>&lt;span class="n">r&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">q&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">i&lt;/span>&lt;span class="p">].&lt;/span>&lt;span class="n">id&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">i&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">sort&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">q&lt;/span> &lt;span class="o">+&lt;/span> &lt;span class="mi">1&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">q&lt;/span> &lt;span class="o">+&lt;/span> &lt;span class="n">m&lt;/span> &lt;span class="o">+&lt;/span> &lt;span class="mi">1&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">cmpRG&lt;/span>&lt;span class="p">);&lt;/span> &lt;span class="c1">// 对区间排序
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="n">l&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">1&lt;/span>&lt;span class="p">;&lt;/span> &lt;span class="c1">// 初始位置
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="n">r&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">ans&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">for&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="kt">int&lt;/span> &lt;span class="n">i&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">1&lt;/span>&lt;span class="p">;&lt;/span> &lt;span class="n">i&lt;/span> &lt;span class="o">&amp;lt;=&lt;/span> &lt;span class="n">m&lt;/span>&lt;span class="p">;&lt;/span> &lt;span class="n">i&lt;/span>&lt;span class="o">++&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">while&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">r&lt;/span> &lt;span class="o">&amp;gt;&lt;/span> &lt;span class="n">q&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">i&lt;/span>&lt;span class="p">].&lt;/span>&lt;span class="n">r&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span> &lt;span class="c1">// 移动到新区间
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="n">del&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">r&lt;/span>&lt;span class="o">--&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">while&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">r&lt;/span> &lt;span class="o">&amp;lt;&lt;/span> &lt;span class="n">q&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">i&lt;/span>&lt;span class="p">].&lt;/span>&lt;span class="n">r&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">add&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="o">++&lt;/span>&lt;span class="n">r&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">while&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">l&lt;/span> &lt;span class="o">&amp;gt;&lt;/span> &lt;span class="n">q&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">i&lt;/span>&lt;span class="p">].&lt;/span>&lt;span class="n">l&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">add&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="o">--&lt;/span>&lt;span class="n">l&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">while&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">l&lt;/span> &lt;span class="o">&amp;lt;&lt;/span> &lt;span class="n">q&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">i&lt;/span>&lt;span class="p">].&lt;/span>&lt;span class="n">l&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">del&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">l&lt;/span>&lt;span class="o">++&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">q&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">i&lt;/span>&lt;span class="p">].&lt;/span>&lt;span class="n">ans&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">ans&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">sort&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">q&lt;/span> &lt;span class="o">+&lt;/span> &lt;span class="mi">1&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">q&lt;/span> &lt;span class="o">+&lt;/span> &lt;span class="n">m&lt;/span> &lt;span class="o">+&lt;/span> &lt;span class="mi">1&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">cmpID&lt;/span>&lt;span class="p">);&lt;/span> &lt;span class="c1">// 恢复原顺序
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="c1">// Code here...
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="再优化蛇形移动">再优化（蛇形移动）&lt;/h2>
+&lt;p>可以发现，每次从一个块前往下一个块的时候，左端点常常会移动很远，此时，我们可以利用&lt;strong>蛇形移动&lt;/strong>来优化。&lt;/p>
+&lt;p>我们先将左端点和右端点在坐标系中形象地表示出来：&lt;/p>
+&lt;p>&lt;img src="https://yhank.com/p/%E7%AE%97%E6%B3%95%E7%AC%94%E8%AE%B0%E8%8E%AB%E9%98%9F/%E8%9B%87%E5%BD%A2%E7%A7%BB%E5%8A%A8.png"
+width="705"
+height="621"
+srcset="https://yhank.com/p/%E7%AE%97%E6%B3%95%E7%AC%94%E8%AE%B0%E8%8E%AB%E9%98%9F/%E8%9B%87%E5%BD%A2%E7%A7%BB%E5%8A%A8_hudfef8ed25aa0dfb3bb11b776998b2167_40478_480x0_resize_box_3.png 480w, https://yhank.com/p/%E7%AE%97%E6%B3%95%E7%AC%94%E8%AE%B0%E8%8E%AB%E9%98%9F/%E8%9B%87%E5%BD%A2%E7%A7%BB%E5%8A%A8_hudfef8ed25aa0dfb3bb11b776998b2167_40478_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="113"
+data-flex-basis="272px"
+>&lt;/p>
+&lt;p>所谓蛇形移动，就是对于奇数块和偶数块在块内采用相反的方向按右端点排序。这样，每次解决完一个块时，我们不必使左端点回到头部，所以可以节省部分时间。&lt;/p>
+&lt;p>当然，这种方法通常是常数级优化。&lt;/p>
+&lt;h3 id="具体实现">具体实现&lt;/h3>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;span class="lnt">16
+&lt;/span>&lt;span class="lnt">17
+&lt;/span>&lt;span class="lnt">18
+&lt;/span>&lt;span class="lnt">19
+&lt;/span>&lt;span class="lnt">20
+&lt;/span>&lt;span class="lnt">21
+&lt;/span>&lt;span class="lnt">22
+&lt;/span>&lt;span class="lnt">23
+&lt;/span>&lt;span class="lnt">24
+&lt;/span>&lt;span class="lnt">25
+&lt;/span>&lt;span class="lnt">26
+&lt;/span>&lt;span class="lnt">27
+&lt;/span>&lt;span class="lnt">28
+&lt;/span>&lt;span class="lnt">29
+&lt;/span>&lt;span class="lnt">30
+&lt;/span>&lt;span class="lnt">31
+&lt;/span>&lt;span class="lnt">32
+&lt;/span>&lt;span class="lnt">33
+&lt;/span>&lt;span class="lnt">34
+&lt;/span>&lt;span class="lnt">35
+&lt;/span>&lt;span class="lnt">36
+&lt;/span>&lt;span class="lnt">37
+&lt;/span>&lt;span class="lnt">38
+&lt;/span>&lt;span class="lnt">39
+&lt;/span>&lt;span class="lnt">40
+&lt;/span>&lt;span class="lnt">41
+&lt;/span>&lt;span class="lnt">42
+&lt;/span>&lt;span class="lnt">43
+&lt;/span>&lt;span class="lnt">44
+&lt;/span>&lt;span class="lnt">45
+&lt;/span>&lt;span class="lnt">46
+&lt;/span>&lt;span class="lnt">47
+&lt;/span>&lt;span class="lnt">48
+&lt;/span>&lt;span class="lnt">49
+&lt;/span>&lt;span class="lnt">50
+&lt;/span>&lt;span class="lnt">51
+&lt;/span>&lt;span class="lnt">52
+&lt;/span>&lt;span class="lnt">53
+&lt;/span>&lt;span class="lnt">54
+&lt;/span>&lt;span class="lnt">55
+&lt;/span>&lt;span class="lnt">56
+&lt;/span>&lt;span class="lnt">57
+&lt;/span>&lt;span class="lnt">58
+&lt;/span>&lt;span class="lnt">59
+&lt;/span>&lt;span class="lnt">60
+&lt;/span>&lt;span class="lnt">61
+&lt;/span>&lt;span class="lnt">62
+&lt;/span>&lt;span class="lnt">63
+&lt;/span>&lt;span class="lnt">64
+&lt;/span>&lt;span class="lnt">65
+&lt;/span>&lt;span class="lnt">66
+&lt;/span>&lt;span class="lnt">67
+&lt;/span>&lt;span class="lnt">68
+&lt;/span>&lt;span class="lnt">69
+&lt;/span>&lt;span class="lnt">70
+&lt;/span>&lt;span class="lnt">71
+&lt;/span>&lt;span class="lnt">72
+&lt;/span>&lt;span class="lnt">73
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-cpp" data-lang="cpp">&lt;span class="line">&lt;span class="cl">&lt;span class="k">struct&lt;/span> &lt;span class="nc">Query&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="kt">int&lt;/span> &lt;span class="n">l&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">r&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="kt">int&lt;/span> &lt;span class="n">lid&lt;/span>&lt;span class="p">;&lt;/span> &lt;span class="c1">// 左端点所在的块的编号
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="kt">int&lt;/span> &lt;span class="n">id&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">ans&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">};&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kt">int&lt;/span> &lt;span class="n">n&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">m&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kt">int&lt;/span> &lt;span class="n">a&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">MAXN&lt;/span>&lt;span class="p">];&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">Query&lt;/span> &lt;span class="n">q&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">MAXQ&lt;/span>&lt;span class="p">];&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kt">int&lt;/span> &lt;span class="n">cnt&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">MAXN&lt;/span>&lt;span class="p">];&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kt">int&lt;/span> &lt;span class="n">l&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">r&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">ans&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kt">int&lt;/span> &lt;span class="n">block&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kt">bool&lt;/span> &lt;span class="nf">cmpRG&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="k">const&lt;/span> &lt;span class="n">Query&lt;/span> &lt;span class="o">&amp;amp;&lt;/span>&lt;span class="n">_a&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="k">const&lt;/span> &lt;span class="n">Query&lt;/span> &lt;span class="o">&amp;amp;&lt;/span>&lt;span class="n">_b&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span> &lt;span class="c1">// 左端点为第一关键字，右端点为第二关键字
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="k">if&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">_a&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">lid&lt;/span> &lt;span class="o">!=&lt;/span> &lt;span class="n">_b&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">lid&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="n">_a&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">lid&lt;/span> &lt;span class="o">&amp;lt;&lt;/span> &lt;span class="n">_b&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">lid&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span> &lt;span class="k">else&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">_a&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">lid&lt;/span> &lt;span class="o">%&lt;/span> &lt;span class="mi">2&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span> &lt;span class="c1">// 奇数块
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="k">return&lt;/span> &lt;span class="n">_a&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">r&lt;/span> &lt;span class="o">&amp;lt;&lt;/span> &lt;span class="n">_b&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">r&lt;/span>&lt;span class="p">;&lt;/span> &lt;span class="c1">// 升序排列
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="p">}&lt;/span> &lt;span class="k">else&lt;/span> &lt;span class="p">{&lt;/span> &lt;span class="c1">// 偶数块
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="k">return&lt;/span> &lt;span class="n">_a&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">r&lt;/span> &lt;span class="o">&amp;gt;&lt;/span> &lt;span class="n">_b&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">r&lt;/span>&lt;span class="p">;&lt;/span> &lt;span class="c1">// 降序排列
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kt">bool&lt;/span> &lt;span class="nf">cmpID&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="k">const&lt;/span> &lt;span class="n">Query&lt;/span> &lt;span class="o">&amp;amp;&lt;/span>&lt;span class="n">_a&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="k">const&lt;/span> &lt;span class="n">Query&lt;/span> &lt;span class="o">&amp;amp;&lt;/span>&lt;span class="n">_b&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span> &lt;span class="c1">// id
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="k">return&lt;/span> &lt;span class="n">_a&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">id&lt;/span> &lt;span class="o">&amp;lt;&lt;/span> &lt;span class="n">_b&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">id&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kt">void&lt;/span> &lt;span class="nf">add&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="kt">int&lt;/span> &lt;span class="n">x&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span> &lt;span class="c1">// 向区间添加元素，更新当前答案
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="n">cnt&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">a&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">x&lt;/span>&lt;span class="p">]]&lt;/span>&lt;span class="o">++&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">cnt&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">a&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">x&lt;/span>&lt;span class="p">]]&lt;/span> &lt;span class="o">==&lt;/span> &lt;span class="mi">1&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">ans&lt;/span>&lt;span class="o">++&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kt">void&lt;/span> &lt;span class="nf">del&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="kt">int&lt;/span> &lt;span class="n">x&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span> &lt;span class="c1">// 从区间删除元素，更新答案
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="n">cnt&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">a&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">x&lt;/span>&lt;span class="p">]]&lt;/span>&lt;span class="o">--&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">cnt&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">a&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">x&lt;/span>&lt;span class="p">]]&lt;/span> &lt;span class="o">==&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">ans&lt;/span>&lt;span class="o">--&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kt">int&lt;/span> &lt;span class="nf">main&lt;/span>&lt;span class="p">()&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1">// Code here...
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="n">block&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">sqrt&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">n&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">for&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="kt">int&lt;/span> &lt;span class="n">i&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">1&lt;/span>&lt;span class="p">;&lt;/span> &lt;span class="n">i&lt;/span> &lt;span class="o">&amp;lt;=&lt;/span> &lt;span class="n">m&lt;/span>&lt;span class="p">;&lt;/span> &lt;span class="n">i&lt;/span>&lt;span class="o">++&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">cin&lt;/span> &lt;span class="o">&amp;gt;&amp;gt;&lt;/span> &lt;span class="n">q&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">i&lt;/span>&lt;span class="p">].&lt;/span>&lt;span class="n">l&lt;/span> &lt;span class="o">&amp;gt;&amp;gt;&lt;/span> &lt;span class="n">q&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">i&lt;/span>&lt;span class="p">].&lt;/span>&lt;span class="n">r&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">q&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">i&lt;/span>&lt;span class="p">].&lt;/span>&lt;span class="n">lid&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">q&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">i&lt;/span>&lt;span class="p">].&lt;/span>&lt;span class="n">l&lt;/span> &lt;span class="o">/&lt;/span> &lt;span class="n">block&lt;/span>&lt;span class="p">;&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">q&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">i&lt;/span>&lt;span class="p">].&lt;/span>&lt;span class="n">id&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">i&lt;/span>&lt;span class="p">;&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">sort&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">q&lt;/span> &lt;span class="o">+&lt;/span> &lt;span class="mi">1&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">q&lt;/span> &lt;span class="o">+&lt;/span> &lt;span class="n">m&lt;/span> &lt;span class="o">+&lt;/span> &lt;span class="mi">1&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">cmpRG&lt;/span>&lt;span class="p">);&lt;/span> &lt;span class="c1">// 对区间排序
