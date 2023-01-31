@@ -1,5 +1,5 @@
 ---
-title: "算法思维导图"
+title: "思路记录"
 date: 2023-01-31T10:11:02+08:00
 mindmap: true
 menu:
