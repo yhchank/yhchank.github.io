@@ -1,4 +1,4 @@
-baseurl: https://yhank.com
+baseurl: https://yhchank.github.io
 languageCode: zh-CN
 theme: hugo-theme-stack
 paginate: 5
@@ -39,7 +39,7 @@ params:
 
     sidebar:
         emoji: 🍥
-        subtitle: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        subtitle: 一个蒟蒻的 Blog
         avatar:
             enabled: true
             local: true
@@ -181,7 +181,7 @@ menu:
     social:
         - identifier: github
           name: GitHub
-          url: https://github.com/CaiJimmy/hugo-theme-stack
+          url: https://github.com/yhchank
           params:
               icon: brand-github
 
