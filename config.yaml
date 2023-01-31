@@ -185,11 +185,11 @@ menu:
           params:
               icon: brand-github
 
-        - identifier: twitter
-          name: Twitter
-          url: https://twitter.com
+        - identifier: luogu
+          name: Luogu
+          url: https://www.luogu.com.cn/user/244309
           params:
-              icon: brand-twitter
+              icon: messages
 
 related:
     includeNewer: true
