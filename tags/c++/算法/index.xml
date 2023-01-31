@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>C++/算法 on Hank's Blog</title><link>https://yhank.com/tags/c++/%E7%AE%97%E6%B3%95/</link><description>Recent content in C++/算法 on Hank's Blog</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><atom:link href="https://yhank.com/tags/c++/%E7%AE%97%E6%B3%95/index.xml" rel="self" type="application/rss+xml"/><item><title>【算法笔记】莫队</title><link>https://yhank.com/p/%E7%AE%97%E6%B3%95%E7%AC%94%E8%AE%B0%E8%8E%AB%E9%98%9F/</link><pubDate>Tue, 04 Oct 2022 09:29:54 +0800</pubDate><guid>https://yhank.com/p/%E7%AE%97%E6%B3%95%E7%AC%94%E8%AE%B0%E8%8E%AB%E9%98%9F/</guid><description>&lt;h1 id="概述">概述&lt;/h1>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>C++/算法 on Hank's Blog</title><link>https://yhchank.github.io/tags/c++/%E7%AE%97%E6%B3%95/</link><description>Recent content in C++/算法 on Hank's Blog</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><atom:link href="https://yhchank.github.io/tags/c++/%E7%AE%97%E6%B3%95/index.xml" rel="self" type="application/rss+xml"/><item><title>【算法笔记】莫队</title><link>https://yhchank.github.io/p/%E7%AE%97%E6%B3%95%E7%AC%94%E8%AE%B0%E8%8E%AB%E9%98%9F/</link><pubDate>Tue, 04 Oct 2022 09:29:54 +0800</pubDate><guid>https://yhchank.github.io/p/%E7%AE%97%E6%B3%95%E7%AC%94%E8%AE%B0%E8%8E%AB%E9%98%9F/</guid><description>&lt;h1 id="概述">概述&lt;/h1>
 &lt;h2 id="解决的问题">解决的问题&lt;/h2>
 &lt;p>&lt;strong>无修改&lt;/strong>的&lt;strong>离线&lt;/strong>区间询问问题&lt;/p>
 &lt;h2 id="对问题的要求">对问题的要求&lt;/h2>
@@ -309,10 +309,10 @@ $$&lt;/p>
 &lt;/div>&lt;h2 id="再优化蛇形移动">再优化（蛇形移动）&lt;/h2>
 &lt;p>可以发现，每次从一个块前往下一个块的时候，左端点常常会移动很远，此时，我们可以利用&lt;strong>蛇形移动&lt;/strong>来优化。&lt;/p>
 &lt;p>我们先将左端点和右端点在坐标系中形象地表示出来：&lt;/p>
-&lt;p>&lt;img src="https://yhank.com/p/%E7%AE%97%E6%B3%95%E7%AC%94%E8%AE%B0%E8%8E%AB%E9%98%9F/%E8%9B%87%E5%BD%A2%E7%A7%BB%E5%8A%A8.png"
+&lt;p>&lt;img src="https://yhchank.github.io/p/%E7%AE%97%E6%B3%95%E7%AC%94%E8%AE%B0%E8%8E%AB%E9%98%9F/%E8%9B%87%E5%BD%A2%E7%A7%BB%E5%8A%A8.png"
 width="705"
 height="621"
-srcset="https://yhank.com/p/%E7%AE%97%E6%B3%95%E7%AC%94%E8%AE%B0%E8%8E%AB%E9%98%9F/%E8%9B%87%E5%BD%A2%E7%A7%BB%E5%8A%A8_hudfef8ed25aa0dfb3bb11b776998b2167_40478_480x0_resize_box_3.png 480w, https://yhank.com/p/%E7%AE%97%E6%B3%95%E7%AC%94%E8%AE%B0%E8%8E%AB%E9%98%9F/%E8%9B%87%E5%BD%A2%E7%A7%BB%E5%8A%A8_hudfef8ed25aa0dfb3bb11b776998b2167_40478_1024x0_resize_box_3.png 1024w"
+srcset="https://yhchank.github.io/p/%E7%AE%97%E6%B3%95%E7%AC%94%E8%AE%B0%E8%8E%AB%E9%98%9F/%E8%9B%87%E5%BD%A2%E7%A7%BB%E5%8A%A8_hudfef8ed25aa0dfb3bb11b776998b2167_40478_480x0_resize_box_3.png 480w, https://yhchank.github.io/p/%E7%AE%97%E6%B3%95%E7%AC%94%E8%AE%B0%E8%8E%AB%E9%98%9F/%E8%9B%87%E5%BD%A2%E7%A7%BB%E5%8A%A8_hudfef8ed25aa0dfb3bb11b776998b2167_40478_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="113"
@@ -473,14 +473,14 @@ data-flex-basis="272px"
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="p">}&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div></description></item><item><title>【算法笔记】局部调整法</title><link>https://yhank.com/p/%E7%AE%97%E6%B3%95%E7%AC%94%E8%AE%B0%E5%B1%80%E9%83%A8%E8%B0%83%E6%95%B4%E6%B3%95/</link><pubDate>Tue, 04 Oct 2022 09:28:59 +0800</pubDate><guid>https://yhank.com/p/%E7%AE%97%E6%B3%95%E7%AC%94%E8%AE%B0%E5%B1%80%E9%83%A8%E8%B0%83%E6%95%B4%E6%B3%95/</guid><description>&lt;h1 id="局部调整法">局部调整法&lt;/h1>
+&lt;/div></description></item><item><title>【算法笔记】局部调整法</title><link>https://yhchank.github.io/p/%E7%AE%97%E6%B3%95%E7%AC%94%E8%AE%B0%E5%B1%80%E9%83%A8%E8%B0%83%E6%95%B4%E6%B3%95/</link><pubDate>Tue, 04 Oct 2022 09:28:59 +0800</pubDate><guid>https://yhchank.github.io/p/%E7%AE%97%E6%B3%95%E7%AC%94%E8%AE%B0%E5%B1%80%E9%83%A8%E8%B0%83%E6%95%B4%E6%B3%95/</guid><description>&lt;h1 id="局部调整法">局部调整法&lt;/h1>
 &lt;ol>
 &lt;li>调整+分析&lt;/li>
 &lt;li>假设优劣+建立不等式&lt;/li>
 &lt;li>解不等式&lt;/li>
 &lt;li>得到局部调整结论&lt;/li>
 &lt;li>得到贪心策略&lt;/li>
-&lt;/ol></description></item><item><title>【算法笔记】ST表</title><link>https://yhank.com/p/%E7%AE%97%E6%B3%95%E7%AC%94%E8%AE%B0st%E8%A1%A8/</link><pubDate>Mon, 12 Sep 2022 18:42:17 +0800</pubDate><guid>https://yhank.com/p/%E7%AE%97%E6%B3%95%E7%AC%94%E8%AE%B0st%E8%A1%A8/</guid><description>&lt;h1 id="st表">ST表&lt;/h1>
+&lt;/ol></description></item><item><title>【算法笔记】ST表</title><link>https://yhchank.github.io/p/%E7%AE%97%E6%B3%95%E7%AC%94%E8%AE%B0st%E8%A1%A8/</link><pubDate>Mon, 12 Sep 2022 18:42:17 +0800</pubDate><guid>https://yhchank.github.io/p/%E7%AE%97%E6%B3%95%E7%AC%94%E8%AE%B0st%E8%A1%A8/</guid><description>&lt;h1 id="st表">ST表&lt;/h1>
 &lt;h3 id="处理的问题">处理的问题&lt;/h3>
 &lt;p>&lt;strong>RMQ：&lt;/strong> 区间最值问题&lt;/p>
 &lt;h3 id="适用情况">适用情况&lt;/h3>
@@ -544,7 +544,7 @@ data-flex-basis="272px"
 &lt;/div>&lt;h3 id="可以使用st表的问题">可以使用ST表的问题&lt;/h3>
 &lt;p>只有&lt;strong>可重复贡献问题&lt;/strong>可以使用&lt;strong>ST表&lt;/strong>，所谓&lt;strong>可重复贡献问题&lt;/strong>，是指满足&lt;code>x opt x == x&lt;/code>的操作&lt;code>opt&lt;/code>&lt;/p>
 &lt;h3 id="注意点">注意点&lt;/h3>
-&lt;p>&lt;strong>第一层循环一定是&lt;/strong>&lt;code>for(int i = n; i &amp;gt;= 1; i--)&lt;/code>&lt;strong>，方向不能错&lt;/strong>&lt;/p></description></item><item><title>CF359C 题解</title><link>https://yhank.com/p/cf359c-%E9%A2%98%E8%A7%A3/</link><pubDate>Wed, 17 Aug 2022 10:36:30 +0800</pubDate><guid>https://yhank.com/p/cf359c-%E9%A2%98%E8%A7%A3/</guid><description>&lt;h2 id="题面">题面&lt;/h2>
+&lt;p>&lt;strong>第一层循环一定是&lt;/strong>&lt;code>for(int i = n; i &amp;gt;= 1; i--)&lt;/code>&lt;strong>，方向不能错&lt;/strong>&lt;/p></description></item><item><title>CF359C 题解</title><link>https://yhchank.github.io/p/cf359c-%E9%A2%98%E8%A7%A3/</link><pubDate>Wed, 17 Aug 2022 10:36:30 +0800</pubDate><guid>https://yhchank.github.io/p/cf359c-%E9%A2%98%E8%A7%A3/</guid><description>&lt;h2 id="题面">题面&lt;/h2>
 &lt;p>&lt;a class="link" href="https://www.luogu.com.cn/problem/CF359C" target="_blank" rel="noopener"
 >点这里&lt;/a>&lt;/p>
 &lt;h2 id="分析">分析&lt;/h2>
@@ -936,7 +936,7 @@ data-flex-basis="272px"
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h2 id="ac">AC&lt;/h2></description></item><item><title>【模板】Dijkstra算法</title><link>https://yhank.com/p/%E6%A8%A1%E6%9D%BFdijkstra%E7%AE%97%E6%B3%95/</link><pubDate>Tue, 09 Aug 2022 21:06:28 +0800</pubDate><guid>https://yhank.com/p/%E6%A8%A1%E6%9D%BFdijkstra%E7%AE%97%E6%B3%95/</guid><description>&lt;h2 id="朴素算法">朴素算法&lt;/h2>
+&lt;/div>&lt;h2 id="ac">AC&lt;/h2></description></item><item><title>【模板】Dijkstra算法</title><link>https://yhchank.github.io/p/%E6%A8%A1%E6%9D%BFdijkstra%E7%AE%97%E6%B3%95/</link><pubDate>Tue, 09 Aug 2022 21:06:28 +0800</pubDate><guid>https://yhchank.github.io/p/%E6%A8%A1%E6%9D%BFdijkstra%E7%AE%97%E6%B3%95/</guid><description>&lt;h2 id="朴素算法">朴素算法&lt;/h2>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
@@ -1016,7 +1016,7 @@ data-flex-basis="272px"
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div></description></item><item><title>Bellman-Ford算法与SPFA算法详解</title><link>https://yhank.com/p/bellman-ford%E7%AE%97%E6%B3%95%E4%B8%8Espfa%E7%AE%97%E6%B3%95%E8%AF%A6%E8%A7%A3/</link><pubDate>Tue, 09 Aug 2022 20:22:51 +0800</pubDate><guid>https://yhank.com/p/bellman-ford%E7%AE%97%E6%B3%95%E4%B8%8Espfa%E7%AE%97%E6%B3%95%E8%AF%A6%E8%A7%A3/</guid><description>&lt;h3 id="ps如果您只需要bellman-fordspfa判负环模板请到相应的模板部分">PS：如果您只需要Bellman-Ford/SPFA/判负环模板，请到相应的模板部分&lt;/h3>
+&lt;/div></description></item><item><title>Bellman-Ford算法与SPFA算法详解</title><link>https://yhchank.github.io/p/bellman-ford%E7%AE%97%E6%B3%95%E4%B8%8Espfa%E7%AE%97%E6%B3%95%E8%AF%A6%E8%A7%A3/</link><pubDate>Tue, 09 Aug 2022 20:22:51 +0800</pubDate><guid>https://yhchank.github.io/p/bellman-ford%E7%AE%97%E6%B3%95%E4%B8%8Espfa%E7%AE%97%E6%B3%95%E8%AF%A6%E8%A7%A3/</guid><description>&lt;h3 id="ps如果您只需要bellman-fordspfa判负环模板请到相应的模板部分">PS：如果您只需要Bellman-Ford/SPFA/判负环模板，请到相应的模板部分&lt;/h3>
 &lt;p>&lt;a class="link" href="https://www.cnblogs.com/HankYu/p/16557165.html" target="_blank" rel="noopener"
 >上一篇&lt;/a>中简单讲解了用于多源最短路的&lt;strong>Floyd&lt;/strong>算法。本篇要介绍的则是用于&lt;strong>单源最短路&lt;/strong>的&lt;strong>Bellman-Ford&lt;/strong>算法和它的一些优化（&lt;del>已死的&lt;/del>&lt;strong>SPFA&lt;/strong>）&lt;/p>
 &lt;h3 id="bellman-ford算法">Bellman-Ford算法&lt;/h3>
@@ -1086,10 +1086,10 @@ data-flex-basis="272px"
 &lt;p>转移方程为：&lt;/p>
 &lt;p>$$dp[v]=min(dp[v],dp[u]+w[v])$$&lt;/p>
 &lt;p>关于状态压缩后的正确性：最有可能令人不理解的部分就是：在同一轮更新中，我们可能会用已经更新完的值再去更新别的值。这就导致，同一论更新中，不同节点被更新到的DP值对应的$k$可能不同。（如果没看懂，就看下面这张图）&lt;/p>
-&lt;p>&lt;img src="https://yhank.com/p/bellman-ford%E7%AE%97%E6%B3%95%E4%B8%8Espfa%E7%AE%97%E6%B3%95%E8%AF%A6%E8%A7%A3/2756435-20220808225759726-1971450317.png"
+&lt;p>&lt;img src="https://yhchank.github.io/p/bellman-ford%E7%AE%97%E6%B3%95%E4%B8%8Espfa%E7%AE%97%E6%B3%95%E8%AF%A6%E8%A7%A3/2756435-20220808225759726-1971450317.png"
 width="353"
 height="348"
-srcset="https://yhank.com/p/bellman-ford%E7%AE%97%E6%B3%95%E4%B8%8Espfa%E7%AE%97%E6%B3%95%E8%AF%A6%E8%A7%A3/2756435-20220808225759726-1971450317_huac4476123a59e7685f7dd694c3310355_19608_480x0_resize_box_3.png 480w, https://yhank.com/p/bellman-ford%E7%AE%97%E6%B3%95%E4%B8%8Espfa%E7%AE%97%E6%B3%95%E8%AF%A6%E8%A7%A3/2756435-20220808225759726-1971450317_huac4476123a59e7685f7dd694c3310355_19608_1024x0_resize_box_3.png 1024w"
+srcset="https://yhchank.github.io/p/bellman-ford%E7%AE%97%E6%B3%95%E4%B8%8Espfa%E7%AE%97%E6%B3%95%E8%AF%A6%E8%A7%A3/2756435-20220808225759726-1971450317_huac4476123a59e7685f7dd694c3310355_19608_480x0_resize_box_3.png 480w, https://yhchank.github.io/p/bellman-ford%E7%AE%97%E6%B3%95%E4%B8%8Espfa%E7%AE%97%E6%B3%95%E8%AF%A6%E8%A7%A3/2756435-20220808225759726-1971450317_huac4476123a59e7685f7dd694c3310355_19608_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="101"
@@ -1492,7 +1492,7 @@ data-flex-basis="243px"
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;p>一道测试用的例题：&lt;a class="link" href="https://www.luogu.com.cn/problem/P3385" target="_blank" rel="noopener"
->P3385 【模板】负环&lt;/a>&lt;/p></description></item><item><title>Floyd算法详解</title><link>https://yhank.com/p/floyd%E7%AE%97%E6%B3%95%E8%AF%A6%E8%A7%A3/</link><pubDate>Sat, 06 Aug 2022 15:47:58 +0800</pubDate><guid>https://yhank.com/p/floyd%E7%AE%97%E6%B3%95%E8%AF%A6%E8%A7%A3/</guid><description>&lt;p>Floyd本质上使用了DP思想，我们定义$d[k][x][y]$为&lt;strong>允许经过前k个节点时，节点x与节点y之间的最短路径长度&lt;/strong>，显然初始值应该为$d[k][x][y] = +\infin (k, x, y\in[1, n])$；对于有边直接连接的两点$x$和$y$，$d[k][x][y] = 边长$。&lt;/p>
+>P3385 【模板】负环&lt;/a>&lt;/p></description></item><item><title>Floyd算法详解</title><link>https://yhchank.github.io/p/floyd%E7%AE%97%E6%B3%95%E8%AF%A6%E8%A7%A3/</link><pubDate>Sat, 06 Aug 2022 15:47:58 +0800</pubDate><guid>https://yhchank.github.io/p/floyd%E7%AE%97%E6%B3%95%E8%AF%A6%E8%A7%A3/</guid><description>&lt;p>Floyd本质上使用了DP思想，我们定义$d[k][x][y]$为&lt;strong>允许经过前k个节点时，节点x与节点y之间的最短路径长度&lt;/strong>，显然初始值应该为$d[k][x][y] = +\infin (k, x, y\in[1, n])$；对于有边直接连接的两点$x$和$y$，$d[k][x][y] = 边长$。&lt;/p>
 &lt;p>转移方程：$f[k][x][y] = min{f[k - 1][x][y], f[k - 1][x][k] + f[k - 1][k][y]}$&lt;/p>
 &lt;p>考虑状态压缩，显然$f[k][x][k]$是一定等于$f[k - 1][x][k]$，因为$x$到$k$的路径不可能以点$k$本身为中转节点；同理，$f[k][k][y] = f[k - 1][k][y]$。&lt;/p>
 &lt;p>于是，我们可以直接压缩掉第一维（$k$），新的状态为$d[x][y]$（$x$和$y$两点的最短路径长度），转移方程为$f[x][y] = min{f[x][y], f[x][k] + f[k][y]}$&lt;/p>
@@ -1605,22 +1605,22 @@ data-flex-basis="243px"
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div></description></item><item><title>数据结构--树和二叉树</title><link>https://yhank.com/p/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84--%E6%A0%91%E5%92%8C%E4%BA%8C%E5%8F%89%E6%A0%91/</link><pubDate>Mon, 25 Jul 2022 16:06:41 +0800</pubDate><guid>https://yhank.com/p/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84--%E6%A0%91%E5%92%8C%E4%BA%8C%E5%8F%89%E6%A0%91/</guid><description>&lt;p>二叉树的递归定义如下：二叉树要么为空，要么由根节点、左子树、右子树组成，而左子树和右子树分别是一棵二叉树。在计算机中，树一般是“倒置”的，即根在上，叶子在下。&lt;/p>
+&lt;/div></description></item><item><title>数据结构--树和二叉树</title><link>https://yhchank.github.io/p/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84--%E6%A0%91%E5%92%8C%E4%BA%8C%E5%8F%89%E6%A0%91/</link><pubDate>Mon, 25 Jul 2022 16:06:41 +0800</pubDate><guid>https://yhchank.github.io/p/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84--%E6%A0%91%E5%92%8C%E4%BA%8C%E5%8F%89%E6%A0%91/</guid><description>&lt;p>二叉树的递归定义如下：二叉树要么为空，要么由根节点、左子树、右子树组成，而左子树和右子树分别是一棵二叉树。在计算机中，树一般是“倒置”的，即根在上，叶子在下。&lt;/p>
 &lt;p>树和二叉树类似，区别在于没一个节点不一定只有两棵子树。&lt;/p>
 &lt;p>&lt;strong>图示：&lt;/strong>
-&lt;img src="https://yhank.com/p/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84--%E6%A0%91%E5%92%8C%E4%BA%8C%E5%8F%89%E6%A0%91/20190817141022512.png"
+&lt;img src="https://yhchank.github.io/p/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84--%E6%A0%91%E5%92%8C%E4%BA%8C%E5%8F%89%E6%A0%91/20190817141022512.png"
 width="386"
 height="278"
-srcset="https://yhank.com/p/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84--%E6%A0%91%E5%92%8C%E4%BA%8C%E5%8F%89%E6%A0%91/20190817141022512_hubd392ffc07e5ccd51455c5b6632d3836_30059_480x0_resize_box_3.png 480w, https://yhank.com/p/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84--%E6%A0%91%E5%92%8C%E4%BA%8C%E5%8F%89%E6%A0%91/20190817141022512_hubd392ffc07e5ccd51455c5b6632d3836_30059_1024x0_resize_box_3.png 1024w"
+srcset="https://yhchank.github.io/p/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84--%E6%A0%91%E5%92%8C%E4%BA%8C%E5%8F%89%E6%A0%91/20190817141022512_hubd392ffc07e5ccd51455c5b6632d3836_30059_480x0_resize_box_3.png 480w, https://yhchank.github.io/p/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84--%E6%A0%91%E5%92%8C%E4%BA%8C%E5%8F%89%E6%A0%91/20190817141022512_hubd392ffc07e5ccd51455c5b6632d3836_30059_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="138"
 data-flex-basis="333px"
 >
-&lt;img src="https://yhank.com/p/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84--%E6%A0%91%E5%92%8C%E4%BA%8C%E5%8F%89%E6%A0%91/a04c7de7726ed7ed9a518738eafe411b.png"
+&lt;img src="https://yhchank.github.io/p/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84--%E6%A0%91%E5%92%8C%E4%BA%8C%E5%8F%89%E6%A0%91/a04c7de7726ed7ed9a518738eafe411b.png"
 width="308"
 height="262"
-srcset="https://yhank.com/p/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84--%E6%A0%91%E5%92%8C%E4%BA%8C%E5%8F%89%E6%A0%91/a04c7de7726ed7ed9a518738eafe411b_hudd09476f78bc13c1ac125b16050651ff_17710_480x0_resize_box_3.png 480w, https://yhank.com/p/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84--%E6%A0%91%E5%92%8C%E4%BA%8C%E5%8F%89%E6%A0%91/a04c7de7726ed7ed9a518738eafe411b_hudd09476f78bc13c1ac125b16050651ff_17710_1024x0_resize_box_3.png 1024w"
+srcset="https://yhchank.github.io/p/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84--%E6%A0%91%E5%92%8C%E4%BA%8C%E5%8F%89%E6%A0%91/a04c7de7726ed7ed9a518738eafe411b_hudd09476f78bc13c1ac125b16050651ff_17710_480x0_resize_box_3.png 480w, https://yhchank.github.io/p/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84--%E6%A0%91%E5%92%8C%E4%BA%8C%E5%8F%89%E6%A0%91/a04c7de7726ed7ed9a518738eafe411b_hudd09476f78bc13c1ac125b16050651ff_17710_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="117"
@@ -1633,10 +1633,10 @@ data-flex-basis="282px"
 &lt;p>&lt;a class="link" href="https://vjudge.net/problem/UVA-679" target="_blank" rel="noopener"
 >UVA679 Dropping Balls&lt;/a>&lt;/p>
 &lt;h4 id="分析">分析&lt;/h4>
-&lt;p>&lt;img src="https://yhank.com/p/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84--%E6%A0%91%E5%92%8C%E4%BA%8C%E5%8F%89%E6%A0%91/20200326003915687.png"
+&lt;p>&lt;img src="https://yhchank.github.io/p/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84--%E6%A0%91%E5%92%8C%E4%BA%8C%E5%8F%89%E6%A0%91/20200326003915687.png"
 width="534"
 height="214"
-srcset="https://yhank.com/p/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84--%E6%A0%91%E5%92%8C%E4%BA%8C%E5%8F%89%E6%A0%91/20200326003915687_hubf6652586310af460ab04664431d838e_62423_480x0_resize_box_3.png 480w, https://yhank.com/p/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84--%E6%A0%91%E5%92%8C%E4%BA%8C%E5%8F%89%E6%A0%91/20200326003915687_hubf6652586310af460ab04664431d838e_62423_1024x0_resize_box_3.png 1024w"
+srcset="https://yhchank.github.io/p/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84--%E6%A0%91%E5%92%8C%E4%BA%8C%E5%8F%89%E6%A0%91/20200326003915687_hubf6652586310af460ab04664431d838e_62423_480x0_resize_box_3.png 480w, https://yhchank.github.io/p/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84--%E6%A0%91%E5%92%8C%E4%BA%8C%E5%8F%89%E6%A0%91/20200326003915687_hubf6652586310af460ab04664431d838e_62423_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="249"
@@ -1699,14 +1699,14 @@ data-flex-basis="598px"
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div></description></item><item><title>数据结构--链表</title><link>https://yhank.com/p/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84--%E9%93%BE%E8%A1%A8/</link><pubDate>Mon, 25 Jul 2022 16:05:23 +0800</pubDate><guid>https://yhank.com/p/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84--%E9%93%BE%E8%A1%A8/</guid><description>&lt;p>链表是一种物理存储单元上非连续、非顺序的存储结构。链表由一系列结点（链表中每一个元素称为结点）组成，每个结点包括两个部分：一个是存储数据元素的数据域，另一个是存储下一个结点地址的指针域。&lt;/p>
+&lt;/div></description></item><item><title>数据结构--链表</title><link>https://yhchank.github.io/p/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84--%E9%93%BE%E8%A1%A8/</link><pubDate>Mon, 25 Jul 2022 16:05:23 +0800</pubDate><guid>https://yhchank.github.io/p/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84--%E9%93%BE%E8%A1%A8/</guid><description>&lt;p>链表是一种物理存储单元上非连续、非顺序的存储结构。链表由一系列结点（链表中每一个元素称为结点）组成，每个结点包括两个部分：一个是存储数据元素的数据域，另一个是存储下一个结点地址的指针域。&lt;/p>
 &lt;p>&lt;strong>优点：&lt;/strong> 使用链表结构不需要预先知道数据大小，可以充分利用计算机内存空间，实现灵活的内存动态管理，链表还允许插入和移除表上任意位置上的节点。&lt;/p>
 &lt;p>&lt;strong>缺点：&lt;/strong> 链表失去了数组随机读取的优点，同时链表由于增加了结点的指针域，空间开销比较大。&lt;/p>
 &lt;p>&lt;strong>分类：&lt;/strong> 单向链表，双向链表以及循环链表&lt;/p>
-&lt;p>&lt;strong>图示：&lt;/strong> &lt;img src="https://yhank.com/p/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84--%E9%93%BE%E8%A1%A8/20210113172838824.png"
+&lt;p>&lt;strong>图示：&lt;/strong> &lt;img src="https://yhchank.github.io/p/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84--%E9%93%BE%E8%A1%A8/20210113172838824.png"
 width="465"
 height="73"
-srcset="https://yhank.com/p/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84--%E9%93%BE%E8%A1%A8/20210113172838824_hucc8a337d7271476f8852dbcc9ab3d7df_875_480x0_resize_box_3.png 480w, https://yhank.com/p/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84--%E9%93%BE%E8%A1%A8/20210113172838824_hucc8a337d7271476f8852dbcc9ab3d7df_875_1024x0_resize_box_3.png 1024w"
+srcset="https://yhchank.github.io/p/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84--%E9%93%BE%E8%A1%A8/20210113172838824_hucc8a337d7271476f8852dbcc9ab3d7df_875_480x0_resize_box_3.png 480w, https://yhchank.github.io/p/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84--%E9%93%BE%E8%A1%A8/20210113172838824_hucc8a337d7271476f8852dbcc9ab3d7df_875_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="636"
@@ -1816,7 +1816,7 @@ For each case, print the Beiju text on the screen.&lt;/p>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div></description></item><item><title>P1980 计数问题 - 题解</title><link>https://yhank.com/p/p1980-%E8%AE%A1%E6%95%B0%E9%97%AE%E9%A2%98-%E9%A2%98%E8%A7%A3/</link><pubDate>Mon, 25 Jul 2022 16:03:29 +0800</pubDate><guid>https://yhank.com/p/p1980-%E8%AE%A1%E6%95%B0%E9%97%AE%E9%A2%98-%E9%A2%98%E8%A7%A3/</guid><description>&lt;h1 id="p1980-计数问题">P1980 计数问题&lt;/h1>
+&lt;/div></description></item><item><title>P1980 计数问题 - 题解</title><link>https://yhchank.github.io/p/p1980-%E8%AE%A1%E6%95%B0%E9%97%AE%E9%A2%98-%E9%A2%98%E8%A7%A3/</link><pubDate>Mon, 25 Jul 2022 16:03:29 +0800</pubDate><guid>https://yhchank.github.io/p/p1980-%E8%AE%A1%E6%95%B0%E9%97%AE%E9%A2%98-%E9%A2%98%E8%A7%A3/</guid><description>&lt;h1 id="p1980-计数问题">P1980 计数问题&lt;/h1>
 &lt;h2 id="题目描述">题目描述&lt;/h2>
 &lt;p>试计算在区间 1 到 n的所有整数中，数字x(0 ≤ x ≤ 9)共出现了多少次？例如，在 1到11中，即在 1,2,3,4,5,6,7,8,9,10,11中，数字1出现了4次。&lt;/p>
 &lt;h2 id="输入格式">输入格式&lt;/h2>
@@ -1897,7 +1897,7 @@ For each case, print the Beiju text on the screen.&lt;/p>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div></description></item><item><title>P4715 淘汰赛 - 题解</title><link>https://yhank.com/p/p4715-%E6%B7%98%E6%B1%B0%E8%B5%9B-%E9%A2%98%E8%A7%A3/</link><pubDate>Mon, 25 Jul 2022 16:02:53 +0800</pubDate><guid>https://yhank.com/p/p4715-%E6%B7%98%E6%B1%B0%E8%B5%9B-%E9%A2%98%E8%A7%A3/</guid><description>&lt;h1 id="p4715-淘汰赛">P4715 淘汰赛&lt;/h1>
+&lt;/div></description></item><item><title>P4715 淘汰赛 - 题解</title><link>https://yhchank.github.io/p/p4715-%E6%B7%98%E6%B1%B0%E8%B5%9B-%E9%A2%98%E8%A7%A3/</link><pubDate>Mon, 25 Jul 2022 16:02:53 +0800</pubDate><guid>https://yhchank.github.io/p/p4715-%E6%B7%98%E6%B1%B0%E8%B5%9B-%E9%A2%98%E8%A7%A3/</guid><description>&lt;h1 id="p4715-淘汰赛">P4715 淘汰赛&lt;/h1>
 &lt;h3 id="题目描述">题目描述&lt;/h3>
 &lt;p>有 2^n (n≤7) 个国家参加世界杯决赛圈且进入淘汰赛环节。我经知道各个国家的能力值，且都不相等。能力值高的国家和能力值低的国家踢比赛时高者获胜。1 号国家和 2 号国家踢一场比赛，胜者晋级。3 号国家和 4 号国家也踢一场，胜者晋级……晋级后的国家用相同的方法继续完成赛程，直到决出冠军。给出各个国家的能力值，请问亚军是哪个国家？&lt;/p>
 &lt;h3 id="工具">工具&lt;/h3>
@@ -1967,13 +1967,13 @@ For each case, print the Beiju text on the screen.&lt;/p>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div></description></item><item><title>CF859E 题解</title><link>https://yhank.com/p/cf859e-%E9%A2%98%E8%A7%A3/</link><pubDate>Mon, 25 Jul 2022 11:20:58 +0800</pubDate><guid>https://yhank.com/p/cf859e-%E9%A2%98%E8%A7%A3/</guid><description>&lt;h2 id="分析">分析&lt;/h2>
+&lt;/div></description></item><item><title>CF859E 题解</title><link>https://yhchank.github.io/p/cf859e-%E9%A2%98%E8%A7%A3/</link><pubDate>Mon, 25 Jul 2022 11:20:58 +0800</pubDate><guid>https://yhchank.github.io/p/cf859e-%E9%A2%98%E8%A7%A3/</guid><description>&lt;h2 id="分析">分析&lt;/h2>
 &lt;p>我们不妨把这些座位看作是一张图中的节点，把每个人的诉求作为一条边（由【原座位】指向【想去的座位】）&lt;/p>
 &lt;p>比如，对于样例#1，我们就可以得到这样一张图：&lt;/p>
-&lt;p>&lt;img src="https://yhank.com/p/cf859e-%E9%A2%98%E8%A7%A3/jtijv9fb.png"
+&lt;p>&lt;img src="https://yhchank.github.io/p/cf859e-%E9%A2%98%E8%A7%A3/jtijv9fb.png"
 width="404"
 height="368"
-srcset="https://yhank.com/p/cf859e-%E9%A2%98%E8%A7%A3/jtijv9fb_hu3967219f6a2f19a1a8084580172e7125_16847_480x0_resize_box_3.png 480w, https://yhank.com/p/cf859e-%E9%A2%98%E8%A7%A3/jtijv9fb_hu3967219f6a2f19a1a8084580172e7125_16847_1024x0_resize_box_3.png 1024w"
+srcset="https://yhchank.github.io/p/cf859e-%E9%A2%98%E8%A7%A3/jtijv9fb_hu3967219f6a2f19a1a8084580172e7125_16847_480x0_resize_box_3.png 480w, https://yhchank.github.io/p/cf859e-%E9%A2%98%E8%A7%A3/jtijv9fb_hu3967219f6a2f19a1a8084580172e7125_16847_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="109"
@@ -2008,10 +2008,10 @@ data-flex-basis="263px"
 &lt;/div>
 &lt;/div>&lt;p>&lt;del>手画一下&lt;/del>复制到&lt;a class="link" href="https://csacademy.com/app/graph_editor/" target="_blank" rel="noopener"
 >Graph Editor&lt;/a>，可以得到这张图：&lt;/p>
-&lt;p>&lt;img src="https://yhank.com/p/cf859e-%E9%A2%98%E8%A7%A3/chufrqa7.png"
+&lt;p>&lt;img src="https://yhchank.github.io/p/cf859e-%E9%A2%98%E8%A7%A3/chufrqa7.png"
 width="386"
 height="466"
-srcset="https://yhank.com/p/cf859e-%E9%A2%98%E8%A7%A3/chufrqa7_hu22c02615917cc8904e2752df94b5ca76_26662_480x0_resize_box_3.png 480w, https://yhank.com/p/cf859e-%E9%A2%98%E8%A7%A3/chufrqa7_hu22c02615917cc8904e2752df94b5ca76_26662_1024x0_resize_box_3.png 1024w"
+srcset="https://yhchank.github.io/p/cf859e-%E9%A2%98%E8%A7%A3/chufrqa7_hu22c02615917cc8904e2752df94b5ca76_26662_480x0_resize_box_3.png 480w, https://yhchank.github.io/p/cf859e-%E9%A2%98%E8%A7%A3/chufrqa7_hu22c02615917cc8904e2752df94b5ca76_26662_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="82"
@@ -2022,10 +2022,10 @@ data-flex-basis="198px"
 &lt;p>于是我们就可以得到结论：如果这是一棵基环树或者一个环，那么它的答案为 $2$（环内的点移/不移，两种情况）&lt;/p>
 &lt;p>当边数等于 $n$ 时，显然这是一棵&lt;strong>树&lt;/strong>&lt;/p>
 &lt;p>我们拿它举例：&lt;/p>
-&lt;p>&lt;img src="https://yhank.com/p/cf859e-%E9%A2%98%E8%A7%A3/4qmktzjh.png"
+&lt;p>&lt;img src="https://yhchank.github.io/p/cf859e-%E9%A2%98%E8%A7%A3/4qmktzjh.png"
 width="402"
 height="429"
-srcset="https://yhank.com/p/cf859e-%E9%A2%98%E8%A7%A3/4qmktzjh_hu0284222e32155c6cc4a5c395d61b5194_21457_480x0_resize_box_3.png 480w, https://yhank.com/p/cf859e-%E9%A2%98%E8%A7%A3/4qmktzjh_hu0284222e32155c6cc4a5c395d61b5194_21457_1024x0_resize_box_3.png 1024w"
+srcset="https://yhchank.github.io/p/cf859e-%E9%A2%98%E8%A7%A3/4qmktzjh_hu0284222e32155c6cc4a5c395d61b5194_21457_480x0_resize_box_3.png 480w, https://yhchank.github.io/p/cf859e-%E9%A2%98%E8%A7%A3/4qmktzjh_hu0284222e32155c6cc4a5c395d61b5194_21457_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="93"
@@ -2191,7 +2191,7 @@ data-flex-basis="224px"
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h2 id="ac">AC&lt;/h2></description></item><item><title>【转载】一封面向社会，关于对近日来 CCF 不当行为之抗议的公开信</title><link>https://yhank.com/p/%E8%BD%AC%E8%BD%BD%E4%B8%80%E5%B0%81%E9%9D%A2%E5%90%91%E7%A4%BE%E4%BC%9A%E5%85%B3%E4%BA%8E%E5%AF%B9%E8%BF%91%E6%97%A5%E6%9D%A5-ccf-%E4%B8%8D%E5%BD%93%E8%A1%8C%E4%B8%BA%E4%B9%8B%E6%8A%97%E8%AE%AE%E7%9A%84%E5%85%AC%E5%BC%80%E4%BF%A1/</link><pubDate>Wed, 20 Jul 2022 21:37:26 +0800</pubDate><guid>https://yhank.com/p/%E8%BD%AC%E8%BD%BD%E4%B8%80%E5%B0%81%E9%9D%A2%E5%90%91%E7%A4%BE%E4%BC%9A%E5%85%B3%E4%BA%8E%E5%AF%B9%E8%BF%91%E6%97%A5%E6%9D%A5-ccf-%E4%B8%8D%E5%BD%93%E8%A1%8C%E4%B8%BA%E4%B9%8B%E6%8A%97%E8%AE%AE%E7%9A%84%E5%85%AC%E5%BC%80%E4%BF%A1/</guid><description>&lt;blockquote>
+&lt;/div>&lt;h2 id="ac">AC&lt;/h2></description></item><item><title>【转载】一封面向社会，关于对近日来 CCF 不当行为之抗议的公开信</title><link>https://yhchank.github.io/p/%E8%BD%AC%E8%BD%BD%E4%B8%80%E5%B0%81%E9%9D%A2%E5%90%91%E7%A4%BE%E4%BC%9A%E5%85%B3%E4%BA%8E%E5%AF%B9%E8%BF%91%E6%97%A5%E6%9D%A5-ccf-%E4%B8%8D%E5%BD%93%E8%A1%8C%E4%B8%BA%E4%B9%8B%E6%8A%97%E8%AE%AE%E7%9A%84%E5%85%AC%E5%BC%80%E4%BF%A1/</link><pubDate>Wed, 20 Jul 2022 21:37:26 +0800</pubDate><guid>https://yhchank.github.io/p/%E8%BD%AC%E8%BD%BD%E4%B8%80%E5%B0%81%E9%9D%A2%E5%90%91%E7%A4%BE%E4%BC%9A%E5%85%B3%E4%BA%8E%E5%AF%B9%E8%BF%91%E6%97%A5%E6%9D%A5-ccf-%E4%B8%8D%E5%BD%93%E8%A1%8C%E4%B8%BA%E4%B9%8B%E6%8A%97%E8%AE%AE%E7%9A%84%E5%85%AC%E5%BC%80%E4%BF%A1/</guid><description>&lt;blockquote>
 &lt;p>&lt;strong>原文链接：&lt;a class="link" href="https://101001011.github.io/2022/06/11/zhi-ccf-de-yi-feng-gong-kai-xin/" title="https://101001011.github.io/2022/06/11/zhi-ccf-de-yi-feng-gong-kai-xin/"
 target="_blank" rel="noopener"
 >https://101001011.github.io/2022/06/11/zhi-ccf-de-yi-feng-gong-kai-xin/&lt;/a>
@@ -2267,7 +2267,7 @@ x = x * &lt;span class="hljs-number">10&lt;/span> + c - &lt;span class="hljs-num
 &lt;p>&lt;span class="markdown-them-math-inline">&lt;mjx-container class="MathJax" jax="CHTML" style="font-size: 113.1%; position: relative;">&lt;mjx-math class="MJX-TEX" aria-hidden="true">&lt;mjx-mstyle>&lt;mjx-mspace style="width: 1em;">&lt;/mjx-mspace>&lt;/mjx-mstyle>&lt;/mjx-math>&lt;mjx-assistive-mml unselectable="on" display="inline">&lt;math xmlns="http://www.w3.org/1998/Math/MathML">&lt;mstyle scriptlevel="0">&lt;mspace width="1em">&lt;/mspace>&lt;/mstyle>&lt;/math>&lt;/mjx-assistive-mml>&lt;/mjx-container>&lt;/span>省选&lt;span class="bd-box">&lt;h-char class="bd bd-beg">&lt;h-inner>，&lt;/h-inner>&lt;/h-char>&lt;/span>&lt;span class="markdown-them-math-inline">&lt;mjx-container class="MathJax" jax="CHTML" style="font-size: 113.1%; position: relative;">&lt;mjx-math class="MJX-TEX" aria-hidden="true">&lt;mjx-mi class="mjx-n">&lt;mjx-c class="mjx-c4E">&lt;/mjx-c>&lt;/mjx-mi>&lt;mjx-mi class="mjx-n">&lt;mjx-c class="mjx-c4F">&lt;/mjx-c>&lt;/mjx-mi>&lt;mjx-mi class="mjx-n">&lt;mjx-c class="mjx-c49">&lt;/mjx-c>&lt;/mjx-mi>&lt;/mjx-math>&lt;mjx-assistive-mml unselectable="on" display="inline">&lt;math xmlns="http://www.w3.org/1998/Math/MathML">&lt;mi mathvariant="normal">N&lt;/mi>&lt;mi mathvariant="normal">O&lt;/mi>&lt;mi mathvariant="normal">I&lt;/mi>&lt;/math>&lt;/mjx-assistive-mml>&lt;/mjx-container>&lt;/span> &lt;span class="bd-box">&lt;h-char class="bd bd-beg">&lt;h-inner>：&lt;/h-inner>&lt;/h-char>&lt;/span>均为两场&lt;span class="bd-box">&lt;h-char class="bd bd-beg">&lt;h-inner>，&lt;/h-inner>&lt;/h-char>&lt;/span>每场 &lt;span class="markdown-them-math-inline">&lt;mjx-container class="MathJax" jax="CHTML" style="font-size: 113.1%; position: relative;">&lt;mjx-math class="MJX-TEX" aria-hidden="true">&lt;mjx-mn class="mjx-n">&lt;mjx-c class="mjx-c35">&lt;/mjx-c>&lt;/mjx-mn>&lt;/mjx-math>&lt;mjx-assistive-mml unselectable="on" display="inline">&lt;math xmlns="http://www.w3.org/1998/Math/MathML">&lt;mn>5&lt;/mn>&lt;/math>&lt;/mjx-assistive-mml>&lt;/mjx-container>&lt;/span> 小时&lt;span class="bd-box">&lt;h-char class="bd bd-beg">&lt;h-inner>，&lt;/h-inner>&lt;/h-char>&lt;/span>&lt;span class="markdown-them-math-inline">&lt;mjx-container class="MathJax" jax="CHTML" style="font-size: 113.1%; position: relative;">&lt;mjx-math class="MJX-TEX" aria-hidden="true">&lt;mjx-mn class="mjx-n">&lt;mjx-c class="mjx-c33">&lt;/mjx-c>&lt;/mjx-mn>&lt;/mjx-math>&lt;mjx-assistive-mml unselectable="on" display="inline">&lt;math xmlns="http://www.w3.org/1998/Math/MathML">&lt;mn>3&lt;/mn>&lt;/math>&lt;/mjx-assistive-mml>&lt;/mjx-container>&lt;/span> 道题&lt;span class="bd-box">&lt;h-char class="bd bd-beg">&lt;h-inner>。&lt;/h-inner>&lt;/h-char>&lt;/span>&lt;/p>
 &lt;p>&lt;span class="markdown-them-math-inline">&lt;mjx-container class="MathJax" jax="CHTML" style="font-size: 113.1%; position: relative;">&lt;mjx-math class="MJX-TEX" aria-hidden="true">&lt;mjx-mstyle>&lt;mjx-mspace style="width: 1em;">&lt;/mjx-mspace>&lt;/mjx-mstyle>&lt;/mjx-math>&lt;mjx-assistive-mml unselectable="on" display="inline">&lt;math xmlns="http://www.w3.org/1998/Math/MathML">&lt;mstyle scriptlevel="0">&lt;mspace width="1em">&lt;/mspace>&lt;/mstyle>&lt;/math>&lt;/mjx-assistive-mml>&lt;/mjx-container>&lt;/span>除了初赛之外&lt;span class="bd-box">&lt;h-char class="bd bd-beg">&lt;h-inner>，&lt;/h-inner>&lt;/h-char>&lt;/span>考试中的每道题形如&lt;span class="bd-box">&lt;h-char class="bd bd-beg">&lt;h-inner>，&lt;/h-inner>&lt;/h-char>&lt;/span>给定一个问题&lt;span class="bd-box">&lt;h-char class="bd bd-beg">&lt;h-inner>，&lt;/h-inner>&lt;/h-char>&lt;/span>如 &lt;span class="bd-box">&lt;h-char class="bd bd-end">&lt;h-inner>“&lt;/h-inner>&lt;/h-char>&lt;/span> 给出两个数&lt;span class="bd-box">&lt;h-char class="bd bd-beg">&lt;h-inner>，&lt;/h-inner>&lt;/h-char>&lt;/span>求它们的和 &lt;span class="bd-box">&lt;h-char class="bd bd-beg">&lt;h-inner>”&lt;/h-inner>&lt;/h-char>&lt;h-char class="bd bd-beg">&lt;h-inner>，&lt;/h-inner>&lt;/h-char>&lt;/span>你需要在规定时间内编写一个程序用来解决它&lt;span class="bd-box">&lt;h-char class="bd bd-beg">&lt;h-inner>。&lt;/h-inner>&lt;/h-char>&lt;/span>考完之后选手编写的程序会被上交&lt;span class="bd-box">&lt;h-char class="bd bd-beg">&lt;h-inner>，&lt;/h-inner>&lt;/h-char>&lt;/span>统一进行评测&lt;span class="bd-box">&lt;h-char class="bd bd-beg">&lt;h-inner>。&lt;/h-inner>&lt;/h-char>&lt;/span>&lt;/p>
 &lt;p>&lt;span class="markdown-them-math-inline">&lt;mjx-container class="MathJax" jax="CHTML" style="font-size: 113.1%; position: relative;">&lt;mjx-math class="MJX-TEX" aria-hidden="true">&lt;mjx-mstyle>&lt;mjx-mspace style="width: 1em;">&lt;/mjx-mspace>&lt;/mjx-mstyle>&lt;/mjx-math>&lt;mjx-assistive-mml unselectable="on" display="inline">&lt;math xmlns="http://www.w3.org/1998/Math/MathML">&lt;mstyle scriptlevel="0">&lt;mspace width="1em">&lt;/mspace>&lt;/mstyle>&lt;/math>&lt;/mjx-assistive-mml>&lt;/mjx-container>&lt;/span>评测时评测机会给出一些输入文本&lt;span class="bd-box">&lt;h-char class="bd bd-beg">&lt;h-inner>，&lt;/h-inner>&lt;/h-char>&lt;/span>待测程序读取后会按照选手所编写的程式对其进行一定处理&lt;span class="bd-box">&lt;h-char class="bd bd-beg">&lt;h-inner>，&lt;/h-inner>&lt;/h-char>&lt;/span>然后给出输出文本&lt;span class="bd-box">&lt;h-char class="bd bd-beg">&lt;h-inner>。&lt;/h-inner>&lt;/h-char>&lt;/span>如果待测程序在规定时间内给出了输出文本&lt;span class="bd-box">&lt;h-char class="bd bd-beg">&lt;h-inner>，&lt;/h-inner>&lt;/h-char>&lt;/span>评测机会将它与标准答案进行对比&lt;span class="bd-box">&lt;h-char class="bd bd-beg">&lt;h-inner>，&lt;/h-inner>&lt;/h-char>&lt;/span>如果完全相同&lt;span class="bd-box">&lt;h-char class="bd bd-end">&lt;h-inner>（&lt;/h-inner>&lt;/h-char>&lt;/span>也有一些非传统评测规则并非如此&lt;span class="bd-box">&lt;h-char class="bd bd-beg">&lt;h-inner>，&lt;/h-inner>&lt;/h-char>&lt;/span>此处略过&lt;span class="bd-box">&lt;h-char class="bd bd-beg">&lt;h-inner>）&lt;/h-inner>&lt;/h-char>&lt;/span>则选手获得该测试点的分数&lt;span class="bd-box">&lt;h-char class="bd bd-beg">&lt;h-inner>。&lt;/h-inner>&lt;/h-char>&lt;/span>比如说在之前那个问题中&lt;span class="bd-box">&lt;h-char class="bd bd-beg">&lt;h-inner>，&lt;/h-inner>&lt;/h-char>&lt;/span>评测机若给出输入文本 &lt;span class="bd-box">&lt;h-char class="bd bd-end">&lt;h-inner>“&lt;/h-inner>&lt;/h-char>&lt;/span> &lt;span class="markdown-them-math-inline">&lt;mjx-container class="MathJax" jax="CHTML" style="font-size: 113.1%; position: relative;">&lt;mjx-math class="MJX-TEX" aria-hidden="true">&lt;mjx-mn class="mjx-n">&lt;mjx-c class="mjx-c32">&lt;/mjx-c>&lt;/mjx-mn>&lt;mjx-mtext class="mjx-n">&lt;mjx-c class="mjx-cA0">&lt;/mjx-c>&lt;/mjx-mtext>&lt;mjx-mn class="mjx-n">&lt;mjx-c class="mjx-c33">&lt;/mjx-c>&lt;/mjx-mn>&lt;/mjx-math>&lt;mjx-assistive-mml unselectable="on" display="inline">&lt;math xmlns="http://www.w3.org/1998/Math/MathML">&lt;mn>2&lt;/mn>&lt;mtext>&amp;nbsp;&lt;/mtext>&lt;mn>3&lt;/mn>&lt;/math>&lt;/mjx-assistive-mml>&lt;/mjx-container>&lt;/span> &lt;span class="bd-box">&lt;h-char class="bd bd-beg">&lt;h-inner>”&lt;/h-inner>&lt;/h-char>&lt;h-char class="bd bd-beg">&lt;h-inner>，&lt;/h-inner>&lt;/h-char>&lt;/span>那么一个正确的程序应该输出 &lt;span class="bd-box">&lt;h-char class="bd bd-end">&lt;h-inner>“&lt;/h-inner>&lt;/h-char>&lt;/span> &lt;span class="markdown-them-math-inline">&lt;mjx-container class="MathJax" jax="CHTML" style="font-size: 113.1%; position: relative;">&lt;mjx-math class="MJX-TEX" aria-hidden="true">&lt;mjx-mn class="mjx-n">&lt;mjx-c class="mjx-c35">&lt;/mjx-c>&lt;/mjx-mn>&lt;/mjx-math>&lt;mjx-assistive-mml unselectable="on" display="inline">&lt;math xmlns="http://www.w3.org/1998/Math/MathML">&lt;mn>5&lt;/mn>&lt;/math>&lt;/mjx-assistive-mml>&lt;/mjx-container>&lt;/span> &lt;span class="bd-box">&lt;h-char class="bd bd-beg">&lt;h-inner>”&lt;/h-inner>&lt;/h-char>&lt;h-char class="bd bd-beg">&lt;h-inner>，&lt;/h-inner>&lt;/h-char>&lt;/span>并且可以获得这个测试点的分数&lt;span class="bd-box">&lt;h-char class="bd bd-beg">&lt;h-inner>。&lt;/h-inner>&lt;/h-char>&lt;/span>&lt;/p>
-&lt;p>&lt;span class="markdown-them-math-inline">&lt;mjx-container class="MathJax" jax="CHTML" style="font-size: 113.1%; position: relative;">&lt;mjx-math class="MJX-TEX" aria-hidden="true">&lt;mjx-mstyle>&lt;mjx-mspace style="width: 1em;">&lt;/mjx-mspace>&lt;/mjx-mstyle>&lt;/mjx-math>&lt;mjx-assistive-mml unselectable="on" display="inline">&lt;math xmlns="http://www.w3.org/1998/Math/MathML">&lt;mstyle scriptlevel="0">&lt;mspace width="1em">&lt;/mspace>&lt;/mstyle>&lt;/math>&lt;/mjx-assistive-mml>&lt;/mjx-container>&lt;/span>在 &lt;span class="markdown-them-math-inline">&lt;mjx-container class="MathJax" jax="CHTML" style="font-size: 113.1%; position: relative;">&lt;mjx-math class="MJX-TEX" aria-hidden="true">&lt;mjx-mi class="mjx-n">&lt;mjx-c class="mjx-c4F">&lt;/mjx-c>&lt;/mjx-mi>&lt;mjx-mi class="mjx-n">&lt;mjx-c class="mjx-c49">&lt;/mjx-c>&lt;/mjx-mi>&lt;/mjx-math>&lt;mjx-assistive-mml unselectable="on" display="inline">&lt;math xmlns="http://www.w3.org/1998/Math/MathML">&lt;mi mathvariant="normal">O&lt;/mi>&lt;mi mathvariant="normal">I&lt;/mi>&lt;/math>&lt;/mjx-assistive-mml>&lt;/mjx-container>&lt;/span> 赛制中&lt;span class="bd-box">&lt;h-char class="bd bd-beg">&lt;h-inner>，&lt;/h-inner>&lt;/h-char>&lt;/span>每道题目的分数均为 &lt;span class="markdown-them-math-inline">&lt;mjx-container class="MathJax" jax="CHTML" style="font-size: 113.1%; position: relative;">&lt;mjx-math class="MJX-TEX" aria-hidden="true">&lt;mjx-mn class="mjx-n">&lt;mjx-c class="mjx-c31">&lt;/mjx-c>&lt;mjx-c class="mjx-c30">&lt;/mjx-c>&lt;mjx-c class="mjx-c30">&lt;/mjx-c>&lt;/mjx-mn>&lt;/mjx-math>&lt;mjx-assistive-mml unselectable="on" display="inline">&lt;math xmlns="http://www.w3.org/1998/Math/MathML">&lt;mn>100&lt;/mn>&lt;/math>&lt;/mjx-assistive-mml>&lt;/mjx-container>&lt;/span>&lt;span class="bd-box">&lt;h-char class="bd bd-beg">&lt;h-inner>，&lt;/h-inner>&lt;/h-char>&lt;/span>最后每道题的得分之和就是一场考试的总分&lt;span class="bd-box">&lt;h-char class="bd bd-beg">&lt;h-inner>。&lt;/h-inner>&lt;/h-char>&lt;/span>当然&lt;span class="bd-box">&lt;h-char class="bd bd-beg">&lt;h-inner>，&lt;/h-inner>&lt;/h-char>&lt;/span>每道题的分数并不是非零即 &lt;span class="markdown-them-math-inline">&lt;mjx-container class="MathJax" jax="CHTML" style="font-size: 113.1%; position: relative;">&lt;mjx-math class="MJX-TEX" aria-hidden="true">&lt;mjx-mn class="mjx-n">&lt;mjx-c class="mjx-c31">&lt;/mjx-c>&lt;mjx-c class="mjx-c30">&lt;/mjx-c>&lt;mjx-c class="mjx-c30">&lt;/mjx-c>&lt;/mjx-mn>&lt;/mjx-math>&lt;mjx-assistive-mml unselectable="on" display="inline">&lt;math xmlns="http://www.w3.org/1998/Math/MathML">&lt;mn>100&lt;/mn>&lt;/math>&lt;/mjx-assistive-mml>&lt;/mjx-container>&lt;/span>&lt;span class="bd-box">&lt;h-char class="bd bd-beg">&lt;h-inner>，&lt;/h-inner>&lt;/h-char>&lt;/span>大多数题目会给出若干子任务&lt;span class="bd-box">&lt;h-char class="bd bd-beg">&lt;h-inner>，&lt;/h-inner>&lt;/h-char>&lt;/span>如果选手无法解决完整的问题&lt;span class="bd-box">&lt;h-char class="bd bd-beg">&lt;h-inner>，&lt;/h-inner>&lt;/h-char>&lt;/span>可以选择一些弱化问题来解决&lt;span class="bd-box">&lt;h-char class="bd bd-beg">&lt;h-inner>，&lt;/h-inner>&lt;/h-char>&lt;/span>并获得相应的部分分&lt;span class="bd-box">&lt;h-char class="bd bd-beg">&lt;h-inner>。&lt;/h-inner>&lt;/h-char>&lt;/span>&lt;/p></description></item><item><title>【坑点记录】关于进行运算时的数据类型转换</title><link>https://yhank.com/p/%E5%9D%91%E7%82%B9%E8%AE%B0%E5%BD%95%E5%85%B3%E4%BA%8E%E8%BF%9B%E8%A1%8C%E8%BF%90%E7%AE%97%E6%97%B6%E7%9A%84%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2/</link><pubDate>Tue, 19 Jul 2022 13:21:50 +0800</pubDate><guid>https://yhank.com/p/%E5%9D%91%E7%82%B9%E8%AE%B0%E5%BD%95%E5%85%B3%E4%BA%8E%E8%BF%9B%E8%A1%8C%E8%BF%90%E7%AE%97%E6%97%B6%E7%9A%84%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2/</guid><description>&lt;p>跳坑位置：&lt;a class="link" href="https://www.luogu.com.cn/problem/P1005" title="P1005 [NOIP2007 提高组] 矩阵取数游戏"
+&lt;p>&lt;span class="markdown-them-math-inline">&lt;mjx-container class="MathJax" jax="CHTML" style="font-size: 113.1%; position: relative;">&lt;mjx-math class="MJX-TEX" aria-hidden="true">&lt;mjx-mstyle>&lt;mjx-mspace style="width: 1em;">&lt;/mjx-mspace>&lt;/mjx-mstyle>&lt;/mjx-math>&lt;mjx-assistive-mml unselectable="on" display="inline">&lt;math xmlns="http://www.w3.org/1998/Math/MathML">&lt;mstyle scriptlevel="0">&lt;mspace width="1em">&lt;/mspace>&lt;/mstyle>&lt;/math>&lt;/mjx-assistive-mml>&lt;/mjx-container>&lt;/span>在 &lt;span class="markdown-them-math-inline">&lt;mjx-container class="MathJax" jax="CHTML" style="font-size: 113.1%; position: relative;">&lt;mjx-math class="MJX-TEX" aria-hidden="true">&lt;mjx-mi class="mjx-n">&lt;mjx-c class="mjx-c4F">&lt;/mjx-c>&lt;/mjx-mi>&lt;mjx-mi class="mjx-n">&lt;mjx-c class="mjx-c49">&lt;/mjx-c>&lt;/mjx-mi>&lt;/mjx-math>&lt;mjx-assistive-mml unselectable="on" display="inline">&lt;math xmlns="http://www.w3.org/1998/Math/MathML">&lt;mi mathvariant="normal">O&lt;/mi>&lt;mi mathvariant="normal">I&lt;/mi>&lt;/math>&lt;/mjx-assistive-mml>&lt;/mjx-container>&lt;/span> 赛制中&lt;span class="bd-box">&lt;h-char class="bd bd-beg">&lt;h-inner>，&lt;/h-inner>&lt;/h-char>&lt;/span>每道题目的分数均为 &lt;span class="markdown-them-math-inline">&lt;mjx-container class="MathJax" jax="CHTML" style="font-size: 113.1%; position: relative;">&lt;mjx-math class="MJX-TEX" aria-hidden="true">&lt;mjx-mn class="mjx-n">&lt;mjx-c class="mjx-c31">&lt;/mjx-c>&lt;mjx-c class="mjx-c30">&lt;/mjx-c>&lt;mjx-c class="mjx-c30">&lt;/mjx-c>&lt;/mjx-mn>&lt;/mjx-math>&lt;mjx-assistive-mml unselectable="on" display="inline">&lt;math xmlns="http://www.w3.org/1998/Math/MathML">&lt;mn>100&lt;/mn>&lt;/math>&lt;/mjx-assistive-mml>&lt;/mjx-container>&lt;/span>&lt;span class="bd-box">&lt;h-char class="bd bd-beg">&lt;h-inner>，&lt;/h-inner>&lt;/h-char>&lt;/span>最后每道题的得分之和就是一场考试的总分&lt;span class="bd-box">&lt;h-char class="bd bd-beg">&lt;h-inner>。&lt;/h-inner>&lt;/h-char>&lt;/span>当然&lt;span class="bd-box">&lt;h-char class="bd bd-beg">&lt;h-inner>，&lt;/h-inner>&lt;/h-char>&lt;/span>每道题的分数并不是非零即 &lt;span class="markdown-them-math-inline">&lt;mjx-container class="MathJax" jax="CHTML" style="font-size: 113.1%; position: relative;">&lt;mjx-math class="MJX-TEX" aria-hidden="true">&lt;mjx-mn class="mjx-n">&lt;mjx-c class="mjx-c31">&lt;/mjx-c>&lt;mjx-c class="mjx-c30">&lt;/mjx-c>&lt;mjx-c class="mjx-c30">&lt;/mjx-c>&lt;/mjx-mn>&lt;/mjx-math>&lt;mjx-assistive-mml unselectable="on" display="inline">&lt;math xmlns="http://www.w3.org/1998/Math/MathML">&lt;mn>100&lt;/mn>&lt;/math>&lt;/mjx-assistive-mml>&lt;/mjx-container>&lt;/span>&lt;span class="bd-box">&lt;h-char class="bd bd-beg">&lt;h-inner>，&lt;/h-inner>&lt;/h-char>&lt;/span>大多数题目会给出若干子任务&lt;span class="bd-box">&lt;h-char class="bd bd-beg">&lt;h-inner>，&lt;/h-inner>&lt;/h-char>&lt;/span>如果选手无法解决完整的问题&lt;span class="bd-box">&lt;h-char class="bd bd-beg">&lt;h-inner>，&lt;/h-inner>&lt;/h-char>&lt;/span>可以选择一些弱化问题来解决&lt;span class="bd-box">&lt;h-char class="bd bd-beg">&lt;h-inner>，&lt;/h-inner>&lt;/h-char>&lt;/span>并获得相应的部分分&lt;span class="bd-box">&lt;h-char class="bd bd-beg">&lt;h-inner>。&lt;/h-inner>&lt;/h-char>&lt;/span>&lt;/p></description></item><item><title>【坑点记录】关于进行运算时的数据类型转换</title><link>https://yhchank.github.io/p/%E5%9D%91%E7%82%B9%E8%AE%B0%E5%BD%95%E5%85%B3%E4%BA%8E%E8%BF%9B%E8%A1%8C%E8%BF%90%E7%AE%97%E6%97%B6%E7%9A%84%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2/</link><pubDate>Tue, 19 Jul 2022 13:21:50 +0800</pubDate><guid>https://yhchank.github.io/p/%E5%9D%91%E7%82%B9%E8%AE%B0%E5%BD%95%E5%85%B3%E4%BA%8E%E8%BF%9B%E8%A1%8C%E8%BF%90%E7%AE%97%E6%97%B6%E7%9A%84%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2/</guid><description>&lt;p>跳坑位置：&lt;a class="link" href="https://www.luogu.com.cn/problem/P1005" title="P1005 [NOIP2007 提高组] 矩阵取数游戏"
 target="_blank" rel="noopener"
 >P1005 [NOIP2007 提高组] 矩阵取数游戏&lt;/a>&lt;/p>
 &lt;p>&lt;strong>此题数据范围：&lt;/strong>&lt;/p>
@@ -2278,13 +2278,13 @@ target="_blank" rel="noopener"
 &lt;p>区间dp很好想，但是根据数据范围，显然要用&lt;del>高精度&lt;/del> int128。
 不过，写的时候要注意**「运算时的数据类型强制转换」**&lt;/p>
 &lt;p>比如，如果写了表达式&lt;code>dp[l - 1][r] + a[i][l - 1] * p[m - r + l - 1]&lt;/code>（其中&lt;code>dp&lt;/code>和&lt;code>p&lt;/code>为&lt;code>__int128&lt;/code>，而&lt;code>a&lt;/code>为&lt;code>int&lt;/code>），那么计算时就会先将&lt;code>p[m - r + l - 1]&lt;/code>转换为&lt;code>int&lt;/code>再与&lt;code>a[i][l - 1]&lt;/code>相乘&lt;/p>
-&lt;p>所以，&lt;strong>正确的写法是：&lt;code>dp[l - 1][r] + p[m - r + l - 1] * a[i][l - 1]&lt;/code>（把目标类型写在运算符号前）&lt;/strong>&lt;/p></description></item><item><title>树的重心相关概念与证明--好文摘录</title><link>https://yhank.com/p/%E6%A0%91%E7%9A%84%E9%87%8D%E5%BF%83%E7%9B%B8%E5%85%B3%E6%A6%82%E5%BF%B5%E4%B8%8E%E8%AF%81%E6%98%8E--%E5%A5%BD%E6%96%87%E6%91%98%E5%BD%95/</link><pubDate>Mon, 18 Jul 2022 13:26:30 +0800</pubDate><guid>https://yhank.com/p/%E6%A0%91%E7%9A%84%E9%87%8D%E5%BF%83%E7%9B%B8%E5%85%B3%E6%A6%82%E5%BF%B5%E4%B8%8E%E8%AF%81%E6%98%8E--%E5%A5%BD%E6%96%87%E6%91%98%E5%BD%95/</guid><description>&lt;p>此处只记录链接，不转载了：&lt;a class="link" href="https://www.luogu.com.cn/blog/dcmfqw/shu-di-zhong-xin-xiang-guan-gai-nian-yu-zheng-ming" target="_blank" rel="noopener"
->请点击此处&lt;/a>&lt;/p></description></item><item><title>关于二叉树上叶节点的最值</title><link>https://yhank.com/p/%E5%85%B3%E4%BA%8E%E4%BA%8C%E5%8F%89%E6%A0%91%E4%B8%8A%E5%8F%B6%E8%8A%82%E7%82%B9%E7%9A%84%E6%9C%80%E5%80%BC/</link><pubDate>Sun, 17 Jul 2022 12:03:53 +0800</pubDate><guid>https://yhank.com/p/%E5%85%B3%E4%BA%8E%E4%BA%8C%E5%8F%89%E6%A0%91%E4%B8%8A%E5%8F%B6%E8%8A%82%E7%82%B9%E7%9A%84%E6%9C%80%E5%80%BC/</guid><description>&lt;h3 id="1-叶结点数最大">1. 叶结点数最大&lt;/h3>
+&lt;p>所以，&lt;strong>正确的写法是：&lt;code>dp[l - 1][r] + p[m - r + l - 1] * a[i][l - 1]&lt;/code>（把目标类型写在运算符号前）&lt;/strong>&lt;/p></description></item><item><title>树的重心相关概念与证明--好文摘录</title><link>https://yhchank.github.io/p/%E6%A0%91%E7%9A%84%E9%87%8D%E5%BF%83%E7%9B%B8%E5%85%B3%E6%A6%82%E5%BF%B5%E4%B8%8E%E8%AF%81%E6%98%8E--%E5%A5%BD%E6%96%87%E6%91%98%E5%BD%95/</link><pubDate>Mon, 18 Jul 2022 13:26:30 +0800</pubDate><guid>https://yhchank.github.io/p/%E6%A0%91%E7%9A%84%E9%87%8D%E5%BF%83%E7%9B%B8%E5%85%B3%E6%A6%82%E5%BF%B5%E4%B8%8E%E8%AF%81%E6%98%8E--%E5%A5%BD%E6%96%87%E6%91%98%E5%BD%95/</guid><description>&lt;p>此处只记录链接，不转载了：&lt;a class="link" href="https://www.luogu.com.cn/blog/dcmfqw/shu-di-zhong-xin-xiang-guan-gai-nian-yu-zheng-ming" target="_blank" rel="noopener"
+>请点击此处&lt;/a>&lt;/p></description></item><item><title>关于二叉树上叶节点的最值</title><link>https://yhchank.github.io/p/%E5%85%B3%E4%BA%8E%E4%BA%8C%E5%8F%89%E6%A0%91%E4%B8%8A%E5%8F%B6%E8%8A%82%E7%82%B9%E7%9A%84%E6%9C%80%E5%80%BC/</link><pubDate>Sun, 17 Jul 2022 12:03:53 +0800</pubDate><guid>https://yhchank.github.io/p/%E5%85%B3%E4%BA%8E%E4%BA%8C%E5%8F%89%E6%A0%91%E4%B8%8A%E5%8F%B6%E8%8A%82%E7%82%B9%E7%9A%84%E6%9C%80%E5%80%BC/</guid><description>&lt;h3 id="1-叶结点数最大">1. 叶结点数最大&lt;/h3>
 &lt;p>每个右子节点都为叶节点&lt;/p>
-&lt;p>&lt;img src="https://yhank.com/p/%E5%85%B3%E4%BA%8E%E4%BA%8C%E5%8F%89%E6%A0%91%E4%B8%8A%E5%8F%B6%E8%8A%82%E7%82%B9%E7%9A%84%E6%9C%80%E5%80%BC/2756435-20220717115652777-1086707988.jpg"
+&lt;p>&lt;img src="https://yhchank.github.io/p/%E5%85%B3%E4%BA%8E%E4%BA%8C%E5%8F%89%E6%A0%91%E4%B8%8A%E5%8F%B6%E8%8A%82%E7%82%B9%E7%9A%84%E6%9C%80%E5%80%BC/2756435-20220717115652777-1086707988.jpg"
 width="315"
 height="280"
-srcset="https://yhank.com/p/%E5%85%B3%E4%BA%8E%E4%BA%8C%E5%8F%89%E6%A0%91%E4%B8%8A%E5%8F%B6%E8%8A%82%E7%82%B9%E7%9A%84%E6%9C%80%E5%80%BC/2756435-20220717115652777-1086707988_hu3d046f6b55c5adb26d5b84210562ee97_7385_480x0_resize_q75_box.jpg 480w, https://yhank.com/p/%E5%85%B3%E4%BA%8E%E4%BA%8C%E5%8F%89%E6%A0%91%E4%B8%8A%E5%8F%B6%E8%8A%82%E7%82%B9%E7%9A%84%E6%9C%80%E5%80%BC/2756435-20220717115652777-1086707988_hu3d046f6b55c5adb26d5b84210562ee97_7385_1024x0_resize_q75_box.jpg 1024w"
+srcset="https://yhchank.github.io/p/%E5%85%B3%E4%BA%8E%E4%BA%8C%E5%8F%89%E6%A0%91%E4%B8%8A%E5%8F%B6%E8%8A%82%E7%82%B9%E7%9A%84%E6%9C%80%E5%80%BC/2756435-20220717115652777-1086707988_hu3d046f6b55c5adb26d5b84210562ee97_7385_480x0_resize_q75_box.jpg 480w, https://yhchank.github.io/p/%E5%85%B3%E4%BA%8E%E4%BA%8C%E5%8F%89%E6%A0%91%E4%B8%8A%E5%8F%B6%E8%8A%82%E7%82%B9%E7%9A%84%E6%9C%80%E5%80%BC/2756435-20220717115652777-1086707988_hu3d046f6b55c5adb26d5b84210562ee97_7385_1024x0_resize_q75_box.jpg 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="112"
@@ -2297,10 +2297,10 @@ data-flex-basis="270px"
 &lt;p>极端情况下，在二叉树中所有的右节点都是叶子节点，除最下层外的左节点都是父节点且有两个孩子，如图所示，1008 = 1007（3~2015的奇数个数)+1(2014)。&lt;/p>
 &lt;h3 id="1-叶结点数最小">1. 叶结点数最小&lt;/h3>
 &lt;p>挂成一条链，则只有一个叶节点&lt;/p>
-&lt;p>&lt;img src="https://yhank.com/p/%E5%85%B3%E4%BA%8E%E4%BA%8C%E5%8F%89%E6%A0%91%E4%B8%8A%E5%8F%B6%E8%8A%82%E7%82%B9%E7%9A%84%E6%9C%80%E5%80%BC/2756435-20220717122454958-1001641004.png"
+&lt;p>&lt;img src="https://yhchank.github.io/p/%E5%85%B3%E4%BA%8E%E4%BA%8C%E5%8F%89%E6%A0%91%E4%B8%8A%E5%8F%B6%E8%8A%82%E7%82%B9%E7%9A%84%E6%9C%80%E5%80%BC/2756435-20220717122454958-1001641004.png"
 width="451"
 height="621"
-srcset="https://yhank.com/p/%E5%85%B3%E4%BA%8E%E4%BA%8C%E5%8F%89%E6%A0%91%E4%B8%8A%E5%8F%B6%E8%8A%82%E7%82%B9%E7%9A%84%E6%9C%80%E5%80%BC/2756435-20220717122454958-1001641004_hub8e2984fb4498ce784f60d9ea1c98df5_26052_480x0_resize_box_3.png 480w, https://yhank.com/p/%E5%85%B3%E4%BA%8E%E4%BA%8C%E5%8F%89%E6%A0%91%E4%B8%8A%E5%8F%B6%E8%8A%82%E7%82%B9%E7%9A%84%E6%9C%80%E5%80%BC/2756435-20220717122454958-1001641004_hub8e2984fb4498ce784f60d9ea1c98df5_26052_1024x0_resize_box_3.png 1024w"
+srcset="https://yhchank.github.io/p/%E5%85%B3%E4%BA%8E%E4%BA%8C%E5%8F%89%E6%A0%91%E4%B8%8A%E5%8F%B6%E8%8A%82%E7%82%B9%E7%9A%84%E6%9C%80%E5%80%BC/2756435-20220717122454958-1001641004_hub8e2984fb4498ce784f60d9ea1c98df5_26052_480x0_resize_box_3.png 480w, https://yhchank.github.io/p/%E5%85%B3%E4%BA%8E%E4%BA%8C%E5%8F%89%E6%A0%91%E4%B8%8A%E5%8F%B6%E8%8A%82%E7%82%B9%E7%9A%84%E6%9C%80%E5%80%BC/2756435-20220717122454958-1001641004_hub8e2984fb4498ce784f60d9ea1c98df5_26052_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="72"
@@ -2310,7 +2310,7 @@ data-flex-basis="174px"
 &lt;blockquote>
 &lt;p>约定二叉树的根节点高度为 1。一棵结点数为 2016 的二叉树最少有______个叶子结点&lt;/p>
 &lt;/blockquote>
-&lt;p>形成一条链的情况，答案为1&lt;/p></description></item><item><title>逆元</title><link>https://yhank.com/p/%E9%80%86%E5%85%83/</link><pubDate>Thu, 17 Feb 2022 20:14:43 +0800</pubDate><guid>https://yhank.com/p/%E9%80%86%E5%85%83/</guid><description>&lt;h3 id="出现的问题">出现的问题&lt;/h3>
+&lt;p>形成一条链的情况，答案为1&lt;/p></description></item><item><title>逆元</title><link>https://yhchank.github.io/p/%E9%80%86%E5%85%83/</link><pubDate>Thu, 17 Feb 2022 20:14:43 +0800</pubDate><guid>https://yhchank.github.io/p/%E9%80%86%E5%85%83/</guid><description>&lt;h3 id="出现的问题">出现的问题&lt;/h3>
 &lt;p>计算组合数（公式如下）时，&lt;/p>
 &lt;p>$$
 C_{n}^{m}=\frac{n!}{m!\times(n-m)!}
