@@ -1,9 +1,9 @@
-name: GitHub Pages
+name: Generate static blog pages
 
 on:
   push:
     branches:
-      - main  # 博客根目录的默认分支，这里是main，有时也是master
+      - main
   pull_request:
 
 jobs:
