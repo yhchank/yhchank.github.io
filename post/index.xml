@@ -7,8 +7,7 @@ alt="树状数组"
 class="gallery-image"
 data-flex-grow="133"
 data-flex-basis="320px"
->&lt;/p></description></item><item><title>图论要素</title><link>https://yhchank.github.io/p/%E5%9B%BE%E8%AE%BA%E8%A6%81%E7%B4%A0/</link><pubDate>Sat, 31 Dec 2022 08:08:12 +0800</pubDate><guid>https://yhchank.github.io/p/%E5%9B%BE%E8%AE%BA%E8%A6%81%E7%B4%A0/</guid><description>&lt;h1 id="图论要素">图论要素&lt;/h1>
-&lt;h2 id="通向权重ch环">&lt;strong>通向权重（ch）环&lt;/strong>&lt;/h2>
+>&lt;/p></description></item><item><title>图论要素</title><link>https://yhchank.github.io/p/%E5%9B%BE%E8%AE%BA%E8%A6%81%E7%B4%A0/</link><pubDate>Sat, 31 Dec 2022 08:08:12 +0800</pubDate><guid>https://yhchank.github.io/p/%E5%9B%BE%E8%AE%BA%E8%A6%81%E7%B4%A0/</guid><description>&lt;h2 id="图论要素通向权重ch环">&lt;strong>图论要素：通向权重（ch）环&lt;/strong>&lt;/h2>
 &lt;ol>
 &lt;li>
 &lt;p>通：是否连通&lt;/p>
@@ -45,7 +44,17 @@ data-flex-basis="320px"
 &lt;li>
 &lt;p>带副权的图：SPFA&lt;/p>
 &lt;/li>
-&lt;/ul></description></item><item><title>ELF格式概述</title><link>https://yhchank.github.io/p/elf%E6%A0%BC%E5%BC%8F%E6%A6%82%E8%BF%B0/</link><pubDate>Sun, 11 Dec 2022 08:32:15 +0800</pubDate><guid>https://yhchank.github.io/p/elf%E6%A0%BC%E5%BC%8F%E6%A6%82%E8%BF%B0/</guid><description>&lt;p>&lt;img src="https://yhchank.github.io/p/elf%E6%A0%BC%E5%BC%8F%E6%A6%82%E8%BF%B0/20170611205621669.jpg"
+&lt;/ul>
+&lt;p>&lt;img src="https://yhchank.github.io/p/%E5%9B%BE%E8%AE%BA%E8%A6%81%E7%B4%A0/img.png"
+width="683"
+height="276"
+srcset="https://yhchank.github.io/p/%E5%9B%BE%E8%AE%BA%E8%A6%81%E7%B4%A0/img_huc50c4db317e76bef71f061036d16501f_36823_480x0_resize_box_3.png 480w, https://yhchank.github.io/p/%E5%9B%BE%E8%AE%BA%E8%A6%81%E7%B4%A0/img_huc50c4db317e76bef71f061036d16501f_36823_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+alt="四种最短路算法对比"
+class="gallery-image"
+data-flex-grow="247"
+data-flex-basis="593px"
+>&lt;/p></description></item><item><title>ELF格式概述</title><link>https://yhchank.github.io/p/elf%E6%A0%BC%E5%BC%8F%E6%A6%82%E8%BF%B0/</link><pubDate>Sun, 11 Dec 2022 08:32:15 +0800</pubDate><guid>https://yhchank.github.io/p/elf%E6%A0%BC%E5%BC%8F%E6%A6%82%E8%BF%B0/</guid><description>&lt;p>&lt;img src="https://yhchank.github.io/p/elf%E6%A0%BC%E5%BC%8F%E6%A6%82%E8%BF%B0/20170611205621669.jpg"
 width="762"
 height="580"
 srcset="https://yhchank.github.io/p/elf%E6%A0%BC%E5%BC%8F%E6%A6%82%E8%BF%B0/20170611205621669_hu07da713942a7090d6222aaa73ceb5c1c_48124_480x0_resize_q75_box.jpg 480w, https://yhchank.github.io/p/elf%E6%A0%BC%E5%BC%8F%E6%A6%82%E8%BF%B0/20170611205621669_hu07da713942a7090d6222aaa73ceb5c1c_48124_1024x0_resize_q75_box.jpg 1024w"

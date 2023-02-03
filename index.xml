@@ -1,10 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Hank's Blog</title><link>https://yhchank.github.io/</link><description>Recent content on Hank's Blog</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Tue, 31 Jan 2023 10:11:02 +0800</lastBuildDate><atom:link href="https://yhchank.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>思路随记</title><link>https://yhchank.github.io/%E6%80%9D%E8%B7%AF%E9%9A%8F%E8%AE%B0/</link><pubDate>Tue, 31 Jan 2023 10:11:02 +0800</pubDate><guid>https://yhchank.github.io/%E6%80%9D%E8%B7%AF%E9%9A%8F%E8%AE%B0/</guid><description>&lt;ul>
+&lt;li>解法分类
+&lt;ul>
+&lt;li>贪心&lt;/li>
+&lt;li>枚举&lt;/li>
+&lt;li>动规&lt;/li>
+&lt;li>数学&lt;/li>
+&lt;/ul>
+&lt;/li>
 &lt;li>“满足要求的最大值”“最大值最小” =&amp;gt; 考虑&lt;strong>二分&lt;/strong>&lt;/li>
-&lt;li>“字典序最小/最大的结果” =&amp;gt; 考虑贪心（因为使当前项更小一定会使结果更优），如&lt;a class="link" href="https://www.luogu.com.cn/problem/CF1547D" target="_blank" rel="noopener"
+&lt;li>“字典序最小/最大的结果” =&amp;gt; 考虑贪心（因为使当前项更小一定会使结果更优），如 &lt;a class="link" href="https://www.luogu.com.cn/problem/CF1547D" target="_blank" rel="noopener"
 >CF1547D Co-growing Sequence&lt;/a>就是一道按位贪心的题目（实际解法可以直接用位运算而不是按位枚举）；&lt;strong>补充：&lt;/strong> 如果在某些涉及位运算及相关知识的题目中，可能会出现“最大值”“最小值”等问题，此时也可以考虑从高到低按位贪心（类似于字典序最小），例题：&lt;a class="link" href="https://www.luogu.com.cn/problem/CF1554C" target="_blank" rel="noopener"
 >CF1554C Mikasa&lt;/a>&lt;/li>
 &lt;li>对点集排序，某些点需满足特定关系 =&amp;gt; 考虑&lt;strong>拓扑排序&lt;/strong>&lt;/li>
-&lt;li>遇到DP题，先从简单情况入手（有时就是DP的初始状态）。比如&lt;a class="link" href="https://www.luogu.com.cn/problem/CF187B" target="_blank" rel="noopener"
+&lt;li>遇到DP题，先从简单情况入手（有时就是DP的初始状态）。比如 &lt;a class="link" href="https://www.luogu.com.cn/problem/CF187B" target="_blank" rel="noopener"
 >CF187B AlgoRace&lt;/a>，这道题就可以先考虑不换车的情况（Floyd板子），再列转移方程，推广到其他情况&lt;/li>
 &lt;li>遇到判&lt;strong>正环&lt;/strong>或者求&lt;strong>最长路&lt;/strong>，将所有的边权&lt;strong>取相反数&lt;/strong>，例题：&lt;a class="link" href="https://www.luogu.com.cn/problem/P1938" target="_blank" rel="noopener"
 >P1938 [USACO09NOV]Job Hunt S&lt;/a>&lt;/li>
@@ -42,6 +50,14 @@
 &lt;/li>
 &lt;/ul>
 &lt;/li>
+&lt;li>树上问题，求两点间的距离（&lt;code>d[i]&lt;/code>表示 $i$ 节点的深度）：&lt;code>d[u] + d[v] - 2 * d[lca(u, v)]&lt;/code>&lt;/li>
+&lt;li>树上问题思考策略：
+&lt;ul>
+&lt;li>暴力+优化&lt;/li>
+&lt;li>简化为链&lt;/li>
+&lt;li>手算特殊情况&lt;/li>
+&lt;/ul>
+&lt;/li>
 &lt;/ul></description></item><item><title>一图概述树状数组</title><link>https://yhchank.github.io/p/%E4%B8%80%E5%9B%BE%E6%A6%82%E8%BF%B0%E6%A0%91%E7%8A%B6%E6%95%B0%E7%BB%84/</link><pubDate>Tue, 31 Jan 2023 08:19:26 +0800</pubDate><guid>https://yhchank.github.io/p/%E4%B8%80%E5%9B%BE%E6%A6%82%E8%BF%B0%E6%A0%91%E7%8A%B6%E6%95%B0%E7%BB%84/</guid><description>&lt;p>&lt;img src="https://yhchank.github.io/p/%E4%B8%80%E5%9B%BE%E6%A6%82%E8%BF%B0%E6%A0%91%E7%8A%B6%E6%95%B0%E7%BB%84/BIT.png"
 width="1163"
 height="870"
@@ -51,8 +67,7 @@ alt="树状数组"
 class="gallery-image"
 data-flex-grow="133"
 data-flex-basis="320px"
->&lt;/p></description></item><item><title>图论要素</title><link>https://yhchank.github.io/p/%E5%9B%BE%E8%AE%BA%E8%A6%81%E7%B4%A0/</link><pubDate>Sat, 31 Dec 2022 08:08:12 +0800</pubDate><guid>https://yhchank.github.io/p/%E5%9B%BE%E8%AE%BA%E8%A6%81%E7%B4%A0/</guid><description>&lt;h1 id="图论要素">图论要素&lt;/h1>
-&lt;h2 id="通向权重ch环">&lt;strong>通向权重（ch）环&lt;/strong>&lt;/h2>
+>&lt;/p></description></item><item><title>图论要素</title><link>https://yhchank.github.io/p/%E5%9B%BE%E8%AE%BA%E8%A6%81%E7%B4%A0/</link><pubDate>Sat, 31 Dec 2022 08:08:12 +0800</pubDate><guid>https://yhchank.github.io/p/%E5%9B%BE%E8%AE%BA%E8%A6%81%E7%B4%A0/</guid><description>&lt;h2 id="图论要素通向权重ch环">&lt;strong>图论要素：通向权重（ch）环&lt;/strong>&lt;/h2>
 &lt;ol>
 &lt;li>
 &lt;p>通：是否连通&lt;/p>
@@ -89,7 +104,17 @@ data-flex-basis="320px"
 &lt;li>
 &lt;p>带副权的图：SPFA&lt;/p>
 &lt;/li>
-&lt;/ul></description></item><item><title>ELF格式概述</title><link>https://yhchank.github.io/p/elf%E6%A0%BC%E5%BC%8F%E6%A6%82%E8%BF%B0/</link><pubDate>Sun, 11 Dec 2022 08:32:15 +0800</pubDate><guid>https://yhchank.github.io/p/elf%E6%A0%BC%E5%BC%8F%E6%A6%82%E8%BF%B0/</guid><description>&lt;p>&lt;img src="https://yhchank.github.io/p/elf%E6%A0%BC%E5%BC%8F%E6%A6%82%E8%BF%B0/20170611205621669.jpg"
+&lt;/ul>
+&lt;p>&lt;img src="https://yhchank.github.io/p/%E5%9B%BE%E8%AE%BA%E8%A6%81%E7%B4%A0/img.png"
+width="683"
+height="276"
+srcset="https://yhchank.github.io/p/%E5%9B%BE%E8%AE%BA%E8%A6%81%E7%B4%A0/img_huc50c4db317e76bef71f061036d16501f_36823_480x0_resize_box_3.png 480w, https://yhchank.github.io/p/%E5%9B%BE%E8%AE%BA%E8%A6%81%E7%B4%A0/img_huc50c4db317e76bef71f061036d16501f_36823_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+alt="四种最短路算法对比"
+class="gallery-image"
+data-flex-grow="247"
+data-flex-basis="593px"
+>&lt;/p></description></item><item><title>ELF格式概述</title><link>https://yhchank.github.io/p/elf%E6%A0%BC%E5%BC%8F%E6%A6%82%E8%BF%B0/</link><pubDate>Sun, 11 Dec 2022 08:32:15 +0800</pubDate><guid>https://yhchank.github.io/p/elf%E6%A0%BC%E5%BC%8F%E6%A6%82%E8%BF%B0/</guid><description>&lt;p>&lt;img src="https://yhchank.github.io/p/elf%E6%A0%BC%E5%BC%8F%E6%A6%82%E8%BF%B0/20170611205621669.jpg"
 width="762"
 height="580"
 srcset="https://yhchank.github.io/p/elf%E6%A0%BC%E5%BC%8F%E6%A6%82%E8%BF%B0/20170611205621669_hu07da713942a7090d6222aaa73ceb5c1c_48124_480x0_resize_q75_box.jpg 480w, https://yhchank.github.io/p/elf%E6%A0%BC%E5%BC%8F%E6%A6%82%E8%BF%B0/20170611205621669_hu07da713942a7090d6222aaa73ceb5c1c_48124_1024x0_resize_q75_box.jpg 1024w"
