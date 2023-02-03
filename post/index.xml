@@ -7,7 +7,7 @@ alt="树状数组"
 class="gallery-image"
 data-flex-grow="133"
 data-flex-basis="320px"
->&lt;/p></description></item><item><title>图论要素</title><link>https://yhchank.github.io/p/%E5%9B%BE%E8%AE%BA%E8%A6%81%E7%B4%A0/</link><pubDate>Sat, 31 Dec 2022 08:08:12 +0800</pubDate><guid>https://yhchank.github.io/p/%E5%9B%BE%E8%AE%BA%E8%A6%81%E7%B4%A0/</guid><description>&lt;h2 id="图论要素通向权重ch环">&lt;strong>图论要素：通向权重（ch）环&lt;/strong>&lt;/h2>
+>&lt;/p></description></item><item><title>图论要素+四种最短路算法对比</title><link>https://yhchank.github.io/p/%E5%9B%BE%E8%AE%BA%E8%A6%81%E7%B4%A0-%E5%9B%9B%E7%A7%8D%E6%9C%80%E7%9F%AD%E8%B7%AF%E7%AE%97%E6%B3%95%E5%AF%B9%E6%AF%94/</link><pubDate>Sat, 31 Dec 2022 08:08:12 +0800</pubDate><guid>https://yhchank.github.io/p/%E5%9B%BE%E8%AE%BA%E8%A6%81%E7%B4%A0-%E5%9B%9B%E7%A7%8D%E6%9C%80%E7%9F%AD%E8%B7%AF%E7%AE%97%E6%B3%95%E5%AF%B9%E6%AF%94/</guid><description>&lt;h2 id="图论要素通向权重ch环">&lt;strong>图论要素：通向权重（ch）环&lt;/strong>&lt;/h2>
 &lt;ol>
 &lt;li>
 &lt;p>通：是否连通&lt;/p>
@@ -45,10 +45,10 @@ data-flex-basis="320px"
 &lt;p>带副权的图：SPFA&lt;/p>
 &lt;/li>
 &lt;/ul>
-&lt;p>&lt;img src="https://yhchank.github.io/p/%E5%9B%BE%E8%AE%BA%E8%A6%81%E7%B4%A0/img.png"
+&lt;p>&lt;img src="https://yhchank.github.io/p/%E5%9B%BE%E8%AE%BA%E8%A6%81%E7%B4%A0-%E5%9B%9B%E7%A7%8D%E6%9C%80%E7%9F%AD%E8%B7%AF%E7%AE%97%E6%B3%95%E5%AF%B9%E6%AF%94/img.png"
 width="683"
 height="276"
-srcset="https://yhchank.github.io/p/%E5%9B%BE%E8%AE%BA%E8%A6%81%E7%B4%A0/img_huc50c4db317e76bef71f061036d16501f_36823_480x0_resize_box_3.png 480w, https://yhchank.github.io/p/%E5%9B%BE%E8%AE%BA%E8%A6%81%E7%B4%A0/img_huc50c4db317e76bef71f061036d16501f_36823_1024x0_resize_box_3.png 1024w"
+srcset="https://yhchank.github.io/p/%E5%9B%BE%E8%AE%BA%E8%A6%81%E7%B4%A0-%E5%9B%9B%E7%A7%8D%E6%9C%80%E7%9F%AD%E8%B7%AF%E7%AE%97%E6%B3%95%E5%AF%B9%E6%AF%94/img_huc50c4db317e76bef71f061036d16501f_36823_480x0_resize_box_3.png 480w, https://yhchank.github.io/p/%E5%9B%BE%E8%AE%BA%E8%A6%81%E7%B4%A0-%E5%9B%9B%E7%A7%8D%E6%9C%80%E7%9F%AD%E8%B7%AF%E7%AE%97%E6%B3%95%E5%AF%B9%E6%AF%94/img_huc50c4db317e76bef71f061036d16501f_36823_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 alt="四种最短路算法对比"
 class="gallery-image"
