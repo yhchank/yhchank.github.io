@@ -58,6 +58,7 @@
 &lt;li>手算特殊情况&lt;/li>
 &lt;/ul>
 &lt;/li>
+&lt;li>线性结构上的问题常用思维方法：&lt;strong>一维数组用二维平面点可视化&lt;/strong>（下标为横坐标，值为纵坐标）&lt;/li>
 &lt;/ul></description></item><item><title>一图概述树状数组</title><link>https://yhchank.github.io/p/%E4%B8%80%E5%9B%BE%E6%A6%82%E8%BF%B0%E6%A0%91%E7%8A%B6%E6%95%B0%E7%BB%84/</link><pubDate>Tue, 31 Jan 2023 08:19:26 +0800</pubDate><guid>https://yhchank.github.io/p/%E4%B8%80%E5%9B%BE%E6%A6%82%E8%BF%B0%E6%A0%91%E7%8A%B6%E6%95%B0%E7%BB%84/</guid><description>&lt;p>&lt;img src="https://yhchank.github.io/p/%E4%B8%80%E5%9B%BE%E6%A6%82%E8%BF%B0%E6%A0%91%E7%8A%B6%E6%95%B0%E7%BB%84/BIT.png"
 width="1163"
 height="870"
