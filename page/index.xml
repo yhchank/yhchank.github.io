@@ -40,7 +40,9 @@
 &lt;li>静态：区间排序+二分（&lt;code>lower_bound()&lt;/code> / &lt;code>upper_bound()&lt;/code>），例：&lt;a class="link" href="https://www.luogu.com.cn/problem/U277755" target="_blank" rel="noopener"
 >[太戈 1058] 进攻长城&lt;/a>，&lt;a class="link" href="https://www.luogu.com.cn/paste/wd605oxt" target="_blank" rel="noopener"
 >代码&lt;/a>&lt;/li>
-&lt;li>动态：树状数组维护
+&lt;li>动态：树状数组维护，例：&lt;a class="link" href="https://www.luogu.com.cn/problem/U277755" target="_blank" rel="noopener"
+>[太戈 1058] 进攻长城&lt;/a>，&lt;a class="link" href="https://www.luogu.com.cn/paste/3dugf4q3" target="_blank" rel="noopener"
+>代码&lt;/a>
 &lt;ol>
 &lt;li>当添加元素 $a[i]$ 时，&lt;code>add(a[i], 1)&lt;/code>&lt;/li>
 &lt;li>对 $1$ 至 $l - 1$ 号元素 &lt;code>add(a[i], 1)&lt;/code>，此时 &lt;code>query(k)&lt;/code> 就是区间 $[1, l - 1]$ 中小于等于 $k$ 的元素个数&lt;/li>
