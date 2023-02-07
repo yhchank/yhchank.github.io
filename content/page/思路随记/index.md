@@ -29,7 +29,7 @@ menu:
   - [[太戈 1060] 提前交卷](https://www.luogu.com.cn/problem/U277718)，[代码](https://www.luogu.com.cn/paste/4ws3mlmj)
 - “区间 $[l, r]$ 内小于等于 $k$ 的元素的个数”
   - 静态：区间排序+二分（`lower_bound()` / `upper_bound()`），例：[[太戈 1058] 进攻长城](https://www.luogu.com.cn/problem/U277755)，[代码](https://www.luogu.com.cn/paste/wd605oxt)
-  - 动态：树状数组维护
+  - 动态：树状数组维护，例：[[太戈 1058] 进攻长城](https://www.luogu.com.cn/problem/U277755)，[代码](https://www.luogu.com.cn/paste/3dugf4q3)
     1. 当添加元素 $a[i]$ 时，`add(a[i], 1)`
     2. 对 $1$ 至 $l - 1$ 号元素 `add(a[i], 1)`，此时 `query(k)` 就是区间 $[1, l - 1]$ 中小于等于 $k$ 的元素个数
     3. 继续对 $l$ 至 $r$ 号元素 `add(a[i], 1)`，此时 `query(k)` 就是区间 $[1, r]$ 中小于等于 $k$ 的元素个数
