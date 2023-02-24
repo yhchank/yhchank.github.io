@@ -1,7 +1,7 @@
 ---
 title: "泛化物品与泛化背包"
 date: 2023-02-08T10:09:02+08:00
-draft: true
+draft: false
 ---
 
 # 泛化物品
