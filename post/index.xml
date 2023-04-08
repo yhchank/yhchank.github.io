@@ -2,7 +2,7 @@
 &lt;li>写出转移朴素 dp 转移方程，如 &lt;code>min{dp[j] + (i - j) * (i - j - 1) / 2} + a[i]&lt;/code>（随便举一个例子）&lt;/li>
 &lt;li>将只和 $j$ 有关的项放在一起，同时和 $i$、$j$ 有关的项放在一起，之和 $i$ 有关的项提到 &lt;code>min{}&lt;/code> 或 &lt;code>max{}&lt;/code> 外面（如果无法直接变形，可以先展开）：&lt;code>min{dp[j] + j * (j + 1) / 2 - j * i} + i * (i - 1) / 2 + a[i]&lt;/code>&lt;/li>
 &lt;li>确定每条直线的斜率和截距，在这个例子中，第 $i$ 条直线的斜率为 &lt;code>-i&lt;/code>，截距为 &lt;code>dp[i] + i * (i + 1) / 2&lt;/code>&lt;/li>
-&lt;li>套斜率优化模板，如下（将 &lt;code>k&amp;lt;i&amp;gt;&lt;/code>、&lt;code>b&amp;lt;i&amp;gt;&lt;/code>和&lt;code>rest&amp;lt;i&amp;gt;&lt;/code> 分别替换为推导出的斜率如 &lt;code>-i&lt;/code>、截距如 &lt;code>dp[i] + i * (i + 1) / 2&lt;/code> 和 &lt;code>{}&lt;/code>外的式子如 &lt;code>i * (i - 1) / 2 + a[i]&lt;/code>）&lt;/li>
+&lt;li>套斜率优化模板，如下（将 &lt;code>k&amp;lt;i&amp;gt;&lt;/code>、&lt;code>b&amp;lt;i&amp;gt;&lt;/code> 和 &lt;code>rest&amp;lt;i&amp;gt;&lt;/code> 分别替换为推导出的斜率如 &lt;code>-i&lt;/code>、截距如 &lt;code>dp[i] + i * (i + 1) / 2&lt;/code> 和 &lt;code>{}&lt;/code> 外的式子如 &lt;code>i * (i - 1) / 2 + a[i]&lt;/code>）&lt;/li>
 &lt;/ol>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
