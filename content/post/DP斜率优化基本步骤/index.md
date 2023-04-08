@@ -1,7 +1,7 @@
 ---
 title: "DP斜率优化基本步骤"
 date: 2023-04-08T09:51:42+08:00
-draft: true
+draft: false
 ---
 
 1. 写出转移朴素 dp 转移方程，如 `min{dp[j] + (i - j) * (i - j - 1) / 2} + a[i]`（随便举一个例子）
