@@ -21,9 +21,9 @@ draft: false
 - 无权图：BFS
 - 正权图：
   
-  - 稠密图：普通 Dijkstra，$\Theta(V^2)$
+  - 稠密图：普通 Dijkstra，$O(V^2)$
   
-  - 稀疏图：堆优化 Dijkstra，$\Theta(E \log E)$
+  - 稀疏图：堆优化 Dijkstra，$O(E \log E)$
 - 带副权的图：SPFA
 
 ![四种最短路算法对比](四种最短路算法对比.png)
